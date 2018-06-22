@@ -1,0 +1,196 @@
+#install.packages("tm") 
+#install.packages("libxml2") 
+#install.packages("corpustools") 
+#install.packages("mongolite") 
+#install.packages("dplyr") 
+#install.packages("fastrtext") 
+
+library(mongolite)
+library(dplyr) 
+library(tm)
+library(corpustools)
+library(fastrtext)
+
+# Remove Variables if they exist
+if (exists("m")) {rm(m)}
+if (exists("getdata")) {rm(getdata)}
+if (exists("listid")) {rm(listid)}
+if (exists("listtext")) {rm(listtext)}
+if (exists("textframe")) {rm(textframe)}
+if (exists("corpus")) {rm(corpus)}
+if (exists("corpusmatrix")) {rm(corpusmatrix)}
+if (exists("model")) {rm(model)}
+if (exists("predictions")) {rm(predictions)}
+if (exists("test_labels_without_prefix")) {rm(test_labels_without_prefix)}
+if (exists("test_sentences")) {rm(test_sentences)}
+if (exists("textframe2")) {rm(textframe2)}
+if (exists("train_sentences")) {rm(train_sentences)}
+if (exists("corpusdataframe")) {rm(corpusdataframe)}
+
+if (exists("listtest")) {rm(listtest)}
+
+
+
+# Verbindung zu Kategorien, wird aktuell nicht gebraucht
+# m <- mongo("categories", url = "mongodb://192.168.2.135:27017/mails")  
+
+# Verbindung zur MongoDB zu den Mails:
+m <- mongo("interactions", url = "mongodb://192.168.2.135:27017/mails")  
+getdata <- m
+
+# Durchzählen wie viele Datensätze vorhanden sind
+getdata$count('{}')
+
+# Texte und Kategorien aus monodb und berinigen (da aktuell nicht sauber gespeichert)
+# Kategorien
+listid <- getdata$find(query = '{}', fields = '{"categories.id" : true, "_id": false}')
+listid <- data.frame(lapply(listid, function(x) {gsub("list\\(id = \"", "", x)}))
+listid <- data.frame(lapply(listid, function(x) {gsub("\"\\)", "", x)}))
+listid <- data.frame(lapply(listid, function(x) {gsub("list\\(id = c\\(\"", "", x)}))
+listid <- data.frame(lapply(listid, function(x) {gsub("\"", "", x)}))
+listid <- data.frame(lapply(listid, function(x) {gsub("\\)", "", x)}))
+
+# Relevante Textbausteine
+listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "_id": false}')
+listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(text = \"", "", x)}))
+listtext <- data.frame(lapply(listtext, function(x) {gsub("\"\\)", "", x)}))
+
+
+# Dataframes zusammenführen und anpassen
+textframe <- data.frame(listid, listtext)
+colnames(textframe) <- c("id", "text")
+#print(textframe)
+
+
+# wir Laden die 2te Spalte in den Dataframe und verwenden tm zur Breinigung
+corpus <- VCorpus(VectorSource(textframe[,2]))
+
+# inspect(corpus)
+#whitespace entfernen
+corpus <- tm_map(corpus, stripWhitespace)
+#convert to lowercases
+corpus <- tm_map(corpus, content_transformer(tolower))
+#remove stopwords
+corpus <- tm_map(corpus, removeWords, stopwords("german"))
+#stemming
+tm_map(corpus, stemDocument)
+
+corpusdataframe <- data.frame(text_new = sapply(corpus, as.character), stringsAsFactors = FALSE)
+
+
+
+# inspect(corpus)
+#print(textframe)
+
+## corpusmatrix erst einmal weglassen, wird nicht benötigt für fastrtext
+##Term document Matrices
+#corpusmatrix <- DocumentTermMatrix(corpus)
+#inspect(corpusmatrix)
+
+##Häufigkeitsmatrix
+#findFreqTerms(corpusmatrix, 10)
+
+##Korrelationen zwischen einzelnen Wörtern
+#findAssocs(corpusmatrix, "fehler", 0.5)
+
+##wir entfernen sehr seltene wörter, die unwichtig bzgl. der korrelation sind
+#removeSparseTerms(corpusmatrix, 0.4)
+#inspect(corpusmatrix)
+
+#wir schreiben in eine neue spalte die editierten texte
+textframe[,3] <- corpusdataframe
+
+
+
+
+#FASTRTEXT
+
+#fuer fastrtext benötigen wir die daten in einem bestimmten format, dafür laden wir die benötigten spalten in 
+#ein neues dataframe
+
+textframe2 <- subset(textframe, select=c("id", "text_new"))
+names(textframe2) <- c("class.text", "text")
+
+# Wir mixen den Datensatz durch vor dem splitten
+# hier wäre besser 70/30 pro kategorie aber das muss man coden
+textframe2 <- textframe2[sample(nrow(textframe2)),]
+
+# Alle Zeilen mit mehreren IDs löschen, nicht sauber aber die müssen erst einmal weg
+textframe2 <- textframe2[!grepl(",", textframe2$class.text),]
+
+#hier zähle ich einmalig die anzahl der texte pro kategorie um sie danach zu löschen
+#das muss man automatisieren
+#textframe3 <- aggregate(cbind(count = text) ~ class.text, data = textframe2, FUN = function(x){NROW(x)})
+# delete cats 59, 70, 72, 85, 86, 87, 92, 97
+textframe2 <- textframe2[!grepl("59", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("70", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("72", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("85", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("86", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("87", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("92", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("97", textframe2$class.text),]
+
+#trainings und test datensätze
+train_sentences <- head(textframe2, 450)
+test_sentences <- tail(textframe2, 145)
+
+
+
+#das muss verbessert werden
+#textframe2 %>% 
+#  add_count(class.text)
+
+
+# Daten in richtiges Format für Model
+tmp_file_model <- tempfile()
+?tempfile()
+
+# label vor die kategorien
+train_labels <- paste0("__label__", train_sentences[,"class.text"])
+
+
+# Text in Kleinbuchstaben
+train_texts <- tolower(train_sentences[,"text"])
+# View(train_texts)
+# Kategorie mit Prefix + Text aus Kleinbuchstaben
+train_to_write <- paste(train_labels, train_texts)
+# View(train_to_write)
+train_tmp_file_txt <- tempfile()
+# Daten in tempfile schreiben
+writeLines(text = train_to_write, con = train_tmp_file_txt)
+
+
+# gleiches Vorgehen für Testdatensatz
+test_labels <- paste0("__label__", test_sentences[,"class.text"])
+test_labels_without_prefix <- test_sentences[,"class.text"]
+test_texts <- tolower(test_sentences[,"text"])
+test_to_write <- paste(test_labels, test_texts)
+
+
+# Modell trainieren und in tempfile abspeichern; Parameter können angepasst werden 
+execute(commands = c("supervised", "-input", train_tmp_file_txt, "-output", tmp_file_model, "-dim", 100, "-lr", 1, "-epoch", 150, "-wordNgrams", 2, "-verbose", 2))
+
+# Modell laden
+model <- load_model(tmp_file_model)
+
+# Modell auf Testdatensatz anwenden
+predictions <- predict(model, sentences = test_to_write)
+
+# Vorhergesagte Kategorie und Wahrscheinlichkeit ausgeben
+print(head(predictions,100))
+summary(unlist(predictions))
+# Prozentualer Anteil, in dem das Model richtig lag
+mean(names(unlist(predictions)) == test_labels_without_prefix)
+
+# because there is only one category by observation, hamming loss will be the same
+get_hamming_loss(as.list(test_labels_without_prefix), predictions)
+
+# you can get flat list of results when you are retrieving only one label per observation
+print(head(predict(model, sentences = test_to_write, simplify = TRUE)))
+
+# free memory
+unlink(train_tmp_file_txt)
+unlink(tmp_file_model)
+gc()
+
