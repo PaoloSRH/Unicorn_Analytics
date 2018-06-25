@@ -36,7 +36,7 @@ if (exists("listtest")) {rm(listtest)}
 m <- mongo("interactions", url = "mongodb://localhost:27017/mails")
 getdata <- m
 
-### Durchzählen wie viele Datensätze vorhanden sind
+### DurchzÃ¤hlen wie viele DatensÃ¤tze vorhanden sind
 getdata$count('{}')
 
 ### Texte und Kategorien aus MongoDB abfragen und bereinigen (da aktuell nicht sauber gespeichert)
@@ -53,7 +53,7 @@ listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "_id"
 listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(text = \"", "", x)}))
 listtext <- data.frame(lapply(listtext, function(x) {gsub("\"\\)", "", x)}))
 
-### Dataframes zusammenführen und anpassen
+### Dataframes zusammenfÃ¼hren und anpassen
 textframe <- data.frame(listid, listtext)
 colnames(textframe) <- c("id", "text")
 # print(textframe)
@@ -77,18 +77,18 @@ corpusdataframe <- data.frame(text_new = sapply(corpus, as.character), stringsAs
 # inspect(corpus)
 # print(textframe)
 
-### corpusmatrix erst einmal weglassen, wird nicht benötigt für fastrtext
+### corpusmatrix erst einmal weglassen, wird nicht benÃ¶tigt fÃ¼r fastrtext
 ### Term document Matrices
 # corpusmatrix <- DocumentTermMatrix(corpus)
 # inspect(corpusmatrix)
 
-### Häufigkeitsmatrix
+### HÃ¤ufigkeitsmatrix
 # findFreqTerms(corpusmatrix, 10)
 
-### Korrelationen zwischen einzelnen Wörtern
+### Korrelationen zwischen einzelnen WÃ¶rtern
 # findAssocs(corpusmatrix, "fehler", 0.5)
 
-### wir entfernen sehr seltene Wörter, die unwichtig bzgl. der Korrelation sind
+### wir entfernen sehr seltene WÃ¶rter, die unwichtig bzgl. der Korrelation sind
 # removeSparseTerms(corpusmatrix, 0.4)
 # inspect(corpusmatrix)
 
@@ -97,18 +97,18 @@ textframe[,3] <- corpusdataframe
 
 ##### FASTRTEXT #####
 
-### fuer fastrtext benötigen wir die Daten in einem bestimmten Format, dafür laden wir die benötigten Spalten in 
+### fuer fastrtext benÃ¶tigen wir die Daten in einem bestimmten Format, dafÃ¼r laden wir die benÃ¶tigten Spalten in 
 ### ein neues Dataframe
 textframe2 <- subset(textframe, select=c("id", "text_new"))
 names(textframe2) <- c("class.text", "text")
 
-### Wir mixen den Datensatz durch vor dem Splitten (bei 70/30 Aufteilung pro Kategorie nicht mehr ben�tigt)
+### Wir mixen den Datensatz durch vor dem Splitten (bei 70/30 Aufteilung pro Kategorie nicht mehr benötigt)
 # textframe2 <- textframe2[sample(nrow(textframe2)),]
 
-### Alle Zeilen mit mehreren IDs löschen, nicht sauber aber die müssen erst einmal weg
+### Alle Zeilen mit mehreren IDs lÃ¶schen, nicht sauber aber die mÃ¼ssen erst einmal weg
 textframe2 <- textframe2[!grepl(",", textframe2$class.text),]
 
-### hier zähle ich einmalig die Anzahl der Texte pro Kategorie um sie danach zu löschen
+### hier zÃ¤hle ich einmalig die Anzahl der Texte pro Kategorie um sie danach zu lÃ¶schen
 # TODO: das muss man automatisieren
 # textframe3 <- aggregate(cbind(count = text) ~ class.text, data = textframe2, FUN = function(x){NROW(x)})
 # delete categories 59, 70, 72, 85, 86, 87, 92, 97
@@ -147,7 +147,7 @@ lowerFunction <- function(textframes){
   }
 }
 
-### generat�ng train and test dataset
+### generatíng train and test dataset
 train_sentences <- lapply(splits, upperFunction)
 test_sentences <- lapply(splits, lowerFunction)
 # str(train_sentences)
@@ -167,7 +167,7 @@ test_set <- bind_rows(test_sentences)
 # textframe2 %>% 
 # add_count(class.text)
 
-### Daten in richtiges Format für Model
+### Daten in richtiges Format fÃ¼r Model
 tmp_file_model <- tempfile()
 ?tempfile()
 
@@ -188,14 +188,14 @@ train_tmp_file_txt <- tempfile()
 writeLines(text = train_to_write, con = train_tmp_file_txt)
 
 
-### gleiches Vorgehen für Testdatensatz
+### gleiches Vorgehen fÃ¼r Testdatensatz
 test_labels <- paste0("__label__", test_set[,"class.text"])
 test_labels_without_prefix <- test_set[,"class.text"]
 test_texts <- tolower(test_set[,"text"])
 test_to_write <- paste(test_labels, test_texts)
 
 
-### Modell trainieren und in tempfile abspeichern; Parameter können angepasst werden 
+### Modell trainieren und in tempfile abspeichern; Parameter kÃ¶nnen angepasst werden 
 execute(commands = c("supervised", "-input", train_tmp_file_txt, "-output", tmp_file_model, "-dim", 100, "-lr", 1, "-epoch", 150, "-wordNgrams", 2, "-verbose", 2))
 
 ### Modell laden
