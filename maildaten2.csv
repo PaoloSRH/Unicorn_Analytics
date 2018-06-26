@@ -1,0 +1,1225 @@
+﻿provider;channel;language;businessScenario;dataSource;id;author;date;category_long;category_short;keyword;text;category_alt
+OMQ;email;DE;multimedia software developer;;1;;14.10.2013;86;11;TODO;"ich habe seit 2 Tagen in meiner Warehouse Software 
+unter Exportieren-File
+Optionen ein fast nicht lesbare Schrift.";86
+OMQ;email;DE;multimedia software developer;;2;;14.10.2013;86;11;TODO;"Am Samstag
+bekam
+die Version WAREHOUSE Sales firstclass 20 Neo, musste nach der Installation
+feststellen, dass die Beschriftung der Knoepfe im Exportbildschirm
+nicht lesbar sind (z.B. Dateiformat, Navigation, Komprimierung, Schrift,
+Sortieren
+u.s.w. die komplette Beschriftung unter File-Optionen, Titelseite gestalten
+und
+Knoepfe gestalten.";86
+OMQ;email;DE;multimedia software developer;;3;;14.10.2013;86;11;TODO;Im Exportmodus ist die Schrift im kleinen Vorschaufenster im Filemenü immer identisch mit der Schrift der Überschriftzeile vom Untermenü.;86
+OMQ;email;DE;multimedia software developer;;4;;14.10.2013;57;11;TODO;"Auf meinem Specificationsheet werden die Textbausteine nur noch als Sprechblase angezeigt, ich hätte
+heute eine Onlinepräsentation meines Specificationsheets gehabt, um einen Sponsor zu gewinnen.";57
+OMQ;email;DE;multimedia software developer;;5;;14.10.2013;57;11;TODO;"Seit Ihrem update kommen komische Blasen auf meinem Blatt zu Vorschein, die ich aber nicht
+reingemacht habe !";57
+OMQ;email;DE;multimedia software developer;;6;;14.10.2013;57;11;TODO;"auf meinem detailsheet http://www.rhein-main-versand.de sind seit gestern
+abend einige Calibri-Texte durch blaue Sprechblasen(?!) ersetzt, u.a. auch das
+Impressum";57
+OMQ;email;DE;multimedia software developer;;7;;14.10.2013;57;11;TODO;"leider kann ich ab heute nicht mehr meine Sammlungen verwalten.
+Es tut sich bei Auswahl des entsprechenden Buttons gar nichts mehr.";57
+OMQ;email;DE;multimedia software developer;;8;;14.10.2013;57;11;TODO;Trotzdem öffnet sich dann die Online-Sammlung in einem neuen Fenster, welches aber nur halbe Bildschirmgröße erreicht. D.H., es muß von Hand auf volle Bildschirmgröße gebracht werden.;57
+OMQ;email;DE;multimedia software developer;;9;;14.10.2013;57;11;TODO;Möchte gerne die Studio-Version nutzen, aber ich kann die Previewbilder nicht austauschen, obwohl sie im Online-Organizer gelöscht wurden - d.h. ich habe die Reihenfolge der Produkte so verändert bzw. Produkte gelöscht,damit die Preview immer das erste Produkt zeigt, aber es passiert nichts.;57
+OMQ;email;DE;multimedia software developer;;10;;14.10.2013;57;11;TODO;Plötzlich wurden Daten nicht mehr geladen bzw.nur der ladevorgang (kreisende punkte)angezeigt,Texte verschoben dargestellt.;57
+OMQ;email;DE;multimedia software developer;;11;;14.10.2013;57;11;TODO;"In unregelmäsigen Abständen verschwinden gewisse Produkte 
+aus den Artikelpreview Rahmen.";57
+OMQ;email;DE;multimedia software developer;;12;;14.10.2013;57;11;TODO;"Wenn ich unter ""Eigene Produktpalette"" Daten, Statistiken oder Prozesse hochladen will und einen neuen Ordner erstellen möchte, so öffnet sich wenn ich das Werkzeug anklicke immer nur die Auswahl";57
+OMQ;email;DE;multimedia software developer;;13;;14.10.2013;57;11;TODO;Habe keinen Zugriff mehr auf den Produktpalettencenter. Kann so keine Produkte mehr hochladen.;57
+OMQ;email;DE;multimedia software developer;;14;;14.10.2013;92;13;TODO;"Wenn man in der Tabellenpräsentation die Produktdarstellungs-Version wähl, dort dann bei Verlinken
+Dynamicolisting oder Popup wählen will, stürzt Iso ab (Ein Skript verlangsamt Iso 13. Soll
+das Skript weiterhin ausgeführt werden?... oder so ähnlich). Dann ist egal ob man ja oder
+nein drückt, denn es kommt zum Absturz: ""Das Iso Addon ist abgestürzt"".";92
+OMQ;email;DE;multimedia software developer;;15;;14.10.2013;92;13;TODO;"nach Eurem letzten Update funktionieren auf meinem Specificationsheet sowohl die Produktdarstellung
+(Verschieben und VergrÃ¶Ã?ern von Produkten) und die ProduktprÃ¤sentation (Daten werden nach der
+Auswahl nicht in neuem Fenster zur ""Gesamt- und TeilstÃƒÅ’ck-Ansicht"" geÃ¶ffnet.";92
+OMQ;email;DE;multimedia software developer;;16;;14.10.2013;111;12;TODO;meine maximale Anzahl der Aktivierung wurde erreicht;111
+OMQ;email;DE;multimedia software developer;;17;;14.10.2013;84;8;TODO;"Zieht man bei der Version 13 Daten und Prozesse, die mit dem selben Kartenleser eingelesen
+wurden, per Mouse in das Schedulingview, erscheinen die Prozess-Dateien entweder gar nicht
+oder ohne die Bestellnummernfelder, die mit den Daten importiert wurden. ";84
+OMQ;email;DE;multimedia software developer;;18;;14.10.2013;84;8;TODO;"Es können zwar 
+die allgemeinen Daten, nicht jedoch die mit erstellten Bestellnummern geladen werden, s. o. ! ";84
+OMQ;email;DE;multimedia software developer;;19;;14.10.2013;84;8;TODO;crv-Import ohne Bestellnummer;84
+OMQ;email;DE;multimedia software developer;;20;;14.10.2013;84;8;TODO;Bestellnummer fehlt bei den Dateien nach dem Import;84
+OMQ;email;DE;multimedia software developer;;21;;14.10.2013;84;8;TODO;Unter Paymentreader ist das ganze Projekt zusehen, nur bei dem Aussetzer keine Bestellnummer mehr.;84
+OMQ;email;DE;multimedia software developer;;22;;14.10.2013;84;8;TODO;Die Bestellnummern der xls-Datei sind die ganze Zeit da und sobald der eigentliche Ablauf geöffnet wird sind alle Bestellnummern weg.;84
+OMQ;email;DE;multimedia software developer;;23;;14.10.2013;84;8;TODO;Wenn ich dann den neuen Ablauf (Beispiel: Gelsenkirchen-Projekt2.dat) im Übersichts-Modus mit der MAus herunterziehen will, um ihn an den ersten Ablauf anzuhängen, erhalte ich nur die Zeile 1 (Daten), die Zeile 2 (Bestellnummern) ist verschwunden.;84
+OMQ;email;DE;multimedia software developer;;24;;14.10.2013;84;8;TODO;Leider kann ich wie bislang problemlos möglich keine CASH-Erstellungen im DAT-Verfahren importieren, die Bestellnummernzeile bleibt leer (ZD-Aufnahmen funktionieren).;84
+OMQ;email;DE;multimedia software developer;;25;;14.10.2013;84;8;TODO;Wenn ich nun von dem USB Stick eine Prozessdatei im Complete EMV Format importiere (Kartenleser Konfiguration: Psk/80MB/81Seg/26Bpd/File_Typ .crv) sehe ich im Warehouse Program die Bestellnummer sehe aber kein Daten.;84
+OMQ;email;DE;multimedia software developer;;26;;14.10.2013;84;8;TODO;"Unter der neuen Version 14 gelingt es nicht, Verkaufsobjekte eine Bestellnummer zu zuordnen (""normale"" XLS-Statistiken in der separaten Bestellnummernzeile o.k. und unter der Version 12 sind auch die Prozessbestellnummern zu sehen)";84
+OMQ;email;DE;multimedia software developer;;27;;14.10.2013;84;8;TODO;"Das funktioniert grundsätzlich auch, es kommt aber der Prozess nur ohne Bestellnummer an; also die Bestellnummer geht bei der Operation verloren.";84
+OMQ;email;DE;multimedia software developer;;28;;14.10.2013;84;8;TODO;Wenn ich jedoch den Anzeigepfeil weiter versetze ist keine Artikelbestellnummer zu sehen.;84
+OMQ;email;DE;multimedia software developer;;29;;14.10.2013;84;8;TODO;Nun jedoch, als ich das Projekt erneute öffnete und geringfügige Bearbeitungen gemacht habe, gibt es keine Bestellnummern mehr.;84
+OMQ;email;DE;multimedia software developer;;30;;14.10.2013;84;8;TODO;In SFC ist gar keine Bestellnummer zu sehen.;84
+OMQ;email;DE;multimedia software developer;;31;;14.10.2013;84;8;TODO;Beim Kopieren von DATA3- Filmen fehlt die Bestellnummernzeile bzw. ist auch keine Bestellnummer zu sehen.;84
+OMQ;email;DE;multimedia software developer;;32;;14.10.2013;84;8;TODO;Nun kann ich bei Warehouse Sales 2008/2009 zwar meinen Ablauf zur Weiterbearbeitung aufrufen, jedoch keine Bestellnummern sehen.;84
+OMQ;email;DE;multimedia software developer;;33;;14.10.2013;84;8;TODO;"nach der letzten Aktualisierung wird innerhalb eines Projekts, hier das ""rüberziehen"" einer Prozessdatei (dat) im Übersichts Modus die Bestellnummer nicht mit übernommen.";84
+OMQ;email;DE;multimedia software developer;;34;;14.10.2013;84;8;TODO;habe seit gestern Sales Firstclass 19 Spezialedition installiert-registriert und habe mir dann die Salesdateien von der Speicherkarte importiert und beim anzeigen des Ablaufs, kommt einfach keine Bestellnummer.;84
+OMQ;email;DE;multimedia software developer;;35;;14.10.2013;32;7;TODO;"Dann kam als nächstes "" Brennen ""
+nach einiger Zeit kam die Meldung "" Problembehandlung""
+X Problem in Klasse "" wmembank.dll""( Ladeadresse: 0x8e 534678) an Adresse
+6x8e80fcre
+Exception Oxc82562 "" ACCESS_FORBIDDEN "".";32
+OMQ;email;DE;multimedia software developer;;36;;14.10.2013;32;7;TODO;"Beim letzte Brennversuch kam aber folgende
+Fehlermeldung:
+Problem in Klasse ""wmembank.dll"" (Suchadresse:Ox83708447) an Adresse 6x8e80fcre";32
+OMQ;email;DE;multimedia software developer;;37;;14.10.2013;32;7;TODO;In allen Fällen kam es beim Erstellen der Disk-Image-Datei zu einem Absturz!;32
+OMQ;email;DE;multimedia software developer;;37;;14.10.2013;32;7;TODO;"Ich kann beim Erstellen des Kontrollleistenbildes (im Brennbereich) die Felder für die Texteingabe
+nicht verschieben. Auch sehe ich den eingegebenen Text nicht (egal ob auf Schwarz
+eingestellt, 3,30 oder 70%).";32
+OMQ;email;DE;multimedia software developer;;38;;14.10.2013;32;7;TODO;"Nachdem ein paarmal die DVD`s richtig gebrannt sind kommt jetzt nach einiger Zeit immer folgende Fehlermeldung:
+Problem in Klasse ""wmembank.dll"" (Suchadresse:Ox28111570) an Adresse 6x8e80fcre";32
+OMQ;email;DE;multimedia software developer;;39;;14.10.2013;32;7;TODO;"Habe mehrmals versucht meine Produktpreview zu brennen bei dem Disc Image kommt jedesmal Fehler.
+Problem in Klasse ""wmembank.dll"" (Ladeadresse:7X0f4d0124)
+an Adresse Ox6ffcre Exception 6Xd3382563
+ACCESS_FORBIDDEN.";32
+OMQ;email;DE;multimedia software developer;;40;;14.10.2013;32;7;TODO;"Ich bekommen nach dem 8 stündigen Verschlüsseln eine Fehlermeldung bezüglich
+""wmembank.dll"" und muss das Programm beenden.";32
+OMQ;email;DE;multimedia software developer;;41;;14.10.2013;32;7;TODO;"-beim Brennen einer Produktpreview mit Produkte im IT & OFFICE Katalog 12 & 13
+Die Fehlermeldung erscheint bei Schritt 7 von 9 - Disc Copy wird
+erzeugt";32
+OMQ;email;DE;multimedia software developer;;42;;14.10.2013;32;7;TODO;"Beim neuen Brennen erfolgt ständig die Fehlermeldung:
+wmem reports disc project build exception:118764f4";32
+OMQ;email;DE;multimedia software developer;;43;;14.10.2013;32;7;TODO;"Beim
+Brennen meldet das Programm schon beim verschlüsseln folgende Fehlermeldung.
+wmem reports disk project puild exception 411451v4";32
+OMQ;email;DE;multimedia software developer;;44;;14.10.2013;32;7;TODO;!!! MBK exception in CopyWorkspace: 13 - process failed !!!;32
+OMQ;email;DE;multimedia software developer;;45;;14.10.2013;32;7;TODO;Das Brennen mit folgendem Fehler abgebrochen: Verschlüsseln fehlgeschlagen.;32
+OMQ;email;DE;multimedia software developer;;46;;14.10.2013;32;7;TODO;das Brennen wurde mit folgendem Fehler abgebrochen: Verschlüsseln fehlgeschlagen.;32
+OMQ;email;DE;multimedia software developer;;47;;14.10.2013;32;7;TODO;"Das Brennen
+wurde mit folgendem Fehler abgebrochen: Verschlüsseln fehlgeschlagen.";32
+OMQ;email;DE;multimedia software developer;;48;;14.10.2013;32;7;TODO;"Ich habe meine Produktpreview mit 330 Dateien versucht zu brennen. Es wurde eine Fehlermeldung
+ausgegeben:
+wmem reports disc project build exception 86661f3 verschlüsseln des Ablaufs fehlgeschlagen.";32
+OMQ;email;DE;multimedia software developer;;49;;14.10.2013;32;7;TODO;"Beim Brennversuch kommt immer folgende Fehlermeldung: wmem reports
+disc project build exception 3762636C8";32
+OMQ;email;DE;multimedia software developer;;50;;14.10.2013;32;7;TODO;"Beim Brennen einer Produktpreview tritt der Fehler : ""wmem reports disc project
+build exception - 411451v4"" auf.";32
+OMQ;email;DE;multimedia software developer;;51;;14.10.2013;32;7;TODO;"Was bedeutet die Fehlermeldung :
+wmem reports disk build exception
+411451v4 ?";32
+OMQ;email;DE;multimedia software developer;;52;;14.10.2013;32;7;TODO;Schon beim Entschlüsseln wird der Prozess mit der Fehlermelung 411451v4 abgebrochen.;32
+OMQ;email;DE;multimedia software developer;;53;;14.10.2013;32;7;TODO;"nach der Installation von WarehousE Produkte im IT § OFFICE Katalog 12 auf meinem Laptop mit Windows Vista
+und der Aktivierung des DATA3-Code's für die CWEMVX-Ausgabe auf DVD erhielt ich nach der
+Berechnung von 6 von 7 Schritten für die Erstellung des Disc - Projects folgende
+Fehlermeldung:
+
+wmem notifies disc project 481763a7";32
+OMQ;email;DE;multimedia software developer;;54;;14.10.2013;32;7;TODO;"Beim Brennen einer DvD erhalte ich folgende Fehlermeldung:
+wmem reports disc project exception:411451v4";32
+OMQ;email;DE;multimedia software developer;;55;;14.10.2013;32;7;TODO;"Beim Processing
+Fehlermeldung
+wmem reports disc project
+build exception: 411451v4";32
+OMQ;email;DE;multimedia software developer;;56;;14.10.2013;32;7;TODO;"Fehlermeldung beim Brennen:Nr. 411451v4
+Verschlüsseln des Ablauf fehlgeschlagen";32
+OMQ;email;DE;multimedia software developer;;57;;14.10.2013;32;7;TODO;Ich kann ein Projekt nicht mehr brennen.;32
+OMQ;email;DE;multimedia software developer;;58;;14.10.2013;32;7;TODO;"Hallo, ich bekomme beim Erstellen einer DVD 
+
+ein Fehlerprotokoll am
+Ende der Verdschlüsselung:
+
+ERROR: PrepareDVDProcessFiles() failed with errNo 8
+- ciphering failed
+!!! MBK exception in BurnProject: 28 - process ciphering failed
+!!!";32
+OMQ;email;DE;multimedia software developer;;59;;14.10.2013;32;7;TODO;"Werte Damen und Herren, mehrmals habe ich versucht meine Produktpreview zu brennen und immer kam
+diese Meldung.
+
+wmem reports disc project build exception:
+411451v4";32
+OMQ;email;DE;multimedia software developer;;60;;14.10.2013;80;10;TODO;"nachdem ich mein programm installiert habe, kommt so ziemlich am schuss 
+die installationsmeldung
+bei der umwandlung ihrer produktbank ist ein
+fehler aufgetreten .";80
+OMQ;email;DE;multimedia software developer;;61;;14.10.2013;56;12;TODO;"Es wird die Registrierung der Software verlangt, diese ist jedoch nicht möglich. Es wird ""Fehlercode -27"" angezeigt.";56
+OMQ;email;DE;multimedia software developer;;62;;14.10.2013;56;12;TODO;Leider meldet das Programm beim Verschlüsseln Fehlercode 27,da das Programm auf eine andere E-mailadresse aktiviert ist.;56
+OMQ;email;DE;multimedia software developer;;63;;14.10.2013;56;12;TODO;Beim Brennen von CD/ DVD bekomme ich die Fehlermeldung -27;56
+OMQ;email;DE;multimedia software developer;;64;;14.10.2013;56;12;TODO;"es wird gesagt ""Software registrieren"" Antwort des Systems ""die Software ist unter einer
+anderen email - Adresse schon registriert"".";56
+OMQ;email;DE;multimedia software developer;;65;;14.10.2013;56;12;TODO;Sehr geehrtes Service-Team, mein Warehouse Produkte id IT&OFFICEKatalog 12 weigert sich eine DVD zu brennen und verlangt immer nach einer Aktiviereung für DATA3, obwohl ich die Software(G1-14543-48801-87860-012174-3051212-16607) bereits registriert habe. Angeblich wäre diese Nummer bereits mit einer anderen Email-Adresse registriert (Fehlercode -27).;56
+OMQ;email;DE;multimedia software developer;;66;;14.10.2013;56;12;TODO;Guten Tag , Bitte Sie mein Ticket zu bearbeiten da ein Fehlercode 27 aufgetreten ist.;56
+OMQ;email;DE;multimedia software developer;;67;;14.10.2013;56;12;TODO;Mit Fehlercode 27 wird angezeigt, dass meine Programme bereits unter einer anderen Mailadresse registriert sind.;56
+OMQ;email;DE;multimedia software developer;;68;;14.10.2013;56;12;TODO;Fehlermeldung 27;56
+OMQ;email;DE;multimedia software developer;;69;;14.10.2013;56;12;TODO;Fehler 27;56
+OMQ;email;DE;multimedia software developer;;70;;14.10.2013;56;12;TODO;"Wenn ich erneut auf registrieren klicke kommt dann folgender Text!
+
+""Diese Seriennummer ist schon mit einer anderen E-mail-Adresse angemeldet worden. Bitte wenden sie sich an den Warehouse Helpdesk Fehlercode 27.";56
+OMQ;email;DE;multimedia software developer;;71;;14.10.2013;56;12;TODO;Nun bekomme ich jedoch eine Fehlermeldung dass die Seriennummer mit einer anderen Emailadresse angemeldet ist. Fehlercode 27.;56
+OMQ;email;DE;multimedia software developer;;72;;14.10.2013;56;12;TODO;Bei der Eingabe meiner Daten wird m ir immer mitgeteil,daß diese n icht stimmen unter meiner E-M ail Adresse zeigt immer das diese nicht stimmt, ich weis nun bei4m  besten Willen nicht mehr was ich tun soll.;56
+OMQ;email;DE;multimedia software developer;;73;;14.10.2013;56;12;TODO;Nunmehr kommt stets die Meldung Software ist bereits unter einer anderen Eamil-Adresse angemeldet.;56
+OMQ;email;DE;multimedia software developer;;74;;14.10.2013;56;12;TODO;Jedoch wurde mir mitgeteilt, dass meine Seriennr. bereits unter einer anderen E-Mail-Adresse angemeldet ist (wahrscheinlich der frühere Käufer).;56
+OMQ;email;DE;multimedia software developer;;75;;14.10.2013;78;7;TODO;"Es erscheint folgender Hinweis: ""Der Dateityp von ...PRC kann von
+Warehouse Produkte im IT & OFFICE Katalog nicht geöffnet werden.""";78
+OMQ;email;DE;multimedia software developer;;76;;14.10.2013;78;7;TODO;"Leider kann Ihr Verarbeitungsprogramm die dabei
+in Ansatz gebrachte Dateierweiterung *.PRC (Workit) nicht lesen.";78
+OMQ;email;DE;multimedia software developer;;77;;14.10.2013;78;7;TODO;"prc-Dateien vom Powerread NEXUS funktionieren im Vorschaumodus einwandfrei, im
+Schedulingview wird die Bestellnummer nicht uebernommen";78
+OMQ;email;DE;multimedia software developer;;78;;14.10.2013;78;7;TODO;"Ich will eine kleine Prozessdatei klappt nicht:
+
+Wenn diese importiert werden soll: Kann nicht geöffnet werden.";78
+OMQ;email;DE;multimedia software developer;;79;;14.10.2013;78;7;TODO;"- einige PRC Dateien werden von Version 13 überhaupt nicht erkannt, bis Version 12 hatte
+ich keine Probleme";78
+OMQ;email;DE;multimedia software developer;;80;;14.10.2013;78;7;TODO;"Jedoch bin ich nicht in der Lage meine Produktpreviews dort abzuspielen er erkennt nur Produkte, wenn ich einen TESTPROZESS draufkopiere erkennt er es zwar als ""Prozesssymbol"" aber er sagt ""der Typ wird nicht unterstützt.";78
+OMQ;email;DE;multimedia software developer;;81;;14.10.2013;78;7;TODO;Processes mit dem prc-Format werden nicht angenommen.;78
+OMQ;email;DE;multimedia software developer;;82;;14.10.2013;78;7;TODO;"Bei der Nutzung Ihres Programm Produkte im IT&OFFICEKatalog 12 firstclass 
+Seriennummer:  C7-30236-22315-77122-46137-58501-12463 unter  Window 7
+
+erhalte ich bei dem Versuch einen Verkaufs-Prozess  der Datei ""PROC1038.prc"" erstellt mit
+dem Kartenlesegerät UWORK Speedreader 43.4 einzufügen folgende Fehlerinformation:
+
+Der Dateityp kannnicht geöffnet werden";78
+OMQ;email;DE;multimedia software developer;;83;;14.10.2013;78;7;TODO;Ich kann Verkaufsprozesse meines Kartenlesers vom Typ .PRC nicht richtig ausführen.;78
+OMQ;email;DE;multimedia software developer;;84;;14.10.2013;78;7;TODO;"Ich verwende Prozesse mit ""PRC"" Format und möchte sie mit Warehouse bearbeiten und soll dafür
+eine Workit Bibliothek installieren. Wie mach ich das?";78
+OMQ;email;DE;multimedia software developer;;85;;14.10.2013;78;7;TODO;"Drücke ich -abbrechen- so kommt der Hinweis : der Dateityp
+kann von Warehouse nicht geöffnet werden.";78
+OMQ;email;DE;multimedia software developer;;86;;14.10.2013;78;7;TODO;wie kann ich PRC Dateien öffnen, bzw. eine Wokit-Bibliothek einrichten.;78
+OMQ;email;DE;multimedia software developer;;87;;14.10.2013;78;7;TODO;ich kann plötzlich keine Salesdateien mit der Dateiendung .prc mehr importieren.;78
+OMQ;email;DE;multimedia software developer;;88;;14.10.2013;78;7;TODO;"leider gelingt es mir nicht, Salesdateien mit der Endung .prc in meine Produktpreview ein zu
+binden.";78
+OMQ;email;DE;multimedia software developer;;89;;14.10.2013;84;8;TODO;Nun plötzlich fehlt beim Import von *.prc Dateien die Bestellnummernzeile.;84
+OMQ;email;DE;multimedia software developer;;90;;14.10.2013;78;7;TODO;Ich kann keine prozesse importieren. sales firstclas zeigt mir dann immer an, dass der dateityp nicht geöffnet werden kann.;78
+OMQ;email;DE;multimedia software developer;;91;;14.10.2013;78;7;TODO;"Wenn ich nun die Dateien auf den
+Schedulingview ziehen will erscheint immer DATA-5-Aktivie-
+rung, da der Dateityp wohl nicht von dieser Software
+geöffnet werden kann.";78
+OMQ;email;DE;multimedia software developer;;92;;14.10.2013;63;20;TODO;"Dann versuche ich das Anzeigen von dem
+aktuell rot aktivierten Verkaufsprozess.
+
+In vielen Fällen beginnt nun aber das Anzeigen vom allerersten Prozess.";63
+OMQ;email;DE;multimedia software developer;;93;;14.10.2013;63;20;TODO;Das Problem besteht indirekt darin, dass der Abschnitts-Endzeiger verschwunden ist!;63
+OMQ;email;DE;multimedia software developer;;94;;14.10.2013;63;20;TODO;Wenn ich auf Preview drücke, beginnt die Anzeige immer von vorn bei Datensatz 1, statt an derStelle wo ich zuletzt bearbeitet habe.;63
+OMQ;email;DE;multimedia software developer;;95;;14.10.2013;63;20;TODO;Während der Bearbeitung tritt das Problem auf, dass der Anzeigepfeil immer zum Ablaufbeginn zurückspringt.;63
+OMQ;email;DE;multimedia software developer;;96;;14.10.2013;63;20;TODO;"Ich schau mir den Ablauf an, er ist zu ende, dann klicke ich auf ""beenden"" und bewege den Pfeil auf das letzte Objekt im Prozess. Dieser startet dann nicht von der position des Pfeils sondern von beginn an.";63
+OMQ;email;DE;multimedia software developer;;97;;14.10.2013;63;20;TODO;Immer wenn ich ab einer bestimmten stelle meinen gewinn eintragen möchte, springt die erstellung zum anfang und das auch bislang erstellte datei wird ersetzt.;63
+OMQ;email;DE;multimedia software developer;;98;;14.10.2013;63;20;TODO;Als ich heute noch einmal etwas weiter machen wollte, stellte ich fest, daß jetzt immer wenn ich den Startzeiger an eine Stelle setze und von dort aus die Preview ansehen möchte, das Anzeigen ganz von Beginn an startet.;63
+OMQ;email;DE;multimedia software developer;;99;;14.10.2013;63;20;TODO;Jetzt kehrt der Curser immer bei Beenden auf die Anfangposition des Prozesses zurück eine Bearbeitung des Prozesses ist somit unmöglich.;63
+OMQ;email;DE;multimedia software developer;;100;;14.10.2013;63;20;TODO;Warum bleibt der blaue Marker bei Sales first class nicht dort stehen, wo ich beim Anzeigen eines elements stoppe. Er springt immer gleich wieder auf den Anfang zurück.;63
+OMQ;email;DE;multimedia software developer;;101;;14.10.2013;63;20;TODO;Der Startzeiger wird angezeigt, aber bei der Vorschau beginnt die Anzeige der Daten immer vom ersten Eintrag an.;63
+OMQ;email;DE;multimedia software developer;;102;;14.10.2013;63;20;TODO;Ich kann den Anzeigepfeil in einem Frame nicht mehr korrekt platzieren. Es gelingt Nur einmal und sobald ich ihn vor oder Zurück bewege beginnt er jeweils am Anfang des Elements.;63
+OMQ;email;DE;multimedia software developer;;103;;14.10.2013;63;20;TODO;Ich kann den Anzeigepfeil in einem Element nicht mehr korrekt positionieren;63
+OMQ;email;DE;multimedia software developer;;104;;14.10.2013;76;6;TODO;"Die Software startet auf
+dem neuen Rechner nicht, sondern bricht den Start ab mit Angabe des Fehlercodes -9.";76
+OMQ;email;DE;multimedia software developer;;105;;14.10.2013;76;6;TODO;"Dannn habe ich es auf einem XP32bit installiert... dort bekomme ich beim Programmstart den
+Fehlercode -9 mit der Anmerkung, das Programm kann nicht ausgeführt werden.";76
+OMQ;email;DE;multimedia software developer;;106;;14.10.2013;76;6;TODO;"Momentan ließ sich dieses nicht öffnen - Fehlercode 9 - habe schön brav
+alles gelöscht, neu installiert, Fehlercode bleibt bestehen.";76
+OMQ;email;DE;multimedia software developer;;107;;14.10.2013;76;6;TODO;Ich bekomme immerwieder den Fehlercode 9.;76
+OMQ;email;DE;multimedia software developer;;108;;14.10.2013;76;6;TODO;Was ist bei Programmstart Fehlercode -9 zu tun?;76
+OMQ;email;DE;multimedia software developer;;109;;14.10.2013;76;6;TODO;"Bei Programmaufruf Hinweis:
+Fehlercode: -9";76
+OMQ;email;DE;multimedia software developer;;110;;14.10.2013;76;6;TODO;"Nach
+""Prozessstruktur wird initialisiert"" kommt Fehlercode 9.";76
+OMQ;email;DE;multimedia software developer;;111;;14.10.2013;76;6;TODO;"Ausserdem
+erscheint Fehlercode-9.";76
+OMQ;email;DE;multimedia software developer;;112;;14.10.2013;76;6;TODO;"beim starten von Sales firstclass erscheint folgende
+Fehlermeldung,
+Programm kann nicht ausgeführt werden,Neuinstallation
+mehrfach probiert, weiterhin Fehlercode 9";76
+OMQ;email;DE;multimedia software developer;;113;;14.10.2013;76;6;TODO;"Heute wollte ich Saeles firstclass 19 und Produkt im IT Katalog 11 starten.
+Fehlermeldung -9. Was ist da los?";76
+OMQ;email;DE;multimedia software developer;;114;;14.10.2013;76;6;TODO;Auch beim Start von Warehouse Super Produkt Designer bekomme ich weiterhin eine Fehlermeldung. Das Programm konnte nicht ausgeführt werden.;76
+OMQ;email;DE;multimedia software developer;;115;;14.10.2013;76;6;TODO;"Leider
+erscheint die Fehlermeldung -9 beim ausführen.";76
+OMQ;email;DE;multimedia software developer;;116;;14.10.2013;76;6;TODO;"Habe meine
+Festplatte D: von 75 GB auf 120 GB erweiter und jetzt kommt beim Programmstart die
+Meldung, Das Programm konnte nicht ausgeführt werden, eventuell ist der
+Program-Order beschädigt. Fehlercode 9";76
+OMQ;email;DE;multimedia software developer;;117;;14.10.2013;76;6;TODO;"leider hatte ich lt. Ihren Anweisungen keinen Erfolg, Fehlercode -9 beim ausführen des
+Programms erscheint noch immer!";76
+OMQ;email;DE;multimedia software developer;;118;;14.10.2013;76;6;TODO;"Dann wollte ich ihn ende August starten und da kam die Fehlermeldung
+Installation Beschädigt neuinstallieren oder Helpdesk kontaktieren.";76
+OMQ;email;DE;multimedia software developer;;119;;14.10.2013;76;6;TODO;Ich bekomme immer die Fehlercodmeldung 9;76
+OMQ;email;DE;multimedia software developer;;120;;14.10.2013;76;6;TODO;fehlercode -9;76
+OMQ;email;DE;multimedia software developer;;121;;14.10.2013;76;6;TODO;Das Programm von sales firstclass 19 lässt sich nicht mehr starten, es wird nur kurz das Logo angezeigt und es erscheind die Fehlermeldung Fehlercode 9.;76
+OMQ;email;DE;multimedia software developer;;122;;14.10.2013;76;6;TODO;"Wenn ich bei meinem neuen Sales firstclass 20 Neo EMV ein vorhandenes Projekt lade, dann dann
+""stockt"" der Bildschirm solange bis das Projekt ganz geladen ist.";76
+OMQ;email;DE;multimedia software developer;;123;;14.10.2013;76;6;TODO;-9;76
+OMQ;email;DE;multimedia software developer;;124;;14.10.2013;116;3;TODO;"Dann
+kam eine Fehlermeldung mit ""smart...."".";116
+OMQ;email;DE;multimedia software developer;;125;;14.10.2013;116;3;TODO;"Kurz darauf konnte ich keine
+Aufträge mehr durchrechnen.";116
+OMQ;email;DE;multimedia software developer;;126;;14.10.2013;116;3;TODO;Wenn ich jetzt eine CRV Datei lade, kann ich sie nicht durchrechnen.;116
+OMQ;email;DE;multimedia software developer;;127;;14.10.2013;116;3;TODO;Ich muÃ? schnell eine Abrechnungsprozess erstellen und mein Programm 2007/2008 geht nicht?,;116
+OMQ;email;DE;multimedia software developer;;128;;14.10.2013;116;3;TODO;"Habe folgenden Hinweis, der die
+Netzwerkkarte betreffen. # Das Smartcard-Device ""Scanners (Temtech High
+Definiti/ Temtech Digital Import Device) kann nicht fuer die Abrechnung
+geoeffnet werden. Grund: externes Problem";116
+OMQ;email;DE;multimedia software developer;;129;;14.10.2013;116;3;TODO;"Es erscheint immer wieder: "" Das Smartcard-Device `Modem Nr. 3 Scan - In`kann
+dieses Format nicht ausführen.
+Dieses Format wird nicht unterstuetzt
+oder ist nicht lesbar. Benutzen Sie die Funktion
+`Supported Formats`, um gepasste Formate zu ermitteln.""";116
+OMQ;email;DE;multimedia software developer;;130;;14.10.2013;116;3;TODO;"Beim
+Versuch, im Previewfenster anzuzeigen, wird folgender Hinweis
+eingeblendet:
+"" Das Smartcard-Device `none`kann dieses Format nicht
+ausführen. Die aktuell genutzte Geraetekennung ist nicht innerhalb des
+erlaubten Bereichs fuer Ihr System""";116
+OMQ;email;DE;multimedia software developer;;131;;14.10.2013;116;3;TODO;"Jetzt erhalte ich folgende Anzeige:
+Das Smartkarte-Device";116
+OMQ;email;DE;multimedia software developer;;132;;14.10.2013;116;3;TODO;"Selbst Produkt im IT&OFFICE Katalog 12-Windows 7angegeben, zeigt an -Das Smartcad-Device"" kann dieses Format nicht ausführen. Die aktuell genutzte Geräteerkennung liegt nicht innerhalb des erlaubten Bereichs für ihr System!!!";116
+OMQ;email;DE;multimedia software developer;;133;;14.10.2013;116;3;TODO;"Jetzt aber mit der Version ""Statistics Cleaner Studio 18 firstclass"" bekomme ich  - nach einer gelungenen kurzen Test-Erstellung - beim Klick auf den ""Erstellungs-Button"" immer nur die Fehlermeldung ""Das Smartcard-Device 'Scanner (High Definition Scan' kann nicht für die Erstellung geöffnet werden. Das Gerät ist bereits in Benutzung ..."".";116
+OMQ;email;DE;multimedia software developer;;134;;14.10.2013;116;3;TODO;"Wenn ich ihn zur Kontrolle im Programm durchrechnen will kommt folgende Meldung: ""Das Smartkarten-Device 'none' kann nicht für die Abrechnung göffnet werden. Es wurde kein Treiber auf ihrem System gefunden"".";116
+OMQ;email;DE;multimedia software developer;;135;;14.10.2013;116;3;TODO;"Bei der dritten Zeile kommt nun wieder der Fehler ""Das Smartcard-Device 'Microsoft Scancreator' kann dieses Format nicht erstellen. Grund: Die aktuell genutzte Gerätekennung ist nicht innerhalb des erlaubten Bereichs für Ihr System"".";116
+OMQ;email;DE;multimedia software developer;;136;;14.10.2013;116;3;TODO;"Aber es erscheint dabei der Hinweis: ""Das Smartcard-Device `Microsoft Scancreator` kann dieses Format nicht erstellen! Grund: Die aktuell genutzte Gerätekennung ist nicht innerhalb des erlaubten Bereichs für Ihr System""";116
+OMQ;email;DE;multimedia software developer;;137;;14.10.2013;116;3;TODO;Wenn ich ein Statstikfile importiere, lässt sich dieses nicht durchrechnen.;116
+OMQ;email;DE;multimedia software developer;;138;;14.10.2013;116;3;TODO;"Wenn ich eine Datei durchrechnen will, erscheint folgende Fehlermeldung: 
+
+""Das Smartcard-Device ´Microsoft Scancreator` kann dieses Format nicht erstellen! -Grund: Die aktuell genutzte Gerätekennung ist nicht innerhalb des erlaubten Bereichs für Ihr System.""";116
+OMQ;email;DE;multimedia software developer;;139;;14.10.2013;116;3;TODO;"Folgender Hinweis:
+""das Smartcard-Device 'none' kann dieses Format nicht ausführen!
+Grung: 
+Die aktuelle genutzte Gerätekennung ist nicht innerhalb des erlaubten Bereichs für Ihr System""";116
+OMQ;email;DE;multimedia software developer;;140;;14.10.2013;116;3;TODO;Meine in Bearbeitung befindliche Artikelpreview lässt sich nicht mehr in Gang setzten / bearbeiten.;116
+OMQ;email;DE;multimedia software developer;;141;;14.10.2013;116;3;TODO;"Konnte Statistics Laboratory L installieren.
+aber damit kann ich weder durchrechnen noch erstellen.";116
+OMQ;email;DE;multimedia software developer;;142;;14.10.2013;116;3;TODO;"Ich erhalte beim Auswählen einer xls-datei für die Zusatzstatistik folgende Fehlermeldung:
+
+Fehlernummer: 44044. Fehlerbeschreibung: Datei nicht gefunden.";116
+OMQ;email;DE;multimedia software developer;;143;;14.10.2013;116;3;TODO;"das Smartcard-Device microsoft scancreator kann diese format nicht erstellen
+die aktuell genutzte gerätekennung ist nicht innerhalb des erlaubten Bereichs für ihr system";116
+OMQ;email;DE;multimedia software developer;;144;;14.10.2013;116;3;TODO;Smartcard der Statistikdatei kann nicht angezeigt werden, Smart-header funktioniert nicht.;116
+OMQ;email;DE;multimedia software developer;;145;;14.10.2013;110;6;TODO;Beim starten ist das Programm aber immer abgestürzt.;110
+OMQ;email;DE;multimedia software developer;;146;;14.10.2013;110;6;TODO;"Das Programm läßt sich nicht
+mehr öffnen !";110
+OMQ;email;DE;multimedia software developer;;147;;14.10.2013;110;6;TODO;"Aber auch dieses Programm startet nicht.
+
+Es kommen: ""Oberfläche laden und Einrichtungsanzeigen"" dann nichts";110
+OMQ;email;DE;multimedia software developer;;148;;14.10.2013;110;6;TODO;Beim Programmaufruf kommt fuer ca. 4-5 Sekunden die Sanduhr auf dem Bildschirm, sonst keine weitere Reaktionen, keine Fehlermeldungen, Warnungen etc. Das Programm wird nicht gestartet.;110
+OMQ;email;DE;multimedia software developer;;149;;14.10.2013;110;6;TODO;Beim hochladen Ihres Programms hängt sich der neue Rechner auf;110
+OMQ;email;DE;multimedia software developer;;150;;14.10.2013;110;6;TODO;"Es kommt bis zum Produkt Pool einrichten, dann beendet
+das Programm ohne jegliche Fehlermeldung.";110
+OMQ;email;DE;multimedia software developer;;151;;14.10.2013;110;6;TODO; Nun habe ich ein Programm gekauft, das nicht startet.;110
+OMQ;email;DE;multimedia software developer;;152;;14.10.2013;110;6;TODO;"Hier bleibt das Programm beim Starten bei ""Programmoberfläche wird eingerichtet"" hängen.";110
+OMQ;email;DE;multimedia software developer;;153;;14.10.2013;110;6;TODO;"Beim Starten der Software bekomme ich die Fehlermeldung:
+WAREHOUSE Sales firstclass Neo funktioniert nicht mehr...";110
+OMQ;email;DE;multimedia software developer;;154;;14.10.2013;110;6;TODO;"Das Programm läßt sich nicht starten, verabschiedet sich bei ""Programmoberfläche wird aktualisiert"" ohne Fehlermeldung.";110
+OMQ;email;DE;multimedia software developer;;155;;14.10.2013;110;6;TODO;wenn ich das programm ausführen will, erscheint zwar der startbildschirm, aber sobald drin steht, dass die prozessstruktur eingerichtet wird, bricht der startvorgang ab, ohne eine fehlermeldung.;110
+OMQ;email;DE;multimedia software developer;;156;;14.10.2013;110;6;TODO;beim Starten des Programmes Warehouse Sales Firstclass WH erscheint nachdem die Programmoberfläche eingerichtet wird eine Fehlermeldung somit kann das Programm nicht gestartet und benutzt werden.;110
+OMQ;email;DE;multimedia software developer;;157;;14.10.2013;110;6;TODO;"Nach der Verlaufsmeldung ""Projektablage wird eingerichtet"" kommt der Windows 7-Hinweis  ""Sales Xtra L7 funktioniert nicht mehr""....";110
+OMQ;email;DE;multimedia software developer;;158;;14.10.2013;110;6;TODO;nach dem dort geschriegben wird, dass die prozessstruktur eingerichtet wird, bricht d;110
+OMQ;email;DE;multimedia software developer;;159;;14.10.2013;110;6;TODO;Das Programm Sales firstclass WH bricht nach der Anzeige com plattform wird eingerichtet ab und startet nicht. ;110
+OMQ;email;DE;multimedia software developer;;160;;14.10.2013;110;6;TODO;Nach einer neuinstallation von sales firstclass lässt sich das Programm nicht mehr starten;110
+OMQ;email;DE;multimedia software developer;;161;;14.10.2013;110;6;TODO;Ich habe auch bereits den neuesten Update installiert, aber trotzdem startet WH nicht. ;110
+OMQ;email;DE;multimedia software developer;;162;;14.10.2013;112;17;TODO;"seit kurzem kann ich keine Daten mehr hochladen. Kurz nach meiner Registrierung ging das
+noch problemlos. In der Fehlermeldung heißt es, es gibt ein Problem mit der OWH-Applikation.";112
+OMQ;email;DE;multimedia software developer;;163;;14.10.2013;112;17;TODO;"ich habe mehreren Freunden ein Passwort für meine Online Sammlung zu gesand, und nach ca. 3
+Wochen konnten sie sich nicht mehr einlogen.";112
+OMQ;email;DE;multimedia software developer;;164;;14.10.2013;112;17;TODO;"Nach dem Hochladen von Dateien im daata2 und smw Format erscheint
+""Allgemeiner Fehler der Online Segmente""";112
+OMQ;email;DE;multimedia software developer;;165;;14.10.2013;112;17;TODO;"ich erhalte die Fehlermeldung: 46283.
+Schwerer Fehler im OWH-Applikation.";112
+OMQ;email;DE;multimedia software developer;;166;;14.10.2013;112;17;TODO;Was muss ich tun, damit meine Prozesse als EMV dargestellt werden, so wie es im Ultimate-Paket offeriert und auf den Warehouse Beispielseiten gezeigt wird?;112
+OMQ;email;DE;multimedia software developer;;167;;14.10.2013;112;17;TODO;"Ich erhalte beim Auswählen einer xls-datei für die Statistiken folgende Fehlermeldung:
+
+Fehlernummer: 15508. Fehlerbeschreibung: Datei nicht gefunden.";112
+OMQ;email;DE;multimedia software developer;;168;;14.10.2013;112;17;TODO;Beim Hochladen meiner Datenin der online-Sammlung kommt immer die Fehlermeldung beim upload ist ein fehler aufgetretten versuchen sie es später noch einmal.;112
+OMQ;email;DE;multimedia software developer;;169;;14.10.2013;104;12;TODO;Ich erhalte die Fehlermeldung: Seriennummer bereits benutzt;104
+OMQ;email;DE;multimedia software developer;;170;;14.10.2013;112;17;TODO;Fehlermeldung:  CRV Datei kann nicht gelesen werden.;112
+OMQ;email;DE;multimedia software developer;;171;;14.10.2013;112;17;TODO;Guten Tag, seit Tagen kann ich leider kaum noch Produkte in meine Online Sammlung laden;112
+OMQ;email;DE;multimedia software developer;;172;;14.10.2013;112;17;TODO;beim Exportieren erhalte ich die Fehlermeldung ;112
+OMQ;email;DE;multimedia software developer;;173;;14.10.2013;101;15;TODO;"beim Exportieren erhalte ich die Fehlermeldung 
+
+Interner Programmfehler 4225.u.kp.v";101
+OMQ;email;DE;multimedia software developer;;174;;14.10.2013;82;8;TODO;"Immerzu kam
+der Hinweis ""Es konnte keine Verbindung zur Hardware aufgebaut werden."" und anschließend
+""Der gewählte Ordner ist schreibgeschützt. Speichern nicht möglich.""";82
+OMQ;email;DE;multimedia software developer;;175;;14.10.2013;82;8;TODO;"immer wenn ich auf ""Erstellung"" und dann auf ""Direkterstellung"" gehe, kommt folgende
+Fehlermeldung:
+
+""Auf Ihrem System wurde keine Erstellungshardware gefunden.""";82
+OMQ;email;DE;multimedia software developer;;176;;14.10.2013;82;8;TODO;"Beim Aktivieren einer Direkterstellung erhalte ich die Meldung ""Auf ihrem System wurde
+keine Erstellungshardware gefunden"".";82
+OMQ;email;DE;multimedia software developer;;177;;14.10.2013;82;8;TODO;"Wenn
+ich auf Datei --> Erstellung --> Direkt gehe, kommt der Hinweis:\""Auf
+Ihrem System wurde keine Erstellunghardware gefunden.\"" und die Erstellung
+ist nicht moeglich.";82
+OMQ;email;DE;multimedia software developer;;178;;14.10.2013;82;8;TODO;Es wird keine Bestellnummer geschrieben.;82
+OMQ;email;DE;multimedia software developer;;179;;14.10.2013;82;8;TODO;Win7, keine Verbindung zur Hardware bei Direkterstellung;82
+OMQ;email;DE;multimedia software developer;;180;;14.10.2013;82;8;TODO;"Ich kann 4 Gerätetreiber aus dem Auswahlfeld anklicken, jedes Mal erhalte ich ""Es konnten keine Verbindung zur Hardware aufgebaut werden"".";82
+OMQ;email;DE;multimedia software developer;;181;;14.10.2013;82;8;TODO;Bei der Direkt Erstellung wird keine Bestellnummer erstellt.;82
+OMQ;email;DE;multimedia software developer;;182;;14.10.2013;82;8;TODO;Die Bestellnummernwert wird nur über Scanner erstellt.;82
+OMQ;email;DE;multimedia software developer;;183;;14.10.2013;82;8;TODO;"Im Erstellungs-Dialogfenster von ""Warehouse Sales Firstclass WH"" erscheint auch der zu erstellende Ablauf, aber sobald ich den Button ""Erstellung"" aktiviere erscheint der Hinweis ""Es konnte keine Verbindung zur Hardware aufgebaut werden""";82
+OMQ;email;DE;multimedia software developer;;184;;14.10.2013;82;8;TODO;"Bei Ihrem Programm sind auch beide Geräte Angezeigt und kann man sie auch auswählen jedoch kommt immer nur der Hinweis: ""Es konnte keine Verbindung zur Hardware aufgebaut werden"".";82
+OMQ;email;DE;multimedia software developer;;185;;14.10.2013;82;8;TODO;Ich sehe zwar dass sie da ist, aber da ist keine Bestellnummer;82
+OMQ;email;DE;multimedia software developer;;186;;14.10.2013;82;8;TODO;beim Versuch eine Direkterstellung zu starten, bekomme ich den Fehlerhinweis 'Auf Ihrem System wurde keine Erstellungshardware gefunden'.;82
+OMQ;email;DE;multimedia software developer;;187;;14.10.2013;82;8;TODO;Bei der Direkterstellung kann ich keine Bestellnummer einlesen.;82
+OMQ;email;DE;multimedia software developer;;188;;14.10.2013;82;8;TODO;Beim Erstellen eines Prozesses von einem XLS-Scanner habe ich das Problem, dass ich im Previewfenster zwar die Daten sehe, jedoch keine Bestellnummer zu sehen ist (Preview Prozess und Bestellnummer sind aktiviert).;82
+OMQ;email;DE;multimedia software developer;;189;;14.10.2013;82;8;TODO;Wenn ich die .pbl datei in das projekt ziehe habe ich im übersichts modus zwar eine zweite zeile (nehme an die Bestellnummernzeile) bekomme aber keine Bestellnummern hinein.;82
+OMQ;email;DE;multimedia software developer;;190;;14.10.2013;82;8;TODO;"beim Versuch die Dataset-Creation-Funktion zu benutzen erhalte ich die Fehlermeldung ""Es konnte keine Verbindung zur Hardware aufgebaut werden.""";82
+OMQ;email;DE;multimedia software developer;;191;;14.10.2013;82;8;TODO;bei der Direkterstellung ist keine Bestellnummer zu sehen, ich benutze Windows XP, wie kann ich diesen Fehler beheben ?;82
+OMQ;email;DE;multimedia software developer;;192;;14.10.2013;66;4;TODO;"bei der eingabe
+der zeitspanne erscheint die meldung: ""fehler beim parsen der XSL datei"".";66
+OMQ;email;DE;multimedia software developer;;193;;14.10.2013;66;4;TODO;"Bei Gewinn-Kalkulation kann ich keine Gewinnziele mehr festlegen. Es wird wohl der
+eingegeben Monat angezeigt, aben nicht in die Übersicht übertragen.";66
+OMQ;email;DE;multimedia software developer;;194;;14.10.2013;66;4;TODO;"Bei dem Program Gewinn-Kalkulation kommt die Fehlermeldung ""Fehler beim Parsen der
+XSL Daten""
+obwohl es vorher sehr gut lief.";66
+OMQ;email;DE;multimedia software developer;;195;;14.10.2013;66;4;TODO;"hallo, bei der erstellung einer gewinnkalkulation kommt bei mir immer die fehlermeldung
+""fehler beim parsen der xsl dateine"" ???";66
+OMQ;email;DE;multimedia software developer;;196;;14.10.2013;66;4;TODO;"Wenn ich ein neues Gewinnziel eigeben will kommt immer die Fehlermeldung
+""Fehler beim parsen der XSL Daten""";66
+OMQ;email;DE;multimedia software developer;;197;;14.10.2013;66;4;TODO;"Beim erstellen einer Gewinnkalkulation erscheint nach der Eingabe des Monats die
+Fehlermeldung:
+""Fehler beim Parsen der XSL Daten"".";66
+OMQ;email;DE;multimedia software developer;;198;;14.10.2013;66;4;TODO;"Nachdem ich den Monat eingeben habe, erscheint der Hinweis "" Fehler beim Parsen der XSL
+Daten""";66
+OMQ;email;DE;multimedia software developer;;199;;14.10.2013;66;4;TODO;Fehler beim holen der XSL Daten bei der Gewinnkalkulation;66
+OMQ;email;DE;multimedia software developer;;200;;14.10.2013;66;4;TODO;"Beim Programm Starten
+und das Gewinnziel eigeben kommt nach Return immer:Fehler beim
+Parsen der XSL Daten.";66
+OMQ;email;DE;multimedia software developer;;201;;14.10.2013;66;4;TODO;"Ich habe Warehouse Produkt im IT OFFICE Katalog 13 gekauft, bei der Gewinn Kalkulation bkomme ich den
+Hinweis, Fehler beim Parsing von XSL Daten, in der Community habe ich keine Lösung
+gefunden.";66
+OMQ;email;DE;multimedia software developer;;202;;14.10.2013;66;4;TODO;"Ich bekomme seit 3 Tagen bei der Gewinn-Kalkulation die Fehlermeldung: ""Fehler beim
+Parsen der XSL Daten"".";66
+OMQ;email;DE;multimedia software developer;;203;;14.10.2013;66;4;TODO;"Bei der Gewinnanwendung in der Gewinnzieleingabe erhalte ich immer die Fehlermeldung:
+Fehler beim parsen der XSL Daten.";66
+OMQ;email;DE;multimedia software developer;;204;;14.10.2013;66;4;TODO;"nach der Eingabe eines Monates kommt folgender Hinweis :
+ 
+Fehler beim parsen der XSL Daten.";66
+OMQ;email;DE;multimedia software developer;;205;;14.10.2013;66;4;TODO;"Bei der Kalkulationsanwendung in der Gewinnzieleingabe erhalte ich immer die Fehlermeldung:
+Fehler beim parsen der XSL Daten.";66
+OMQ;email;DE;multimedia software developer;;206;;14.10.2013;66;4;TODO;"Bei der der Monatseingabe unter Gewinnziel eingeben und mit
+Eingabetaste (Enter) bestätigen, kommt die Fehlermeldung ""Fehler beim Parsen der XSL
+Daten"".";66
+OMQ;email;DE;multimedia software developer;;207;;14.10.2013;66;4;TODO;"Beim Versuch einen Monat einzugeben erscheint immer die Meldung: Fehler beim Parsen
+der XSL Dateien.";66
+OMQ;email;DE;multimedia software developer;;208;;14.10.2013;66;4;TODO;"Nach Eingabe eines Gewinnzieles erscheint 
+folgende Fehlermeldung: ""Fehler beim Parsen der XSL-Daten"". ";66
+OMQ;email;DE;multimedia software developer;;209;;14.10.2013;66;4;TODO;"Jedes mal wenn ich ein Gewinnziel setzen will bekomme ich Anzeige:""Fehler beim Parsen
+der XSL Datei"".";66
+OMQ;email;DE;multimedia software developer;;210;;14.10.2013;66;4;TODO;"Beim Arbeiten mit der Kurven-Kalkulation escheint immer der Hinweis: Fehler beim Parsen
+der XSL Daten.";66
+OMQ;email;DE;multimedia software developer;;211;;14.10.2013;74;9;TODO;"Mein Super Bill administrator funktioniert nicht auf Windows 7 Wo kann ich
+eine abgrade Version bekommen ?";74
+OMQ;email;DE;multimedia software developer;;212;;14.10.2013;74;9;TODO;"Mein Betriebssystem  ist   Windows 7,das Programm habe ich 2010 gekauft.
+Ich möchte jetzt mit meinem Warenbestand ein Projekt gestalten.
+Beim brennen diese, erkennt das Programm den aktuellen Brenner nicht!";74
+OMQ;email;DE;multimedia software developer;;213;;14.10.2013;74;9;TODO;"ich habe von euch 3Produkt Programme Warehouse 8 Warehouse 10first Class und Warehouse 11 first Class. Jetzt habe
+ich einen neuen Computer mit Windows 7-und alle 3 sind für die Katz.";74
+OMQ;email;DE;multimedia software developer;;214;;14.10.2013;74;9;TODO;"Ich habe auf meinem Rechner ein Upgrade von Vista auf Windows 7 ausgeführt und kann nun das
+Warehouse Produktprogramm nicht mehr installieren.";74
+OMQ;email;DE;multimedia software developer;;215;;14.10.2013;74;9;TODO;"Kann ich mein Produkt Ultimate Programm ( 11.3.5.3
+)und B2B Creator auch auf meinem neuen Rechner mit dem Programm Window 7 installieren?";74
+OMQ;email;DE;multimedia software developer;;216;;14.10.2013;74;9;TODO;"Der Rechner wurde neu aufgesetzt Betriebssystem xp, unter win 7 läuft
+das Programm nicht 
+der Lizenzschlüssel läßt sich nicht aktivieren.";74
+OMQ;email;DE;multimedia software developer;;217;;14.10.2013;74;9;TODO;"'Leider' stelle ich jetzt auf Windows 7 64bit um. Welche Möglichkeiten gibt es
+entweder meine jetzige Version zu nutzen oder welches ist die kostengünstigste Variante,
+wenn ich ein Programm vergleichbaren Umfangs und vergleichbarer Bedienfreundlichkeit /
+Funktionalität nutzen möchte?";74
+OMQ;email;DE;multimedia software developer;;218;;14.10.2013;74;9;TODO;"Ich habe auf meinem Laptop Windows 7 installiert. Da WAREHOUSE CASH &
+Prozessscanner (Kaufdatum Feb. 2010)nicht mehr lief, habe ich es
+deinstalliert und dann versucht neu zu installieren.";74
+OMQ;email;DE;multimedia software developer;;219;;14.10.2013;74;9;TODO;"Ich habe 3 Programme Produkte IT&OFFICEKatalog7 +firstclass und Sales firstclass 2009 und
+Erwege
+auf Windows 7 umzusteigen.";74
+OMQ;email;DE;multimedia software developer;;220;;14.10.2013;74;9;TODO;"Warum ist der prozesscanner nicht mit windows 7
+Kompatibel?";74
+OMQ;email;DE;multimedia software developer;;221;;14.10.2013;74;9;TODO;"Habe neu Windows7, DVD / und vindows firstclass2009 neo laest sich nicht
+mehr
+auf windows7 laden";74
+OMQ;email;DE;multimedia software developer;;222;;14.10.2013;74;9;TODO;"Windows
+7 falsche Version.";74
+OMQ;email;DE;multimedia software developer;;223;;14.10.2013;74;9;TODO;"Ich habe jetzt einen neuen PC mit Windows7 und
+moechte die Programme wieder installieren, diese sind aber nicht
+kompatibel.";74
+OMQ;email;DE;multimedia software developer;;224;;14.10.2013;74;9;TODO;"meine version vom Warehouse Super Bill Administrator funktioniert
+leider auf meinem neuen Rechner nicht mehr , gibt es eine Moeglichkeit
+das
+Programm unter Windows 7 lauffaehig zu machen , oder eine neue Version
+?";74
+OMQ;email;DE;multimedia software developer;;225;;14.10.2013;74;9;TODO;Eine Installation unter Windows 7 ist nicht moeglich. ;74
+OMQ;email;DE;multimedia software developer;;226;;14.10.2013;74;9;TODO;"ich habe meinen Computer auf Win 7
+aufgeruestet und kann das Programm Sales firstclass 2009 nicht mehr
+installiern.";74
+OMQ;email;DE;multimedia software developer;;227;;14.10.2013;74;9;TODO;"Laesst sich Abläufa im office katalog 11 auf einem min 7 rechner richtig
+installieren?";74
+OMQ;email;DE;multimedia software developer;;228;;14.10.2013;74;9;TODO;"Wie kann ich diese Software Version
+auf einen Windows 7 PC installieren?";74
+OMQ;email;DE;multimedia software developer;;229;;14.10.2013;74;9;TODO;"ich habe Windows 7 HomePremium 64 bit
+Version als Betriebssystem.
+
+Leider funktioniert ja mein Warehouse abläufe
+fuers buero 6 nicht mehr.";74
+OMQ;email;DE;multimedia software developer;;230;;14.10.2013;74;9;TODO;"Es erscheint die
+Meldung: Windows Version nicht unterstuetzt.";74
+OMQ;email;DE;multimedia software developer;;231;;14.10.2013;74;9;TODO;"Nun habe ich
+meine beiden Notebooks komplett neu installiert mit einem neuen
+Betriebssystem, das Windows 7 Ultimate.
+Damit laesst sich nun das Programm
+nicht mehr neu installieren !";74
+OMQ;email;DE;multimedia software developer;;232;;14.10.2013;74;9;TODO;Laeuft Sales firstclass 2009 Neo auch unter Windows 7??;74
+OMQ;email;DE;multimedia software developer;;233;;14.10.2013;74;9;TODO;"seitdem ich das Betriebssystem windows 7 auf dem Rechner habe, laesst
+sich
+der produktcreator 11 nicht mehr installieren.";74
+OMQ;email;DE;multimedia software developer;;234;;14.10.2013;106;16;TODO;erkennt keinen brenner wenn eine Video-DVD erstellt werden soll;106
+OMQ;email;DE;multimedia software developer;;235;;14.10.2013;104;12;TODO;"die Online Reg. funktioniert nicht, obwohl ich online 
+war bei Produkte im OFFICE & IT Katalog 11 deluxe.";104
+OMQ;email;DE;multimedia software developer;;236;;14.10.2013;104;12;TODO;"ich bekomme mein Sales firstclass 19 Ultimate unter Windows7 nicht ans laufen. Es liegt daran,
+dass nach der eigentlichen Installation das Eingabefenster für die Seriennummer nicht
+erscheint.";104
+OMQ;email;DE;multimedia software developer;;237;;14.10.2013;104;12;TODO;"Fehlercode:
+-4 angezeigt";104
+OMQ;email;DE;multimedia software developer;;238;;14.10.2013;104;12;TODO;xls creator 21fehlercode -4;104
+OMQ;email;DE;multimedia software developer;;239;;14.10.2013;104;12;TODO;Leider läßt sich für mich aus der von Ihnen gesendeten e-mail nicht der Code zur Demo-Phase erschließen.;104
+OMQ;email;DE;multimedia software developer;;240;;14.10.2013;104;12;TODO;"This Version of Warehouse Specs Manager Ultimate ist currently not registered for .SPEC files. Do you want register it ?      YES or NO
+
+Wenn ich auf Yes gehe komme ich normal ins Programm weiter. Nichts passiert.";104
+OMQ;email;DE;multimedia software developer;;241;;14.10.2013;104;12;TODO;"Beim Registrierungsversuch konnte ich in der Rubrik ""Meine Produkte"" keine Möglichkeit finden, meinen Upgradecode einzugeben.";104
+OMQ;email;DE;multimedia software developer;;242;;14.10.2013;104;12;TODO;"der unten angegebene Aktivierungscode zur Verlängerung der Testphase auf 33 Tage funktioniert leider nicht.
+Bitte um Zusendung eines neuen Codes. ";104
+OMQ;email;DE;multimedia software developer;;243;;14.10.2013;104;12;TODO;wenn ich die neuen von mir erstellten sheets im .trl aus meinem neuen programm exportiere - wie kann ich diese bei ihnen unter der .ssh zuweisung meiner domainen hochladen?;104
+OMQ;email;DE;multimedia software developer;;244;;14.10.2013;104;12;TODO;Bei dem Versuch der Aktivierung mit og. Code erhalte ich Meldung, mich zuerst zu registrieren. Bei der Registrierung wird mir mitgeteilt, die og. Seriennummer sei wahrscheinlich (!)bereits registriert.;104
+OMQ;email;DE;multimedia software developer;;245;;14.10.2013;104;12;TODO; ich habe eine unvollständige Mailadresse angegeben. Wenn ich mich jetzt einlogge, erscheint der Hinweis , daß die Seriennummer schon benutzt wird.;104
+OMQ;email;DE;multimedia software developer;;246;;14.10.2013;104;12;TODO;Die online-Registrierung/Freischaltung von Statistics Creator WH 21 nach dem Start zeigt zwar bei Seriennummer und E-Mail-Adresse grüne Häkchen, quitiert aber mit der Behauptung, dass keine Internetverbindung möglich wäre.;104
+OMQ;email;DE;multimedia software developer;;247;;14.10.2013;104;12;TODO;Ich habe nun das Produkt instaliert es funktioniert auch. Nun möchte ich es gerne registrieren geht aber nicht da es schon für eine andere E-Mail registriert ist.;104
+OMQ;email;DE;multimedia software developer;;248;;14.10.2013;104;12;TODO;ich möchte das schon auf dem'Hauptrechner' installierte u.registrierte Programm (Sales firstclass neo) auch auf dem Laptop nutzen, kann hierzu aber keine Freischaltung erreichen (z. B. Eingabe dat.-Dateien nichgt möglich ohne verherige Registrierung...);104
+OMQ;email;DE;multimedia software developer;;249;;14.10.2013;104;12;TODO;Jetz habe ich mich neu regiestrieren wollen,mit wahrscheinlich anderer Mailanschrift.Als ich mit neuen Login mich einwählen wollte,wurde mir gesagt,dass das Produkt schon regiestriert sei.;104
+OMQ;email;DE;multimedia software developer;;250;;14.10.2013;104;12;TODO;Gerne möchte ich dieses Produkt für mich registrieren.;104
+OMQ;email;DE;multimedia software developer;;251;;14.10.2013;104;12;TODO;Ich habe Specs Manager 9 auf einem neuen PC instaliert und wurde aufgefordert die Seriennummer anzugeben. Nach aufführung der auf der Box aufgeführten Nummer, wurde ich nicht weitergeleitet.;104
+OMQ;email;DE;multimedia software developer;;252;;14.10.2013;104;12;TODO;Sehr geehrtes Warehouse-Team, ich habe die Cd Bill Cleaner Studio verkauft, nun hat der Käufer ein Problem er kann mit dieser Software keine updates machen, da die Software immer noch auf meinen Namen (Accunt) registriert ist.;104
+OMQ;email;DE;multimedia software developer;;253;;14.10.2013;104;12;TODO;Leider ist eine Registrierung des Produktes nicht möglich, da die Meldung kommt: Seriennummer bereits benutzt.;104
+OMQ;email;DE;multimedia software developer;;254;;14.10.2013;125;19;TODO;sind ihre Produkte auch mit den Apple-Computer (Betriebssystem OS-X) kompatibel?;125
+OMQ;email;DE;multimedia software developer;;255;;14.10.2013;125;19;TODO;"Ich habe neuerdings einen Apple PC.
+Wie kann ich den gekauften ""Digital Produkt Creator 12""verwenden, bzw Ihre Angebote im Netz?";125
+OMQ;email;DE;multimedia software developer;;256;;14.10.2013;125;19;TODO;Haben Sie eine Software, die beim Mac laeuft??;125
+OMQ;email;DE;multimedia software developer;;257;;14.10.2013;125;19;TODO;" 1. ist Warehouse Sales Xtra l7 Mac tauglich?
+2. selbe Frage zu Analysity 14 Xtra
+3. Specsmanager 10";125
+OMQ;email;DE;multimedia software developer;;258;;14.10.2013;125;19;TODO;"da ich mir einen Apple ,iMac Os X angeschafft habe, wollte ich fragen ob ich meine Warehouse Programme, überwiegend sales firstclass 20, auch auf diesem
+Computer von Apple iMac nutzen kann oder sind sie nicht kompatible?";125
+OMQ;email;DE;multimedia software developer;;259;;14.10.2013;125;19;TODO;Ich bitte um die Ermöglichung der Nutzung meiner erworbenen Hard- und Software auf meinem Mac.;125
+OMQ;email;DE;multimedia software developer;;260;;14.10.2013;125;19;TODO;Leider Funktionieren weder auf der Windows noch auf der Macoberfläche die Tasten a, q, j, u, i, o, p. Woran kann das liegen?;125
+OMQ;email;DE;multimedia software developer;;261;;14.10.2013;125;19;TODO;Sind Ihre Programme Apple-kompatibel?;125
+OMQ;email;DE;multimedia software developer;;262;;14.10.2013;125;19;TODO;Ich habe die Download Version Warehouse Specssheet Creator WH gekauft. Das Programm wird nach 3 Sekunden wieder beendet, bzw. kann nicht gestartet werden.;125
+OMQ;email;DE;multimedia software developer;;263;;14.10.2013;125;19;TODO;"Ich habe das Online Specificationsheet erstellen ""free"" aktiviert. Wenn ich das Programm starten möchte, bekomme ich die Meldung ""das Plugin fehlt"". Ich arbeite mit einem Mac.";125
+OMQ;email;DE;multimedia software developer;;264;;14.10.2013;125;19;TODO;Möchte meine o.g. Software auf Mac laufen lassen?;125
+OMQ;email;DE;multimedia software developer;;265;;14.10.2013;125;19;TODO;Meine Frage nun, gibt es auch eine Version für Mac Os???;125
+OMQ;email;DE;multimedia software developer;;266;;14.10.2013;125;19;TODO;"Ist die Software ""Produkte im OFFICE Katalog WH"" auch auf einem Apple-Computer (MAC) unter dessen Betriebssystem ""MAC OS X Lion"" lauffähig?";125
+OMQ;email;DE;multimedia software developer;;267;;14.10.2013;125;19;TODO;Ich bin auf Apple, Mac umgestiegen und möchte Warehouse first class weiter verwenden.;125
+OMQ;email;DE;multimedia software developer;;268;;14.10.2013;125;19;TODO;"Ich möchte mein Mac auf OSX Lion upgraden, funktioniert ""Archivieren Sie Ihre Bestandslisten (Mac)"" unter Lion?";125
+OMQ;email;DE;multimedia software developer;;269;;14.10.2013;125;19;TODO;bin auf mac umgestiegen, funktioniert sales firstclass auf apple ?;125
+OMQ;email;DE;multimedia software developer;;270;;14.10.2013;125;19;TODO;Kann ich Sales firstclass  auch in  das Betriebssystem von Apple installieren?;125
+OMQ;email;DE;multimedia software developer;;271;;14.10.2013;125;19;TODO;Habe einige Daten und Ablauf Bearbeitungsprogramme und jetzt einen Mac;125
+OMQ;email;DE;multimedia software developer;;272;;14.10.2013;70;1;TODO;"Aus Hardware Gründen wurde die Übertragung beendet, soll angebelich
+zu schwache Prozessorleistung haben oder zu wenig Speicher.";70
+OMQ;email;DE;multimedia software developer;;273;;14.10.2013;70;1;TODO;"Beim Reinladen von EMVX Prozessdaten bricht das Programm nach ca 500
+Kb ab und meldet:
+Systemspeicher reicht nicht aus.";70
+OMQ;email;DE;multimedia software developer;;274;;14.10.2013;83;12;TODO;Es wird immer eine Ende der Demophase angezeigt.;83
+OMQ;email;DE;multimedia software developer;;275;;14.10.2013;83;12;TODO;Wenn ich dann aber auf das erleuchtete ?Programm unbegrenzt verwenden drücke? bekomme ich wieder die Fehlermeldung: Der Freischaltcode ist nicht korrekt.;83
+OMQ;email;DE;multimedia software developer;;276;;14.10.2013;83;12;TODO;Drücke ich danach auf Programm unbegrenzt verwenden, bekomme ich weiterhin die Fehlermeldung. Der Freischaltcode ist nicht korrekt.;83
+OMQ;email;DE;multimedia software developer;;277;;14.10.2013;83;12;TODO;"Hallo, der mir per Mail zugesandte Aktivierungscode für Produkt Organizer 12:
+DEMOC-03827-07014-21153-68834-60636
+wird mit der Meldung ""der Freischaltcode ist nicht korrekt"" abgewiesen.";83
+OMQ;email;DE;multimedia software developer;;278;;14.10.2013;83;12;TODO;Ich bekomme Fehlermeldung Demophase abgelaufen - Registrieren mit Kunden Nr..;83
+OMQ;email;DE;multimedia software developer;;279;;14.10.2013;83;12;TODO;Demophase läuft ab;83
+OMQ;email;DE;multimedia software developer;;280;;14.10.2013;83;12;TODO;"Warehouse Produkt Organizer 12 und 13 läst sich nicht freischalten
+mit den per Mail geschickten Aktivierungcode.";83
+OMQ;email;DE;multimedia software developer;;281;;14.10.2013;83;12;TODO;"Ich warte schon zwei tage auf die seriennummer von     W
+AREHOUSE Produkt Organizer 13,die ich ber e-mail bekommen solte?";83
+OMQ;email;DE;multimedia software developer;;282;;14.10.2013;83;12;TODO;"""Programm weiter verwenden""
+führt zum Hinweis
+""Der Freischaltcode ist nicht korrekt...""";83
+OMQ;email;DE;multimedia software developer;;283;;14.10.2013;83;12;TODO;der Verlängerungscod für die Demofase  wird nicht angenommen;83
+OMQ;email;DE;multimedia software developer;;284;;14.10.2013;111;12;TODO;"möchte gerne die Zusatzprogramme xtraGOOD Calculage 14 und xtraGOOD Corporare 5 auf meinem PC
+installieren, aber die auf dem CD Cover angegebenen Seriennummern werden nicht
+akzeptiert???";111
+OMQ;email;DE;multimedia software developer;;285;;14.10.2013;111;12;TODO;"Ich habe das auf Ihrer Webseite erwähnte AutoSortSD-Funktionspaket im Programm nicht
+gefunden. Erst nach dem Download von Plug-In-Funktionen stand eine Datensatz-Funktion zur
+Verfügung, mit diesem ist mir o.g. Ziel jedoch nicht gelungen.";111
+OMQ;email;DE;multimedia software developer;;286;;14.10.2013;111;12;TODO;"Ich kann meine Zusätze xtraGOOD Corporare 5 und xtraGOOD Calculage im Fenster- Geben Sie Ihre
+Seriennummer ein-
+nicht mehr weiter installieren, da sich hier nichts mehr eingeben lässt.";111
+OMQ;email;DE;multimedia software developer;;287;;14.10.2013;111;12;TODO;"Im Installer steht, ich solle xtraGOOD Calculage und Corporare sowie AutoSortSD via
+Hilfe/Zusatzprogramme installieren. Wenn ich dort aber (offline) die auf der Rückseite der
+CD-Hülle angegebenen Seriennummern eingebe, behauptet das Programm, diese seien
+ungültig...";111
+OMQ;email;DE;multimedia software developer;;288;;14.10.2013;100;12;TODO;"Bei der Funktion ""Zusatzprogramme installieren"" werde ich aufgefordert, das Programm zu
+aktivieren.
+Wenn ich das mache, wird mir angezeigt, das die Software
+bereits aktiviert ist.";100,111
+OMQ;email;DE;multimedia software developer;;289;;14.10.2013;111;12;TODO;" 1.Wie kann das Programm sowie die Zusatzprogramme auf DVD brennen 
+bzw.wie kann ich die Zusatzprogramme instalieren.";111
+OMQ;email;DE;multimedia software developer;;290;;14.10.2013;111;12;TODO;"Es kommt immer die
+Fehlermeldung ""Das Installationsprogramm für ""XtraGood Calculage"" konnte auf dem
+Installationsmedium nicht geöffnet werden......"" obwohl die DVD eingelegt ist.";111
+OMQ;email;DE;multimedia software developer;;291;;14.10.2013;111;12;TODO;Anschließend wollte ich das Programm (Product_Organizer_13) installieren, welches mir nach mehreren Versuchen nicht gelingt. Ebenfalls wird auch das Programm (xtraGOOD CrystalCycrle 5 WAREHOUSE Edition) nicht installieren.;111
+OMQ;email;DE;multimedia software developer;;292;;14.10.2013;111;12;TODO;Ich habe nach kompletter Neuinstallation u.a. sales firstclass Ultimate Spezialedition installiert, um updates zu erhalten, bzw xtraGOOD Calculage installiereb zu können, werde ich ständig auf die Registrierung verwiesen.;111
+OMQ;email;DE;multimedia software developer;;293;;14.10.2013;111;12;TODO;"doch die seriennummer hat eine stelle zu viel entweder das ""Z"" oder die letzte ""3"" passen nicht rein somit habe ich die S/N: 
+3-31304-87734-04150-5167-06373 und
+Z3-31304-87734-04150-5167-06373
+ausprobier, doch beide funktionieren nicht.";111
+OMQ;email;DE;multimedia software developer;;294;;14.10.2013;111;12;TODO;"aufgrund von einigen Rechner-Setups (Systemabstürze, neuer Rechner) habe ich nicht mehr die Möglichkeit, das Programm
+
+Analysity Statistics Laboratory 20 Download-Version,
+Bestellnummer:61308483000334367WHR,
+Seriennummer: T3-03038-71133-67283-56662-18207-68518,
+Registrierungsdatum: 11.03.2011
+
+frei zu schalten, da die begrenzte Anzahl von Freischaltungen erreicht ist.";111
+OMQ;email;DE;multimedia software developer;;295;;14.10.2013;111;12;TODO;"Wenn ich die Zusatzprogramme aktivieren will,erscheint
+die Meldung : Die Anzahl der möglichen Aktivierungen 
+wurde überschritten ! ";111
+OMQ;email;DE;multimedia software developer;;296;;14.10.2013;111;12;TODO;"Beim Programmstart akzeptierte die DVD Version
+bei der Aktivierung die Download-Seriennummer nicht.";111
+OMQ;email;DE;multimedia software developer;;297;;14.10.2013;111;12;TODO;Ich kann mein Sales firstclass weder über das Internet, noch über das Telefon aktivieren.;111
+OMQ;email;DE;multimedia software developer;;298;;14.10.2013;111;12;TODO;"Ich habe mein SALES firstclass 2010 NEO mit der Seriennummer D-51207-38458-80204-55530-05112 nun auf einen neuen Rechner gespielt, da der alte PC defekt war; nun wollte ich das Programm nutzen, benötige dafür einen Aktivierungscode - den ich laut Internet-Warehouse eingeben sollte; ich weiß aber leider nich tmehr, wo er ist; 
+könnte ich einen neuen Code dafür bekommen, damit ich das Programm wieder nutzen kann? ";111
+OMQ;email;DE;multimedia software developer;;299;;14.10.2013;111;12;TODO;" 1.Beim öffnen von OFFICE Katalog 13 und
+WH first Clas geht anhängendes Fenster auf,da ich beide Versionen habe, aber immer nur ein Programm geöffnet habe";111
+OMQ;email;DE;multimedia software developer;;300;;14.10.2013;111;12;TODO;Nach dem Rückladen eines Systembackups (OS:Windows7 64Bit) meldet SalesFirstclass 19 Neo, dass die Testzeit abgelaufen ist, obwohl ich gültige Seriennummer habe (T8-26371-58197-33412-03110-24771-01414);111
+OMQ;email;DE;multimedia software developer;;301;;14.10.2013;111;12;TODO;xtraGOOD Xorporare 5 läßt sich nach mehreren Neuinstallationen von Windows und damit des Programmes nicht mehr freischalten.;111
+OMQ;email;DE;multimedia software developer;;302;;14.10.2013;111;12;TODO;"Bei der Installation der Zusatzprogramme über den Menüpunkt ""Hilfef"" erhalte ich bei beiden Programmen die Meldung: Falsche Seriennummer.";111
+OMQ;email;DE;multimedia software developer;;303;;14.10.2013;111;12;TODO;Doch jedesmal, wenn ich die Serien-Nummer eingegeben habe, erschien der Hinweis: die Seriennummer ist ungültig.;111
+OMQ;email;DE;multimedia software developer;;304;;14.10.2013;111;12;TODO;"Nachdem Upgrade auf ""Sales Firstclass WH Ultimate"" stellte ich fest, dass die Plugins ""Sellulate inScan 7.1 Starterpack"" (aus Sales firstclass 20 Premium) sowie ""xtraGOOD Calculage 13  (Bestände, Rechnungen, Verkauf, Doku, Archivierung ..., aus aus Sales firstclass 19 Ultimate Spezialedition) nicht mehr verfügbar sind.";111
+OMQ;email;DE;multimedia software developer;;305;;14.10.2013;111;12;TODO;Giebt es andere Möglichkeiten das Programm frei zu schalten oder komme ich irgendwie an eine neue Seriennummer, ohne das Programm nochmal zu kaufen?;111
+OMQ;email;DE;multimedia software developer;;306;;14.10.2013;111;12;TODO;Nach Eingabe meiner Daten erfragt das Programm den Registrierungscode.;111
+OMQ;email;DE;multimedia software developer;;307;;14.10.2013;111;12;TODO;Bei der Eingabe der Seriennummer wurde mir gesagt, daß sie bereits existiert.;111
+OMQ;email;DE;multimedia software developer;;308;;14.10.2013;106;16;TODO;"Meldung beim Versuch zu brennen: ""Es ist kein geeigneter Brenner
+gefunden worden""";106
+OMQ;email;DE;multimedia software developer;;309;;14.10.2013;106;16;TODO;Das Brennen von DVDs ist unter Win7 nicht möglich.;106
+OMQ;email;DE;multimedia software developer;;310;;14.10.2013;106;16;TODO;In der Brennauswahl wird der Brenner nicht angezeigt und es ist kein Brennen möglich.;106
+OMQ;email;DE;multimedia software developer;;311;;14.10.2013;106;16;TODO;"Die Meldung lautet: ""Brennprozess erfolgreicch abgeschlossen"", ohne dass ein einziges Bit auf der BD gelandet wäre.";106
+OMQ;email;DE;multimedia software developer;;312;;14.10.2013;31;14;TODO;"Habe mit der 9 fachen Brenngeschwindigkeit beim Abspielen
+auf den DVD-Brenner Probleme.";31
+OMQ;email;DE;multimedia software developer;;312;;14.10.2013;106;16;TODO;Wie kann ich die niedrigere Brenngeschwindigkeit beibehalten, denn hierbei macht mir mein DVD-Brenner keine Probleme.;106
+OMQ;email;DE;multimedia software developer;;313;;14.10.2013;106;16;TODO;"Nachdem Start des Brennvorgangs erscheint die Fehlermeldung ""Brennergerät kann nicht gefunden werden"".";106
+OMQ;email;DE;multimedia software developer;;314;;14.10.2013;100;12;TODO;bei meinem Produktorganizerprogramm kommt bei Aufruf die Meldung daß ich mich registrieren soll obwohl ich mich im April schon registriert habe.;100
+OMQ;email;DE;multimedia software developer;;315;;14.10.2013;106;16;TODO;"Ich möchte meine fertiggestellten Daten Brennen. Leider kommt die Meldung:
+       Brenner nicht vorhanden/gefunden.";106
+OMQ;email;DE;multimedia software developer;;316;;14.10.2013;106;16;TODO;Vor dem Brenne tritt folgendes Problem auf.;106
+OMQ;email;DE;multimedia software developer;;317;;14.10.2013;106;16;TODO;habe software aud neuem pc installiert, konnte mit neuer adresse nicht registrieren und kann zz nicht brennen sowie kurze prc einlesen.;106
+OMQ;email;DE;multimedia software developer;;318;;14.10.2013;106;16;TODO;Ich habe eine Produktpreview und kann sie nicht auf eine DVD brennen. Sagt  hat einen Versionskonflikt.;106
+OMQ;email;DE;multimedia software developer;;319;;14.10.2013;106;16;TODO;"Als ich auf brennen einer DVDdrückte, erschien ein Blättchen:
+Kein Brenner gefunden.";106
+OMQ;email;DE;multimedia software developer;;320;;14.10.2013;106;16;TODO;Leider finde das Programm keinen Brenner.;106
+OMQ;email;DE;multimedia software developer;;321;;14.10.2013;106;16;TODO;Brennen - Schritt 4: Wie werden hier zu Brenner und Geschwindigkeit Daten eingegeben?;106
+OMQ;email;DE;multimedia software developer;;322;;14.10.2013;106;16;TODO;seit ich windows 7 habe, erkennt das Programm meinen Brenner nicht.;106
+OMQ;email;DE;multimedia software developer;;323;;14.10.2013;106;16;TODO;Beim Versuch eine DVD zu brennen,wird kein Brenner gefunden.;106
+OMQ;email;DE;multimedia software developer;;324;;14.10.2013;106;16;TODO;der rechner sagt,kein brenner vorhanden.;106
+OMQ;email;DE;multimedia software developer;;325;;14.10.2013;106;16;TODO;Bei mir wird kein Brenner angezeigt?;106
+OMQ;email;DE;multimedia software developer;;326;;14.10.2013;106;16;TODO;Das Programm erkennt den Brenner nicht!;106
+OMQ;email;DE;multimedia software developer;;327;;14.10.2013;106;16;TODO;Hallo ich habe auf win 7 umgestellt und möchte eine Produkt CD erstellen, doch mein Originalprogramm erkennt meinen Brenner nicht.;106
+OMQ;email;DE;multimedia software developer;;328;;14.10.2013;106;16;TODO;"Ich kann keine DVD brennen.
+Man schlägt mir ein Brennprozedur-Update vor";106
+OMQ;email;DE;multimedia software developer;;329;;14.10.2013;106;16;TODO;Wenn ich meine Dia-Show brennen möchte, wird kein Brenner angezeigt.;106
+OMQ;email;DE;multimedia software developer;;330;;14.10.2013;106;16;TODO;Ich benötige Version 9.5.432 oder höher.;106
+OMQ;email;DE;multimedia software developer;;331;;14.10.2013;106;16;TODO;Beim brennen auf DVD wird mein Brenner beim Brennvorgang nicht angezeigt?;106
+OMQ;email;DE;multimedia software developer;;332;;14.10.2013;106;16;TODO;Die Produktpreview läßt sich nicht brennen. Hinweis Programm ist gestört: ;106
+OMQ;email;DE;multimedia software developer;;333;;14.10.2013;65;3;TODO;"Das Problem ist, wenn ich die
+Prozesserstellung starte, wird die Erstellung Fehlerhaft (Teilweise gut, Teilweise erscheinen kleine
+Fehler auf dem Bildschirm) das geht so lange bis die Erstellung vom Programm abbricht.";65
+OMQ;email;DE;multimedia software developer;;334;;14.10.2013;65;3;TODO;"Bei der Erstellung kann ich jedoch nicht vorwärts und rückwärts durch die Daten springen und auch
+nichts erstellen.";65
+OMQ;email;DE;multimedia software developer;;335;;14.10.2013;65;3;TODO;Bei EM Erstellung - Es werden keine Prozessdaten angezeigt - nur Leere Feld;65
+OMQ;email;DE;multimedia software developer;;336;;14.10.2013;65;3;TODO;"Der Datenscanner wird gefunden, er laesst sich
+aus
+SFC 20 auch ansprechen, es werden aber weder Daten noch Bestellnummer erstellt.";65
+OMQ;email;DE;multimedia software developer;;337;;14.10.2013;65;3;TODO;"Nach Start mit ""S"" erfolgt einmaliger Zugriff auf Datenscanner mit Anzeige
+EMoutInPlug auf der Datenscanner-View und danach Fehlermeldung auf PC ""Es konnte keine
+Verbindung zur Hardware aufgebaut werden"".";65
+OMQ;email;DE;multimedia software developer;;338;;14.10.2013;65;3;TODO;"Leider hat das die Lage
+nicht verbessert, es erscheint weiterhin nur ganz gurz zu Anfang der geplanten Importierung
+von meinem ProfiKartenleser Systech MDX-X3E ein einzelner Datensatz im Erstellungs-Fenster und ich kann auch
+die Datensatz-Vor- und Rückwärtssteuerung nutzen, aber bei Betätigen des Erstellungs-Bottoms (grüner Knopf)
+erscheinen nach wie vor keine Daten und am Ende wird angezeigt, dass die zwar benannte, aber
+nicht sichtbare Erstellung ""nicht existiert"".";65
+OMQ;email;DE;multimedia software developer;;339;;14.10.2013;65;3;TODO;"Leider sind weder im ARC-Modus noch im Cardreader-Modus Daten
+im Vorschau-Fenster zu sehen.";65
+OMQ;email;DE;multimedia software developer;;340;;14.10.2013;65;3;TODO;"Nun
+erhalte
+ich allerdings folgenden Hinweis, wenn ich meinen Inhalt vom Datenscanner in
+das Programm WAREHOUSE Sales Firstclass 2009 Ultimate uebertragen moechte:
+
+Es
+konnte keine Verbindung zum Hardwea aufgebaut werden.";65
+OMQ;email;DE;multimedia software developer;;341;;14.10.2013;65;3;TODO;"beim Oeffnen der Em-Liste
+erscheint ein kleiner Teil der Daten im Fenster des Programms und dann
+passiert gar nichts mehr.";65
+OMQ;email;DE;multimedia software developer;;342;;14.10.2013;65;3;TODO;"Seit ich Windows 7 habe kommt immer die Meldung wenn ich erstellen
+moechte,das keine Hardware gefunden wurde.";65
+OMQ;email;DE;multimedia software developer;;343;;14.10.2013;65;3;TODO;Aber der em scanner wird nicht gefunden.;65
+OMQ;email;DE;multimedia software developer;;344;;14.10.2013;65;3;TODO;"Leider bekomme ich immer den
+Hinweis \""Es konnte keine Verbindung mit der Hardware aufgebaut
+werden\"".";65
+OMQ;email;DE;multimedia software developer;;345;;14.10.2013;65;3;TODO;"Wenn ich nun WAREHOUSE Sales firstclass
+18 Ultimate öffne und auf Erstellung EMV drücke, so reagiert der Kartenleser
+zwar, nach einigen Kilobyte erscheint jedoch das Dialogfeld: ""Es konnte
+keine Verbindung zur Hardware aufgebaut werden"".";65
+OMQ;email;DE;multimedia software developer;;346;;14.10.2013;65;3;TODO;"Bei  der Erstellung in salesfirstclass 20, kommt die
+Fehlermeldung - es konnte keine Verbindung zur Hardware aufgebaut werden.";65
+OMQ;email;DE;multimedia software developer;;347;;14.10.2013;65;3;TODO;"Der
+Kartenleser beginnt automatisch und stoppt nach der Fehlermeldung: Nicht
+ausreichend Recourcen, entweder Platte zu langsam oder ungenügender Hauptspeicher";65
+OMQ;email;DE;multimedia software developer;;348;;14.10.2013;65;3;TODO;"Ich habe vor einigen Tagen das Programm Sales firstclas 20 Ultimate bei Ihnen erworben und
+Installiert dann habe ich meinen Kartenleser an der EtheNet Schnittstelle amgeschlossen und das
+Erstellungs Auswahlfenster geöffnet habe dann EM Kartenleser ausgewählt wenn ich dan den grünen
+Erstellungs Batten übertragen anwähle wird der Ablauf im Kartenleser gestartet aber das
+Vorschaufenster zeigt nur fehlerhafte zeichen und der Ablauf wird nicht übertragen.";65
+OMQ;email;DE;multimedia software developer;;349;;14.10.2013;65;3;TODO;"Doch leider (ich habe es 4 Mal versucht) speicherte der PC lediglich eine 50
+KB-Version, obwohl die Karte 30 Megabyte beinhaltete und die Daten auch auf dem PC im
+Warehouse-Programm zu sehen und zu lesen waren.";65
+OMQ;email;DE;multimedia software developer;;350;;14.10.2013;65;3;TODO;Leider bekomme ich keine Produktvorschau bei der Erstellung angezeigt, sondern immer nur die ersten Daten, die beim Erstellungsbeginn vom Solarmobile QS-BV070 angezeigt wurden, als einzelner Datensatz.;65
+OMQ;email;DE;multimedia software developer;;351;;14.10.2013;65;3;TODO;Man sieht nur ein leeres Datenfenster - der Datenscanner wird automatisch aktiviert aber die Software erstellt nichts und hängt sich dann kurze Zeit später auf.;65
+OMQ;email;DE;multimedia software developer;;352;;14.10.2013;65;3;TODO;"Wähle ich im Vorfeld ""EM als DATA erstallen"", wird nur ""CWV-konforme EM-Hardware 4000 ARC"" als Gerätetreiber angezeigt. Eine Erstellung kann ich nicht starten.";65
+OMQ;email;DE;multimedia software developer;;353;;14.10.2013;121;3;TODO;"Nach der Treiberinstallation kommt der Hinweis:
+1133 Skript gesteuerte
+Installation konnte nicht beendet werden.";121
+OMQ;email;DE;multimedia software developer;;354;;14.10.2013;121;3;TODO;"Beim Installieren vom DVD Treiber Warehouse DVD-Prozessverwalter 5 Gelb-Weisses
+Geraet) kommt folgende Fehlermeldung:
+1133. Unable to finish
+instullation.";121
+OMQ;email;DE;multimedia software developer;;355;;14.10.2013;121;3;TODO;"der DVD Treiber laesst sich nicht installieren, Hinweis DVD Treiber:
+""1133
+unable to finish Installation""";121
+OMQ;email;DE;multimedia software developer;;356;;14.10.2013;121;3;TODO;"Gemaess Ihrer Beschreibung wollte ich den DVD-Prozessverwalter
+installieren - fehlgeschlagen!";121
+OMQ;email;DE;multimedia software developer;;357;;14.10.2013;121;3;TODO;"Waehrend der Installation erscheint der Hinweis: 1133:
+Unable to finis installation.";121
+OMQ;email;DE;multimedia software developer;;358;;14.10.2013;121;3;TODO;"doch bei der installation des dvd prozessverwalters
+gelb/weiss kommt folgende meldung:
+1133 unable to finish
+installation";121
+OMQ;email;DE;multimedia software developer;;359;;14.10.2013;121;3;TODO;"Auch nach dem Download des Treibers
+dvd-prozessverwalter-5.de auf \""helpdesk.warehouse.net\"" erscheint die
+Fehlermeldung:
+
+1133: Unable to finish installation.";121
+OMQ;email;DE;multimedia software developer;;360;;14.10.2013;121;3;TODO;"Kann DVD 8425 Device
+Treiber nicht Laden";121
+OMQ;email;DE;multimedia software developer;;361;;14.10.2013;76;6;TODO;Hallo auch nach Neuinstallation Problemcode -9;76
+OMQ;email;DE;multimedia software developer;;361;;14.10.2013;76;6;TODO;"bei starten von Warehouse xtra L 8.8 nach der Installation von Warehouse
+Bill Cleaner studio erscheint der Problemcode -9.";76
+OMQ;email;DE;multimedia software developer;;362;;14.10.2013;76;6;TODO;Immer derselbe Problemcode -9....;76
+OMQ;email;DE;multimedia software developer;;363;;14.10.2013;71;2;TODO;Sales Xtra L 8.8: Stocken in der Seitenansicht;71
+OMQ;email;DE;multimedia software developer;;364;;14.10.2013;71;2;TODO;"Die Anzeige von EMVX1 Abläufen, die mit Sales Xtra L 5 eingespielt wurden,
+stockt, sobald man zwie Zeilen gegeneinander durchrechnet.";71
+OMQ;email;DE;multimedia software developer;;365;;14.10.2013;71;2;TODO;"Sobald erste Daten oder Funktionen genutzt werden
+faengt der Ablauf an zu stocken.";71
+OMQ;email;DE;multimedia software developer;;366;;14.10.2013;71;2;TODO;"Wenn ich die Abläufe im Warehouse bearbeiten moechte so
+stcken die Abläufe sehr stark so das eine Bearbeitung fast gar nicht mehr
+moeglich ist.";71
+OMQ;email;DE;multimedia software developer;;367;;14.10.2013;71;2;TODO;"Beim Starten eines
+geladenen Prozesses in SalesfirstClass 19 faengt die Abrechnung an zu stolpern
+und
+plockiert das gesamte System, so dass ich das Netbook einem Hardreset
+unterziehen muss.";71
+OMQ;email;DE;multimedia software developer;;368;;14.10.2013;71;2;TODO;"Wie bereits bei Herr Benjamin Regeler erwähnt, stockt das Programm
+beim Bearbeiten und zusammenstellen der Ablaufteile.";71
+OMQ;email;DE;multimedia software developer;;369;;14.10.2013;71;2;TODO;"Bei
+Uebergaengen (egal welchen Typs) bleibt die Anzeige haengen und 
+springt einige Zeit nicht weiter.";71
+OMQ;email;DE;multimedia software developer;;370;;14.10.2013;71;2;TODO;Bei Skripten stockt es manchmal!;71
+OMQ;email;DE;multimedia software developer;;371;;14.10.2013;71;2;TODO;"Manchmal allerdings funktioniert überhaupt nichts mehr, dann kann ich das
+Programm nur ueber den Task-Manager (sofort beenden) schliessen oder den
+Computer brutal ausschalten. In diesem Fall finde ich die ja von mir
+eingestellten Sicherungskopien nicht.";71
+OMQ;email;DE;multimedia software developer;;372;;14.10.2013;71;2;TODO;"Beim Bearbeiten von
+Complete-EMV
+Prozessen (egal ob im CWVEMX- oder DATA-Format) kommt es zu einer fast
+dauerhaften CPU Überlastung zu 100%, beim Durchrechnen bzw. Anzeigen der
+Übersicht zu extremem Stocken.";71
+OMQ;email;DE;multimedia software developer;;373;;14.10.2013;71;2;TODO;Danach habe ich mir nochmals die alte Preview angesehen, diese stockte wie gehabt.;71
+OMQ;email;DE;multimedia software developer;;374;;14.10.2013;71;2;TODO;"Wir besitzen Neu einen Systech EMVR-QS154 VE Complete EMV Chipkartenleser,
+Leider
+koennen wir auf Warehouse Sales firstclas 19 sowie mit einem Testprogramm Warehouse
+Sales Xtra L7 die Abläufe nicht bearbeiten, da sie stocken.";71
+OMQ;email;DE;multimedia software developer;;375;;14.10.2013;71;2;TODO;"Wenn ich eine Produkt Prozesspreview mit mehreren Prozessen erstelle, stocken meine Prozesse beim
+Anzeigen fürchterlich.";71
+OMQ;email;DE;multimedia software developer;;376;;14.10.2013;71;2;TODO;Nun habe ich das Problem, dass sich das Projekt nur noch einmal halbwegs vernünftig anzeigen lässt. (1x nach Neustart des Programms) Bei allen weiteren Versuchen werden nur noch die Zahlen angezeigt.;71
+OMQ;email;DE;multimedia software developer;;377;;14.10.2013;71;2;TODO;Schon einfaches Umschreiben eines Auftrags kann dazu führen, dass die Vorschau stockt und Speicherfehler erzeugt.;71
+OMQ;email;DE;multimedia software developer;;378;;14.10.2013;71;2;TODO;wenn ich mit der Overlay und ved backcalculating einstellung arbeite. Dann stockt mein Prozess bei großen Eingabedaten extrem.;71
+OMQ;email;DE;multimedia software developer;;379;;14.10.2013;71;2;TODO;"Ich habe in der Vergangenheit oft Rundunkskorrekturen (ich arbeite praktisch nur mit CWVEMX) durchführen müssen und danach stockt die Ausgabe und wird nicht mehr ""flüssig"" dargestellt.";71
+OMQ;email;DE;multimedia software developer;;380;;14.10.2013;33;7;TODO;"Eine Speicheranfrage ist
+ungültig. Eventuell ist kein Speicher mehr verfuegbar oder ein
+internes Problem ist aufgetreten.";33
+OMQ;email;DE;multimedia software developer;;381;;14.10.2013;33;7;TODO;speicheranfrage ungültig;33
+OMQ;email;DE;multimedia software developer;;382;;14.10.2013;33;7;TODO;"Immer wieder beendet sich das Programm ohne eine für mich erkennbaren Grund. Dabei schreibt das Programm unter anderem:
+ 
+""Eine Speicheranfrage ist ungültig. Eventuell ist kein Speicher mehr verfügbar, oder ein internes Problem ist aufgetreten.""";33
+OMQ;email;DE;multimedia software developer;;383;;14.10.2013;33;7;TODO;"Jetzt habe ich leider das Problem, dass ich ein
+bereits angefangenes Projekt beim wieder oeffnen also um es z.B. Tage
+spaeter weiter zu bearbeiten zu koennen, eine Fehlermeldung
+bekomme.
+
+Eine Speicheranfrage ist ungültig. Eventuell
+ist kein Speicher mehr verfuegbar oder ein internes Problem ist
+aufgetragen.";33
+OMQ;email;DE;multimedia software developer;;384;;14.10.2013;33;7;TODO;Es wird unheimlich viel Arbeitsspeicher benötigt und oft und in unregelmäßigen Abständen kommt eine Meldung, welche beschreibt, dass eine Speicheranfrage ungültig ist und das Programm geschlossen werden muss.;33
+OMQ;email;DE;multimedia software developer;;385;;14.10.2013;33;7;TODO;Die Speicheranfrage ist ungültig. Kernel...Adresse...;33
+OMQ;email;DE;multimedia software developer;;386;;14.10.2013;33;7;TODO;"Leider habe ich
+irgendwann staendig die Meldung bekommen ""Speicheranfrage
+ungültig..."" und ich konnte das Projekt nicht fertig stellen.";33
+OMQ;email;DE;multimedia software developer;;387;;14.10.2013;33;7;TODO;"aber an ca. 22. Stelle in der Gesamtansicht
+erscheint
+eine Fehlermeldung ""Speicheranfrage ungültig"".";33
+OMQ;email;DE;multimedia software developer;;388;;14.10.2013;33;7;TODO;"Fehler ""eine speicheranfrage ist ungültig"" in einigen
+programmsituationen.";33
+OMQ;email;DE;multimedia software developer;;389;;14.10.2013;33;7;TODO;"Fehlermeldung:
+Eine Speicheranfrage ist ungültig. Eventuell ist kein
+Speicher mehr verfuegbar oder ein internes Problem ist aufgetreten.";33
+OMQ;email;DE;multimedia software developer;;390;;14.10.2013;33;7;TODO;"Beim Brennversuch erscheinen, nachdem das Verschlüsseln lt. Fortschrittsanzeige
+zu 75% erfolgt ist, die Hinweise: ""Speicheranfrage ungültig""
+sowie ""Fehler beim Verschlüsseln. Es konnten keine Dateien gefunden werden"".";33
+OMQ;email;DE;multimedia software developer;;391;;14.10.2013;33;7;TODO;bei o.a. Programm bekomme ich die Fehlermeldung: Speicheranfrage ist ungültig etc.;33
+OMQ;email;DE;multimedia software developer;;392;;14.10.2013;33;7;TODO;"Ich habe Windows 7 (64 bit) und bekomme immer wieder die Fehlermeldung, dass eine Speicheranfrage ungültig ist (oder ein internes Problem ist aufgetreten) wenn ich einen Verkaufsprozess
+
+(prc-Datei) einfügen möchte.";33
+OMQ;email;DE;multimedia software developer;;393;;14.10.2013;33;7;TODO;"Das Processing startet, nach kurzer Zeit erscheint die
+Fehlermeldung: eine Speicheranfrage ist ungültig.";33
+OMQ;email;DE;multimedia software developer;;394;;14.10.2013;33;7;TODO;Beim Erzeugen: Speicheranfrage klappt nicht.;33
+OMQ;email;DE;multimedia software developer;;395;;14.10.2013;33;7;TODO;"Nach ca. 8-13 Minuten des Vorganges. kommt eine
+Meldung:
+
+\\\""Eine Speicheranfrage ist
+ungültig
+Moeglicheweise ist kein Speicher mehr verfuegbar oder ein
+interenes Problem ist aufgetreten.\\\""";33
+OMQ;email;DE;multimedia software developer;;396;;14.10.2013;73;6;TODO;installationsproblem asus fehler;73
+OMQ;email;DE;multimedia software developer;;397;;14.10.2013;73;6;TODO;Das Programmpaket konnte nicht installiert werden.;73
+OMQ;email;DE;multimedia software developer;;398;;14.10.2013;73;6;TODO;die installation bricht immer wieder ab! mit dem hinweis auf den windows installer...;73
+OMQ;email;DE;multimedia software developer;;399;;14.10.2013;73;6;TODO;"Nach dem Download von WAREHOUSE Specs Manager 9 zum Test gekingt es mir
+nicht, das Paket zu installieren. ";73
+OMQ;email;DE;multimedia software developer;;400;;14.10.2013;73;6;TODO;Fehler 9000 bei der Installation;73
+OMQ;email;DE;multimedia software developer;;401;;14.10.2013;73;6;TODO;Die Software xls Creator 20 lässt sich nicht mehr starten. ;73
+OMQ;email;DE;multimedia software developer;;402;;14.10.2013;73;6;TODO;Jetzt habe ich Sales firstclass 20 Neo erworben und kann sie wegen der Fehlermldung 9000 nicht installieren.;73
+OMQ;email;DE;multimedia software developer;;403;;14.10.2013;73;6;TODO;"Wenn ich aber das Prog starten möchte kommt""Die Installation ist ungültig. Bitte installieren sie das Prog neu oder wenden sie sich an den Helpdesk"".";73
+OMQ;email;DE;multimedia software developer;;404;;14.10.2013;99;7;TODO;"Die Software lauft aber es ist nicht möglich die fertige Blätter anzuschauen, ich kriege den Hinweis: Fehler von WAREHOUSE SPecs Manager Ultimate ""CODEC ZUM EINBINDEN DIESE DATEI KONNTE NICHT GEFUNDEN WERDEN"".";99
+OMQ;email;DE;multimedia software developer;;405;;14.10.2013;80;10;TODO;bei der umwandlung des produktdatenspeichers ist ein fehler aufgetreten;80
+OMQ;email;DE;multimedia software developer;;406;;14.10.2013;80;10;TODO;Bei der Umwandlung Ihres Produktdatein ist ein Fehler aufgetreten;80
+OMQ;email;DE;multimedia software developer;;407;;14.10.2013;59;18;TODO;"Eine Funktion (Getright) ist so fehlerhaft, das nicht einmal ein Ausgang (X) installiert
+ist! Einmal die Funktion aufgerufen - geht sie nicht wieder weg.";59
+OMQ;email;DE;multimedia software developer;;408;;14.10.2013;59;18;TODO;"Wenn ich bei ""AutoSortSD Ultimate Functions"" die Getright-Funktion starte, öffnet sich das
+entsprechende Fenster. Dieses ist allerdings in der Höhe zu gross und ragt oben und unten
+über den Bildrand hinaus. Somit kann ich es weder oben über das Kreuz schliessen, noch
+unten über die Buttons bestätigen.";59
+OMQ;email;DE;multimedia software developer;;409;;14.10.2013;59;18;TODO;"Fenster bei Getright ist grösser als Bildschirm (20""), sodass ich dieses nicht schließen kann; OK bzw.     Abbruch liegen außerhalb des Bildschirmes.";59
+OMQ;email;DE;multimedia software developer;;410;;14.10.2013;55;8;TODO;"Nach dem Import von DAT Verkaufs Objekten aus dem Systech MTX-XR435W Kartenleser mit SD erstellt,
+sind am Ende aller einzelnen Objekte immer ca. 28-150 Prozesseinzelfelder leer, während die
+Statistikanzeige fehlerfrei bis zum Ende des Objekts angezeigt wird.";55
+OMQ;email;DE;multimedia software developer;;411;;14.10.2013;55;8;TODO;Aber sobald ich sie im Warehouse Sales Firstclass Programm öffne, stimmt die Bestellnummernzeile nicht mehr mit dem Ablauf überein. Beim Sales Simple Programm ist es das gleiche, Daten und Bestellnummernzeile werden nicht identisch angezeigt. ;55
+OMQ;email;DE;multimedia software developer;;412;;14.10.2013;55;8;TODO;"seit kurzem kann ich Salesdateien im da-Format, die zb im Paymentreader völlig
+intakt sind, nicht mehr korrekt importieren.";55
+OMQ;email;DE;multimedia software developer;;413;;14.10.2013;55;8;TODO;"Sobald ich das Projekt speichere (als Datei - unabhängig vom Format - oder auf DVD
+brenne) stimmt die Identität zwischen Daten und Bestellnummer nicht mehr.";55
+OMQ;email;DE;multimedia software developer;;414;;14.10.2013;55;8;TODO;"Egal, ob ich den Prozess bearbeite oder nicht, nach dem Export laufen die Anzeigen von
+Daten und Bestellnummer auseinander.";55
+OMQ;email;DE;multimedia software developer;;415;;14.10.2013;55;8;TODO;"ich habe ein Problem beim Anwenden von Skripten. Sobald ich diese Einfüge, und mir
+den Prozess bzw. den Auftrag erneut ansehe, passt die Bestellnummer nicht mehr zu den Daten und an das Ende
+dieses Auftrags wird der Anfang des Auftrags hängend für ein paar Prozessschritte abgebildet.";55
+OMQ;email;DE;multimedia software developer;;416;;14.10.2013;55;8;TODO;ablaufzeile  stimmt nicht mit der bestellnummernzeile überein.;55
+OMQ;email;DE;multimedia software developer;;417;;14.10.2013;55;8;TODO;"Wenn ich einen mit ""WinCASH-BHD 312Y"" erstellten Ablauf mit ""Warehouse
+Abläufe im OFFICE Katalog 11"" bearbeiten moechte, gibt es 
+bei der Abrechnung des
+Ablaufs keine Synchronitaet zwischsn Daten und Bestellnummer.";55
+OMQ;email;DE;multimedia software developer;;418;;14.10.2013;55;8;TODO;"Schon beim ersten Objekt ohne
+jegliche Bearbeitung jind nach 8-13 mb. die Daten und die Bestellnummer nicht
+mehr
+syncron.";55
+OMQ;email;DE;multimedia software developer;;419;;14.10.2013;55;8;TODO;"ich habe einen Ablauf von DVD (vermutlich mit
+Scanner erstellt) importiert und die Bestellnummer ist von Angang an
+asynchron.";55
+OMQ;email;DE;multimedia software developer;;420;;14.10.2013;55;8;TODO;"Und so viele User beklagen, dass nach einem Import eines
+Prozesses
+die Bestellnummer und die Daten nicht mehr synchron angezeigt werden.";55
+OMQ;email;DE;multimedia software developer;;421;;14.10.2013;55;8;TODO;" Daraufhin moechte den Ablauf einfach als data3
+exportieren. Auch das geht problemlos, jedoch sind dann im fertigen Ablauf
+Daten
+und Bestellnummern asyncron.";55
+OMQ;email;DE;multimedia software developer;;422;;14.10.2013;55;8;TODO;"wenn ich Abläufe zum Bearbeiten in
+das Programm lade sind Daten und Bestellnummer nicht mehr synchron.";55
+OMQ;email;DE;multimedia software developer;;423;;14.10.2013;55;8;TODO;"Leider habe ich nun festgestellt, dass
+die
+Bestellnummer nicht synchron mit dem Ablauf angezeigt wird.";55
+OMQ;email;DE;multimedia software developer;;424;;14.10.2013;55;8;TODO;"mein Problem ist, wenn ich eine ZIP Liste versuche zu
+dekomprimieren, das die Erstellung
+jedes mal asynchron ist.";55
+OMQ;email;DE;multimedia software developer;;425;;14.10.2013;55;8;TODO;"Nun beim
+zweiten Ablauf stimmt die Bestellnummer nicht mit den Daten ueberein.";55
+OMQ;email;DE;multimedia software developer;;426;;14.10.2013;55;8;TODO;"Bei der Erstellung von Prozessen mit einem Handscanner kommt es zu Versetzung
+zwischen der Bestellnummer- und der Datenzeile!";55
+OMQ;email;DE;multimedia software developer;;427;;14.10.2013;55;8;TODO;Wenn ich einen erstellten Statistikprozess im Programm öffne, stimmt die Bestellnummer nicht mit den Daten überein.;55
+OMQ;email;DE;multimedia software developer;;428;;14.10.2013;55;8;TODO;"Wenn ich den Ablauf zur Bearbeitung in Sales
+firstclass 19 Neo Spezialedition einspiele, werden Daten und Bestellnummern nicht synchron angezeigt.";55
+OMQ;email;DE;multimedia software developer;;429;;14.10.2013;55;8;TODO;"sowohl auf ?Abläufe im OFFICE Katalog 11?, der ?Download-Version von Abläufe im OFFICE Katalog 11?, als auch auf
+Download-Version von ?Sales first Class 20? sind die Bestellnummern nur teilweise synchron.";55
+OMQ;email;DE;multimedia software developer;;430;;14.10.2013;55;8;TODO;"Sobald ich aber eine bearbeitung vornehme und den prozess in die übersicht ziehe, liegt asynchronität vor und das auch
+noch nach dem exportieren in sämtliche prozessformate.";55
+OMQ;email;DE;multimedia software developer;;431;;14.10.2013;55;8;TODO; Es kömmt des Öfteren vor, dass ein Ablauf unter WindowsBudgetCreator länger dauert als unter Warehouse.;55
+OMQ;email;DE;multimedia software developer;;432;;14.10.2013;55;8;TODO;Die beiden zeilen haben nach dem Import unterschiedlichen Umfang, Daten und Bestellnummern sind asynchron!;55
+OMQ;email;DE;multimedia software developer;;433;;14.10.2013;60;15;TODO;"Ich habe mein Specificationsheet erstellt und beim Specificationsheet exportieren und Specificationsheet freischalten
+erhalte ich bei 50% die Fehlermeldung ""Insufficient memory"" und ""nicht ausreichend Speicher"".";60
+OMQ;email;DE;multimedia software developer;;434;;14.10.2013;60;15;TODO;"Es erscheind nun immer ""Nicht ausreichend Speicher"" (obwohl auf Externen Speicher gespeichert ist) und immer öfter erscheint ""Insufficient memory"".";60
+OMQ;email;DE;multimedia software developer;;435;;14.10.2013;60;15;TODO;"Seit ein paar Tagen bekomme ich immer die Fehlermeldung ""Nicht ausreichender
+Speicher"" ich bekomme zur Zeit nicht mal mein Projekt vollständig über das Programm
+aufgerufen!!!";60
+OMQ;email;DE;multimedia software developer;;436;;14.10.2013;60;15;TODO;"Es tritt folgene Fehlermeldung nach exakt 45% Laufzeit auf: ""Insufficient memory"" ";60
+OMQ;email;DE;multimedia software developer;;437;;14.10.2013;60;15;TODO;"Mein schon vor Monaten erstelletes Daten-Blatt lässt sich mit Super Specs Manager8 nicht mehr
+ins Programm laden. Es erscheint der Hinweis ""nicht ausreichend Speicher"".";60
+OMQ;email;DE;multimedia software developer;;438;;14.10.2013;60;15;TODO; Nachdem ich nun mein Detailsheet (bisher mit Specster erstellt) kpl. neu mit Ihrer Software erstellt habe und diese nun umwandeln will bekomme ich die Fehlermeldung daß ich nicht ausreichend Speicher habe.;60
+OMQ;email;DE;multimedia software developer;;439;;14.10.2013;60;15;TODO;ich habe ständig die fehlermeldung nicht ausreichend speicher, beim importieren von datn (wdt + popup 640 pix) per drag and drop.;60
+OMQ;email;DE;multimedia software developer;;440;;14.10.2013;60;15;TODO;Es kommt beim exportieren des Datenblatts immer ein Zugriffsverletzung und der Hinweis der Speicher wird eng?;60
+OMQ;email;DE;multimedia software developer;;441;;14.10.2013;60;15;TODO;"Beim Freischalten erscheint jetzt ständig der Hinweis: ""SpecsManager Nicht ausreichend Seicher"".";60
+OMQ;email;DE;multimedia software developer;;442;;14.10.2013;60;15;TODO;Oft kommt auch die Medlung, dass der Speicher voll ist.;60
+OMQ;email;DE;multimedia software developer;;443;;14.10.2013;60;15;TODO;Leider kommt der Hinweis nicht ausreichend Speicher.;60
+OMQ;email;DE;multimedia software developer;;444;;14.10.2013;60;15;TODO;"Nun habe ich mehrere Bild-Dateien gelöscht, aber das 
+System merkt das nicht: es meldet den Speicher nach wie vor als voll.";60
+OMQ;email;DE;multimedia software developer;;445;;14.10.2013;60;15;TODO;"Bei Specs Manager 9 kommt während des Freischaltens der Hinweis: ""nicht ausreichend Speicher"".";60
+OMQ;email;DE;multimedia software developer;;446;;14.10.2013;60;15;TODO;Ich erhalte bein Export meines Specificationsheets eine Fehlermeldung, dass der Speicher eng wird.;60
+OMQ;email;DE;multimedia software developer;;447;;14.10.2013;60;15;TODO;"Ich bekomme beim freischalten der Preview die Fehlermeldung ""Interner Ausnahmefehler 7451.o.wh.b"" Was kann ich tun? Hin und wieder kommt auch der Hinweis ""nicht ausreichend Speicher""";60
+OMQ;email;DE;multimedia software developer;;448;;14.10.2013;78;7;TODO;"Wenn ich jetzt in meine Produktpreview kleine
+Hintergrundklänge einfügen möchte, erscheint folgender Hinweis
+das Deteiformat von H:\mein Produktarchiv\Artikel 2010\Ausverkauf Berlin\BerlinFiliale 030.PRC
+kann von Warehouse Produkte im IT & OFFICE Katalog nicht gelesen werden. Bitte stellen Sie sicher, dass das
+betroffenen Laufwerk nicht voll oder schreibgeschützt ist.";78
+OMQ;email;DE;multimedia software developer;;449;;14.10.2013;78;7;TODO;"Ich kann bei Produkte im IT & OFFICE Katalog 13 Suprem-Sooftware
+keine PRC Produktobjekte in den Produktbereich ziehen, es erscheind das Fenster, siehe Anhang!";78
+OMQ;email;DE;multimedia software developer;;450;;14.10.2013;78;7;TODO;"fehlermeldung:das Dateiformat..prc kann nicht gelesen werden,bitte vergewissern sie sich das
+das laufwerk nicht voll oder schreibgeschützt ist.";78
+OMQ;email;DE;multimedia software developer;;451;;14.10.2013;78;7;TODO;"Bei der Nutzung Ihres Programm Produkte im IT & OFFICE Katalog 12 firstclass
+Seriennummer:  V5-77525-84214-71767-52885-74064-35545 unter  Window 7
+
+erhalte ich bei dem Versuch einen Verkaufs-Prozess  der Datei ""PRDC5663.prc"" eingepflegt mit
+dem Kartenlesegerät UWORK Speedreader 13T6 einzufügen folgende Fehlerinformation:
+
+Das Dateiformat kannnicht gelesen werden";78
+OMQ;email;DE;multimedia software developer;;452;;14.10.2013;78;7;TODO;"Warehouse läd nun keine PRC-Dateien, die ich mit meinem Scanixkartenleser
+gemacht habe und auf meinem vorigen PC ohne Problemein in Warehouse Sales
+firstclass 18 neo zu laden waren.";78
+OMQ;email;DE;multimedia software developer;;453;;14.10.2013;78;7;TODO;"Es ist mir nicht möglich fehlerfrei Abläufe, die ich mit dem Kartenleser CRX P1 angefertigt habe
+(*.PRC), in das Programm einzubringen. Es folgt dann immer die Meldung:
+
+Fout in module « CenterEncodingTools.dll » (laadadres:1x820a7666) op adres4x67158bd6 
+Uitzondering 6xc775220 !ACCES_FORBIDDEN!";78
+OMQ;email;DE;multimedia software developer;;454;;14.10.2013;78;7;TODO;Laden von * PRC Dateien in den Arbeitsbereich.;78
+OMQ;email;DE;multimedia software developer;;455;;14.10.2013;78;7;TODO;"Nach Importieren einiger (waren etwa 11
+Stueck) ganz
+kleiner *.PRC-Dateien (7 bis 18 MB) in die Bearbeitungsleiste
+kam die Meldung:
+Problembehandlung
+Im Programm ist ein schwerwiegendes
+Problem aufgetreten.
+Fehler in Datei ""CenterEncoding Tools.dll""
+(Ladeadresse: 6x34874027) an Adresse 0x274c3bd3
+Exception 3x0386687
+""ACCESS FORBIDDEN"".";78
+OMQ;email;DE;multimedia software developer;;456;;14.10.2013;78;7;TODO;Ich kann keine prc-Dateien mehr in meine Projekte importieren.;78
+OMQ;email;DE;multimedia software developer;;457;;14.10.2013;31;14;TODO;"Wenn ich dan die gebrannte DVD auf dem Computer laufen lasse kommt es zu aussetzer und
+fehlenden Bestellnummern die DVD läuft
+nicht mehr weiter ( hängt sich auf )";31
+OMQ;email;DE;multimedia software developer;;458;;14.10.2013;31;14;TODO;"Wenn ich bei meinem neuen Sales firstclass 20 Neo EMV ein vorhandenes Projekt lade, dann dann
+""hängt"" der Bildschirm solange bis das Projekt ganz geladen ist.";31
+OMQ;email;DE;multimedia software developer;;459;;14.10.2013;31;14;TODO; Diese erstellte DVD ist an meinem LG Blu-Ray Disc/DVD Laufwerk BH-10LS nicht lesbar.;31
+OMQ;email;DE;multimedia software developer;;460;;14.10.2013;31;14;TODO;Beim DVD-Brennen kommt erst nach Fertigstellung beim Ausführen die Meldung, das die DVD nicht ausgeführt werden kann, weil die Benutzung für mein Land verboten ist.;31
+OMQ;email;DE;multimedia software developer;;461;;14.10.2013;31;14;TODO;"Um die DVDs besser auszunutzen, habe ich jetzt 6 solche
+Projekte mit der Funktion ""WAREHOUSE Power writR/Daten
+zusammenstellen"" auf eine DVD gebrannt mit dem Ergebnis,
+daß die DVD auf meinem DVD-Laufwerk nicht läuft.";31
+OMQ;email;DE;multimedia software developer;;462;;14.10.2013;31;14;TODO;Es erscheint das Fenster zum Brennen. Aber die gebrannte DVD lässt sich auf dem DVD-Laufwerk nicht wiedergeben.;31
+OMQ;email;DE;multimedia software developer;;463;;14.10.2013;31;14;TODO;Sobald ich diese DVD aber in meinen DVD-Player einlege kommt die antwort: keine Vorschauansicht.;31
+OMQ;email;DE;multimedia software developer;;464;;14.10.2013;31;14;TODO;Ich habe den Proozess auf verschiedenen DVDfarbikaten gebrannt und auch auf verschiedenen DVDbrennern abgespielt.In jedem Fall ist mit der Wiedergabe nach rd. 1 Minute Schluß.;31
+OMQ;email;DE;multimedia software developer;;465;;14.10.2013;31;14;TODO;ich habe mir gestern Power 6 gekauft und wollte heute mit dem Programm einen Iso-Prozess (Benefizverkauf unseres Partners) auf DVD brennen. Das hat wohl geklappt, aber es ist wieder ein sfc-Datei entstanden.;31
+OMQ;email;DE;multimedia software developer;;466;;14.10.2013;31;14;TODO;"wie kann man eine dvd abschliesen damit die Produktpreview auf jedem DVD Laufwerk 
+läuft ?
+läuft hier auf dem Rechner aber wird von keinem externen DVD Laufwerk erkannt";31
+OMQ;email;DE;multimedia software developer;;467;;14.10.2013;31;14;TODO;Mein bearbeiteter Prozess ird erfolgreich gebrannt. Ich kann ihn aber nicht ausführen. Nach ca. 4 Min. ende das Abspielen und die DVD geht auf den Anfang zurück;31
+OMQ;email;DE;multimedia software developer;;468;;14.10.2013;101;15;TODO;habe versucht beim Warehouse Specs manager xml zu generieren - das funktioniert nicht, es kommt ein Fenster von Warehouse mit Vermerk Nativer Fehler.;101
+OMQ;email;DE;multimedia software developer;;469;;14.10.2013;101;15;TODO;"SOBALD ICH AUF ""AKTUELLES BLATT EXPORTIEREN UND VORSCHAU ANZEIGEN / KOMPLETTES DATENBLATT EXPORTIEREN UND VORSCHAU ANZEIGEN"" KLICKE (FÜR
+DIE VORSCHAUFUNKTION) BEKOMME ICH DIE FEHLERMELDUNG. FEHLER VON WAREHOUSE
+SPECSMANAGER NATIVER FEHLER!";101
+OMQ;email;DE;multimedia software developer;;470;;14.10.2013;76;6;TODO;Beim Star des Programms erschien der schon so oft aufgetretene Fehlercode -9.;76
+OMQ;email;DE;multimedia software developer;;471;;14.10.2013;101;15;TODO;"Wenn ich versuche, das Specificationsheet zu exportieren oder die Vorschau anklicke, kommt die Meldung ""Nativer Fehler"" (keine Fehlernummer).";101
+OMQ;email;DE;multimedia software developer;;472;;14.10.2013;101;15;TODO;"Beim Veröffentlichen des Specificationsheets mit Warehouse ""Webspace Free"" teilte mir das Programm einen ""natien Fehler"" mit.";101
+OMQ;email;DE;multimedia software developer;;473;;14.10.2013;101;15;TODO;Hallo, ich bekomme beim Versuch Tabellen zu duplizieren folgende Fehlermeldung: Nativer Programmfehler 1878. u.sp.v;101
+OMQ;email;DE;multimedia software developer;;474;;14.10.2013;101;15;TODO;"Beim öffnen bzw. hochladen der Seite/n zeigt der Sheetviewer (Explorer 7.7.6004) in der Leiste oben folgende Meldung: ""Das Ausführen von Skripts bzw. LifeD-Kontrollelementen, die auf den Computer zugreifen können, wurde für dieses Datenblatt aus Sicherheitsgründen unterdrückt. Klicken Sie, um weitere Optionen anzuzeigen ...""";101
+OMQ;email;DE;multimedia software developer;;475;;14.10.2013;101;15;TODO;"Bis zum Punkt, an dem die Daten exportiert und auf der Festplatte des heimatlichen PCs gespeichert werden sollten. Ich bekomme immer die Fehlermeldung: ""Nativer Fehler"".";101
+OMQ;email;DE;multimedia software developer;;476;;14.10.2013;101;15;TODO;"Der link:""www.onthefloor.com"" erscheint auf dem Sheet Explorer Sheetviewer als ""www.onfloor.de"". Nach der Korrektur dieses Links wiederholt sich  der Fehler beim erneuten testen.";101
+OMQ;email;DE;multimedia software developer;;477;;14.10.2013;101;15;TODO;"Wenn ich aber die komplette exportiere um sie mir in der Vorschau anzuschauen kommt eine Meldung ""Nativer Fehler"".";101
+OMQ;email;DE;multimedia software developer;;478;;14.10.2013;101;15;TODO;"Seit gestern kommt folgende Fehlermeldung, wenn ich das Datenblatt exportieren (als specs.xml) bzw. freischalten will:
+""Fehler von Warehouse Specs Manager. Nativer Fehler.""";101
+OMQ;email;DE;multimedia software developer;;479;;14.10.2013;101;15;TODO;"Wenn ich ein Link auf eine pdf-Datei erstellen möchte kommt der Hinweis ""Es ist ein unproblematischer nativer Fehler aufgetreten""";101
+OMQ;email;DE;multimedia software developer;;480;;14.10.2013;101;15;TODO;"Specsmanager 10 ändert bei jedem Neustart, wenn ich an einem Datenblatt weiter arbeiten möchte, die DSG Dateien
+in AppData/Local/Temp/DSG.../specs_xm_sheets !";101
+OMQ;email;DE;multimedia software developer;;481;;14.10.2013;101;15;TODO;"Beim exportieren bzw. wenn ich die Specificationsheet-Vorschau nutzen will, zeigt mir das Programm ""Nativer Fehler"" an.";101
+OMQ;email;DE;multimedia software developer;;482;;14.10.2013;101;15;TODO;"Wichtig ist das Abschalten der Fehlermeldung ""nativer Fehler"" am Ende des Exportiervorgangs.";101
+OMQ;email;DE;multimedia software developer;;483;;14.10.2013;101;15;TODO;Wenn ich Specsdesign vorschau drücke, kommt immer die Meldung nativer Fehler.;101
+OMQ;email;DE;multimedia software developer;;484;;14.10.2013;101;15;TODO;"Bei Klick auf ""Vorschau"" erscheint der Kasten ""Datenübertragung"". Entweder es erscheint dann:
+
+a)überhaupt kein Fortschrittsbalken oder
+b)er wird kurz angezeigt und bricht dann ab";101
+OMQ;email;DE;multimedia software developer;;485;;14.10.2013;101;15;TODO;Seit Tagen gibt es Probleme mit der Specificationsheet-Vorschau und ich kann das (neue)specificationsheet auch nicht freischalten.;101
+OMQ;email;DE;multimedia software developer;;486;;14.10.2013;101;15;TODO;Ich kann auf dem Vorschau-Blatt nur ein Blatt meines DS anschauen (richtiges Symbol für ganzes Specificationsheet habe ich angeklickt).;101
+OMQ;email;DE;multimedia software developer;;487;;14.10.2013;101;15;TODO;es kommt ständig der Fehler 14 bei Datei öffen für CR Umwandlungen und ich muss mein Passwort ändern, da dies nicht gültig ist.;101
+OMQ;email;DE;multimedia software developer;;488;;14.10.2013;101;15;TODO;Ich möchte mit Sales first clas 18 ein Projekt exportieren in Windows Economy Export. Dabei wird das Exportieren immer kurz vor Schluß beendet, so daß der exportierte Prozess nicht ganz vollständig ist.;101
+OMQ;email;DE;multimedia software developer;;489;;14.10.2013;97;15;TODO;Hallo, wollte ein Angebot (auf Basis des Handout_05) für den Gang zur Druckerei in .pdf exportieren, aber im Auswahl-Menü für Dateitypen ist PDF nicht vorhanden.;97
+OMQ;email;DE;multimedia software developer;;490;;14.10.2013;99;7;TODO;"Ich probiere unter Datei >
+Datenblatt-Vorschau meine Projekt anzuschauen, aber da geht leider nicht, kommt immer
+Fehler"" Codec zum Import dieser Datei ist nicht verfügbar"".";99
+OMQ;email;DE;multimedia software developer;;491;;14.10.2013;99;7;TODO;"Ich habe mein System gewechselt und kann nun nach Installation des Programms die Dateien
+nicht mehr als exportieren, da der Codec nicht verfügbar ist!";99
+OMQ;email;DE;multimedia software developer;;492;;14.10.2013;99;7;TODO;"Folgende Fehlermeldung tritt auf:
+""Codec zum Import dieser Datei ist nicht verfügbar.""";99
+OMQ;email;DE;multimedia software developer;;493;;14.10.2013;99;7;TODO;"mit der Installation von Sales FIrstclass wh wurde auch der super Export Core installiert. Wenn ich nunmehr diesen Aufrufe, erscheint folgende Fehlermeldung:
+
+""Warnung,es ist keine Codec verfügbar, die für diesen Dateityp geeignet ist.""";99
+OMQ;email;DE;multimedia software developer;;494;;14.10.2013;99;7;TODO;"Nun kommt die Meldung, die Dateien könnten nicht in den Programmordner geschrieben werden. Außerdem kann ich keine Produkte mehr laden. Es erscheint die Meldung ""Codec zum Import dieser Datei ist nicht verfügbar"".";99
+OMQ;email;DE;multimedia software developer;;495;;14.10.2013;99;7;TODO;"Taste 'F10' bringt Fehlermeldung:
+""Codec zum Import dieser Datei ist nicht verfügbar'";99
+OMQ;email;DE;multimedia software developer;;496;;14.10.2013;99;7;TODO;Ich kann zwar meine Abläufe in xls exportieren, aber meine xls-Teamprozesse nicht einlesen/importieren.;99
+OMQ;email;DE;multimedia software developer;;497;;14.10.2013;99;7;TODO;Liebe Warehouse-Mitarbeiter, warum erscheint nach einer Datenbearbeitung fortwährend: Codec zum import ist nicht verfügbar? ;99
+OMQ;email;DE;multimedia software developer;;498;;14.10.2013;99;7;TODO;"Werbung lässt sich nicht Speichern, folgende Meldung erscheint:
+Codec zum Import dieser Datei ist nicht verfügbar. ";99
+OMQ;email;DE;multimedia software developer;;499;;14.10.2013;77;3;TODO;"Der Hardwaremanager antwortet mit ""Hardwareinstallation nicht möglich"" und begründet, dass
+die erforderl. Software nicht gefunden wurde.";77
+OMQ;email;DE;multimedia software developer;;500;;14.10.2013;77;3;TODO;"Bei der
+Installation
+von WAREHOUSE Abläufe im OFFICE Katalog kam die Meldung, dass der USB-Verwalter-Treiber
+nicht installiert werden konnte, da mindestens Winddows SP 1  noetig ist.";77
+OMQ;email;DE;multimedia software developer;;501;;14.10.2013;77;3;TODO;Für USB1658 Device konnte kein Treiber (Code31) gefunden werden .;77
+OMQ;email;DE;multimedia software developer;;502;;14.10.2013;77;3;TODO;"Weiter läßt sich die Erstellung nicht durchrechnen,
+es kommt die Fehlermeldung: Erstellung kann nicht berechnet werden.";77
+OMQ;email;DE;multimedia software developer;;503;;14.10.2013;77;3;TODO;"Leider muss ich  Ihnen jedoch mitteilen, dass der
+USB-Prozessverwalter
+weder eine Funktionsanzeige hat, noch sich an meinem Rechner anmeldet.";77
+OMQ;email;DE;multimedia software developer;;504;;14.10.2013;77;3;TODO;"nach dem kauf ihres produktes stellt sich heraus, dass der import von analogprozess über den
+usb-salesgetter von goldtop (treiber sg4512jn nfs - 43.7.29.4) nicht möglich ist und
+der vorgang verursacht einen bluescreen.";77
+OMQ;email;DE;multimedia software developer;;505;;14.10.2013;77;3;TODO;"Seitdem lässt sich nun auch
+der Treiber nicht mehr mit dem Programm verbinden, obwohl ich Schritt für Schritt so
+vorgegangen bin, wie auf der helpdesk-Seite beschrieben.";77
+OMQ;email;DE;multimedia software developer;;506;;14.10.2013;77;3;TODO;"Im Erstellungsfenster habe ich wie in der Berechnung immer Bestellnummer aber keine durchgehenden
+Prozessdaten , sondern ein Stück Datensatz im hinteren Projektbereich .";77
+OMQ;email;DE;multimedia software developer;;507;;14.10.2013;77;3;TODO;Wir haben alles ordnungsgemäß angeschlossen, trotzdem keine Daten und Bestellnummern auf Preview.;77
+OMQ;email;DE;multimedia software developer;;508;;14.10.2013;77;3;TODO;"ich habe mir ein usb prozessverwalter gekauft (habe bereits sales first class ultimate und chartlaboratory first class)
+der lässt sich aber nicht installieren.";77
+OMQ;email;DE;multimedia software developer;;509;;14.10.2013;77;3;TODO;"Ich habe ein Problem mit der Installation der Traiber für ""Archivieren Sie Ihre Bestandlisten"".";77
+OMQ;email;DE;multimedia software developer;;510;;14.10.2013;77;3;TODO;mein USB Prozessverwalter lässt sich nicht den treiber instalieren .;77
+OMQ;email;DE;multimedia software developer;;511;;14.10.2013;77;3;TODO;"Die Installation des
+Hardwaretreibers ist nicht möglich (entsprechend der Kurzanleitung Seite 17 für Windows
+XP).";77
+OMQ;email;DE;multimedia software developer;;512;;14.10.2013;77;3;TODO;Hallo. ich bekome den treiber nicht nei, oder weil es auf Windows 7 nicht gehet.;77
+OMQ;email;DE;multimedia software developer;;513;;14.10.2013;77;3;TODO;"Im Erstellungsdialog auf ""Erweiterte Einstellungen"" erscheint bei mir als Scanquelle weder 4068 noch 1648 Device.";77
+OMQ;email;DE;multimedia software developer;;514;;14.10.2013;77;3;TODO;"Seither
+erscheinen immerwieder die Hinweise ""In Ihrem Sytem konnte^n keine Erstellungsgräte erkannt werden""
+und ""Treibersoftware für USB 1658 Device muss installiert werden.";77
+OMQ;email;DE;multimedia software developer;;515;;14.10.2013;77;3;TODO;Jetzt kam der Hinweis , daß keine Verbindung zum Datenscanner hergestellt ist, auch wenn ich ihn vorher auf scan gestellt habe.;77
+OMQ;email;DE;multimedia software developer;;516;;14.10.2013;77;3;TODO;Beim Einstecken des USB-Prozessverwalter 5 kommt folgender Hinweis: kein Treiber installiert.;77
+OMQ;email;DE;multimedia software developer;;517;;14.10.2013;77;3;TODO;Meine diversen Versuche, einen Ablauf zu importieren, schlugen fehl.;77
+OMQ;email;DE;multimedia software developer;;518;;14.10.2013;79;2;TODO;"Mit der neuen Software 20 neo ist die Bearbeitung der Prozesse erheblich komplizierter
+geworden weil Daten und Bestellnummer oft unvollständig sind und die Befehle extrem langsam ausgeführt werden.";79
+OMQ;email;DE;multimedia software developer;;519;;14.10.2013;79;2;TODO;"Muss jetzt beim Darstellen leider feststellen,dass die importierten
+Prozessdarstellungen stocken.";79
+OMQ;email;DE;multimedia software developer;;520;;14.10.2013;79;2;TODO;plötzlich geht die Berechnung los.. es stockt.. obwohl keine weiteren funktionen verwendet wurden und als dann der Auftrag mit den funktionen kommt steht das Programm fast fest.;79
+OMQ;email;DE;multimedia software developer;;521;;14.10.2013;79;2;TODO;Ich muss nun leider feststellen, dass mein Notebook meine bearbeiteten Prozesse nicht ruckelfrei durchrechnen kann. ;79
+OMQ;email;DE;multimedia software developer;;522;;14.10.2013;79;2;TODO;Ich arbeite mit halber Leistung und das Programm kriegt kaum eine 5-S-Rechnung hin und wenn doch, dann derart stockend, dass man dien Auftrag überhauzpt nicht verarbeiten kann. ;79
+OMQ;email;DE;multimedia software developer;;523;;14.10.2013;79;2;TODO;"Ich habe Salesdateien im Komplettformat 81 Segmente/ 15f per SD HC Karte 20 GB class 13 importiert (kopiert)
+und der Ablauf stockt.";79
+OMQ;email;DE;multimedia software developer;;524;;14.10.2013;79;2;TODO;Leider werden die einzelnen Dateien nur stockend im Previewfenster abgespielt, was mir die Arbeit erheblich erschwert. ;79
+OMQ;email;DE;multimedia software developer;;525;;14.10.2013;79;2;TODO;Aber das Problem das ich vorher hatte ist immer noch da(flackernde Berechnung).;79
+OMQ;email;DE;multimedia software developer;;526;;14.10.2013;79;2;TODO;Weiterhin passiert es, dass die Abläufe total stockend berechnet werden oder sogar in der Preview hängen bleiben, wenn ich den Übersicht etwas schneller manuell nach rechts verschiebe, weil ich einen Auftrag weiter hinten anschauen will.;79
+OMQ;email;DE;multimedia software developer;;527;;14.10.2013;79;2;TODO;Wenn ich einen Ablauf eingespielt habe, stocken die Daten beim durchrechnen, desto mehr ich bearbeite, (berechne, Text und Produktdaten einfüge), desto schlimmer wird es. ;79
+OMQ;email;DE;multimedia software developer;;528;;14.10.2013;79;2;TODO;Wnn ich dieses Projekt jetzt im NF-Format (05f) exportiere dann kommt es bei komplizierten Berechnungen zu starken Stockern, als werden hier Daten des 15f-Materials nicht korrekt umgerechnet sondern einfach weggelassen.;79
+OMQ;email;DE;multimedia software developer;;529;;14.10.2013;79;2;TODO;Beim Verarbeiten von CWVEMX Prozessen (z.B. direkte Verarbeitung) ohne voheriges Berechnen stockt die Previewanzeige in diesem Abschnitt des Ablaufs.;79
+OMQ;email;DE;multimedia software developer;;530;;14.10.2013;79;2;TODO;Mein Problem ist nun das importierte Abläufe im Programm nur stockend angezeigt werden.;79
+OMQ;email;DE;multimedia software developer;;531;;14.10.2013;79;2;TODO;Die angeklickte Directory stockt bei den Daten und Bestellnummer kommt nicht simultan.;79
+OMQ;email;DE;multimedia software developer;;532;;14.10.2013;79;2;TODO;ist folgende ausrüstung gut genug um beim bearbeiten von cwvemx clips ohne stocken durchrechnen zu können:;79
+OMQ;email;DE;multimedia software developer;;533;;14.10.2013;79;2;TODO;Wenn ich einen Ablauf von Antonio Deabreu (Gewinkalkulation) nach Warehouse WH Sales spiele stockt diese obwohl sie berrechnet wurde Von Warehouse WH;79
+OMQ;email;DE;multimedia software developer;;534;;14.10.2013;67;5;TODO;"Internes Problem beim
+Brennen.";67
+OMQ;email;DE;multimedia software developer;;535;;14.10.2013;67;5;TODO;"Nach dem 3
+Schritt ist der Brennvorgang unterbrochen mit folgendem Hinweis:
+wmem
+reports disc project build exception 405388a2 ";67
+OMQ;email;DE;multimedia software developer;;536;;14.10.2013;67;5;TODO;beim brennen von Blu-rays wird brennforgang unterbrochen.Beschreibung (internes Problem);67
+OMQ;email;DE;multimedia software developer;;537;;14.10.2013;67;5;TODO;"Problem bei Sales firstclass 2009 Ultimate tritt bei Speicherung vom Prozess
+auf DVD auf, mit der Fehlermeldung: Internes Problem während der Durchführung.";67
+OMQ;email;DE;multimedia software developer;;538;;14.10.2013;67;5;TODO;"Nach kurzer Zeit erscheint beim Brennen ein kleines
+Fenster auf dem Bidschirm, wo steht
+- Internes Problem - und das Brennen von der Produktpreview wrd abgebrochen.";67
+OMQ;email;DE;multimedia software developer;;539;;14.10.2013;67;5;TODO;"Ploetzlich der Abbruch nachdem alles vorbereitet ist
+unter: Proucessing - internes Problem- Datei nicht vorhanden.";67
+OMQ;email;DE;multimedia software developer;;540;;14.10.2013;67;5;TODO;"laeuft normal durch bis zur
+Meldung""Disc wir gebrannt"". Dann kommt ein Abbruch mit ""Internes
+Problem waehrend der Durchführung"" und ein Zusatzvermerk ""Kein Zugriffsrechte auf
+das Laufwerk.";67
+OMQ;email;DE;multimedia software developer;;541;;14.10.2013;67;5;TODO;"Jatzt kommt beim Start der
+Brennvorgang die Fehlermeldung \""Brennen wurde unterbrochen - Internes
+Problem\"" und der PC ist blockiert und muss erneut hochgefahren werden.";67
+OMQ;email;DE;multimedia software developer;;542;;14.10.2013;67;5;TODO;nach Einbau eines neuen DVD-Laufwerkes (GGD FG 25 LP56) ist es nicht mehr möglich, nach erstellten Ablauf (s. Prgramm unter Betreff) eine DVD zu brennen.;67
+OMQ;email;DE;multimedia software developer;;543;;14.10.2013;67;5;TODO;"beim brennen des fertiggestellten Ablaufes
+internes Problem bei der durchführung ";67
+OMQ;email;DE;multimedia software developer;;544;;14.10.2013;67;5;TODO;"ES TRAT SCHON BEIM ERSTEN BRENNANLAUF
+EIN INTERNES PROBLEM AUF !";67
+OMQ;email;DE;multimedia software developer;;545;;14.10.2013;67;5;TODO;"Brennvorgang laeuft
+bis
+zum vorletzten Schritt problemlos, dann kommt die Fehlermeldung bei
+Fuellstandsanzeige 24123 MB/05088 GH-QD , \""Internes Problem waehrend der
+Durchführung\"" nachdem auf dem Bildschirm Schritt 7 von 7 und Disc wird
+formatiert abgekuendigt wurde. ";67
+OMQ;email;DE;multimedia software developer;;546;;14.10.2013;67;5;TODO;"Fehlermeldung: internes Problem während der Durchführung
+Problem tritt immer auf;";67
+OMQ;email;DE;multimedia software developer;;547;;14.10.2013;67;5;TODO;"Der Schritt des Brennens bricht mit
+einem internen Problem ab.";67
+OMQ;email;DE;multimedia software developer;;548;;14.10.2013;67;5;TODO;"Beim Brennen kommt die
+Fehlermeldung, gleich zu Beginn, ""internes Problem"".";67
+OMQ;email;DE;multimedia software developer;;549;;14.10.2013;67;5;TODO;"Nach dem Einlesen und Bearbeitung des Ablaufes erfolgt dann 
+beim Brennvorgang immer die gleiche Meldung: Internes Problem bei der Bearbeitung. ";67
+OMQ;email;DE;multimedia software developer;;550;;14.10.2013;67;5;TODO;"Internes Problem waehren der Durchfuehrung; Das Brennen wurde fit
+folgendem Fehler Abgebrochen;Das Laufwerk wird nicht komplett
+unterstuetz";67
+OMQ;email;DE;multimedia software developer;;551;;14.10.2013;67;5;TODO;"Doch nach den Verschlüsselungs-Vorgaengen
+kam
+eine Fehlermeldung und das Brennen wurde abgebrochen.";67
+OMQ;email;DE;multimedia software developer;;552;;14.10.2013;67;5;TODO;"Die Schritte 2-6 Verschlüsseln und Processing werden durchgeführt, beim
+
+Schritt 7 ""Brenne CD"" kommt die Fehlermeldung ""Brennvorgang auf
+grund
+eines internen Problems unterbrochen"". ";67
+OMQ;email;DE;multimedia software developer;;553;;14.10.2013;67;5;TODO;"Nach Umwandlung des Ablaufs erkennt Sales firstclass 2009 NEO zum Brennen
+der DVD nicht den per COM angeschlossenen externen Brenner Jacobs
+PWR0868 und bricht mit der Hinweis eines internen Fehlers ab.";67
+OMQ;email;DE;multimedia software developer;;554;;14.10.2013;67;5;TODO;"Nach ca.4 min verschlüsseln erfolgt Abbruch mit folgendem
+Hinweis:Internes Problem während der Durchführung.";67
+OMQ;email;DE;multimedia software developer;;555;;14.10.2013;67;5;TODO;"Das Brennen wird jedesmal mit folgendem Fehler unterbrochen:
+
+Internes Problem während der Durchführung.";67
+OMQ;email;DE;multimedia software developer;;556;;14.10.2013;67;5;TODO;Internes Problem während der Durchführung, Vorgang abgebrochen (beim Brennen).;67
+OMQ;email;DE;multimedia software developer;;557;;14.10.2013;67;5;TODO;bricht beim brennen ab;67
+OMQ;email;DE;multimedia software developer;;558;;14.10.2013;32;7;TODO;"Nach einem kurzen Moment wird angezeigt \""wmem reports disc project build
+exceptios\"". Nach der OK Bestaetigung kommt dann \""verschlüsseln
+fehlgeschlagen\""";32
+OMQ;email;DE;multimedia software developer;;559;;14.10.2013;32;7;TODO;"Leider ist es mir bisher nicht gelungen, eine DVD zu erzeugen, da das Verschlüsseln jedes Mal mit einer Fehlermeldung abgebrochen wird:
+ 
+wmem reports disc project build exception";32
+OMQ;email;DE;multimedia software developer;;560;;14.10.2013;32;7;TODO;Fehlermeldung: wmem reports disc project build exception 026416f5;32
+OMQ;email;DE;multimedia software developer;;561;;14.10.2013;32;7;TODO;"Ich habe Warehouse 20 installiert - jetzt kann ich auch unter Warehouse 19 keine
+DVD brennen.";32
+OMQ;email;DE;multimedia software developer;;562;;14.10.2013;32;7;TODO;"ist dieser Scritt fertig, kommt eine Fehleranzeige,
+""wmem
+reports disc project build exception: 026416f5";32
+OMQ;email;DE;multimedia software developer;;563;;14.10.2013;32;7;TODO;"Nach dem ich in der Produktpreview eine kleine Korrektur
+gemacht hatte, bekam ich immer eine Fehlermeldung - siehe dazu den Dateianhang. ";32
+OMQ;email;DE;multimedia software developer;;564;;14.10.2013;32;7;TODO;"immer, wenn ich einen Prozess brennen will und im Brennmodus unter ""bearbeiten"" ein eigenes
+Label ( als bmp od jpg )einfüge, das auch im Vorschaumonitor richtig angezeigt
+wird, bekommen ich nach dem Start des Brennvorgangs folgenden Hinweis:
+wmem reports disc project build exception: 026416f5 und der Brennvorgang wird abgebroche.";32
+OMQ;email;DE;multimedia software developer;;565;;14.10.2013;32;7;TODO;"Der der Brennvorgang wird nach dem verschlüsseln
+abgebrochen.";32
+OMQ;email;DE;multimedia software developer;;566;;14.10.2013;32;7;TODO;"Der Brennvorgang wird nach dem Processing mit dem folgenden Hinweis
+abgebrochen:
+
+wmem reports disc project build exception";32
+OMQ;email;DE;multimedia software developer;;567;;14.10.2013;32;7;TODO;"Ich besitze schon eine längere Zeit Ihre Softwares, jetzt habe ich einen neuer Rechner bekommen mit Windows 7 habe dort das Programm? Produkt im IT&OFFICE Katalog 11firstclass"" installiert und möchte jetzt die Artikelpreview auf eine DVD Brennen und erhalte eine Fehlermeldung"" wmem  Reports disc  project build exception: 026416f5 "" damit kann ich nichts anfangen, können Sie mir helfen?";32
+OMQ;email;DE;multimedia software developer;;568;;14.10.2013;32;7;TODO;brennen ist nicht moeglich. ;32
+OMQ;email;DE;multimedia software developer;;569;;14.10.2013;32;7;TODO;"Ich bekomme beim Brennen folgenden Fehlercode: 026416f5 (Verschlüsseln
+fehlgeschlagen) Was kann ich tun?";32
+OMQ;email;DE;multimedia software developer;;570;;14.10.2013;32;7;TODO;"Heute habe ich beim verschlüsseln erstmals den Fehler ""WMEM reports disc
+build exception: 026416f5"" bekommen.";32
+OMQ;email;DE;multimedia software developer;;571;;14.10.2013;85;3;TODO;"Ich kann weder EM noch EMVX vom Kartenleser laden. Geraet
+wird nicht erkannt";85
+OMQ;email;DE;multimedia software developer;;572;;14.10.2013;85;3;TODO;"Sales firstclas 19 Ultimate stellt fest, dass keine Verbindung zum Systech Sales
+Scanner zum Aufzeichnen von EM Prozessen aufgebaut werden konnte.";85
+OMQ;email;DE;multimedia software developer;;573;;14.10.2013;85;3;TODO;"Es erscheint immer der
+Hinweis, Es konnte keine Verbindung zur Hardware aufgebaut werden.";85
+OMQ;email;DE;multimedia software developer;;574;;14.10.2013;85;3;TODO;Auf meinem neuen Rechner kommt bei der Erstelung von dem Kartenleser,immer folgende Fehlermeldung: Es konnte keine Verbindung zur Hardware aufgebaut werden.;85
+OMQ;email;DE;multimedia software developer;;575;;14.10.2013;82;8;TODO;"Leider kann ich meinen Datenscanner SOLARMOBILE MB-HD700
+nicht aktivieren.";82,85
+OMQ;email;DE;multimedia software developer;;576;;14.10.2013;72;8;TODO;bei der Abrechnung der Salesdateien mit dem o.g. Programm kommt es zu hohen Fehlerquote bei den Bestellnummern (auch nach der Berechnung).;72
+OMQ;email;DE;multimedia software developer;;577;;14.10.2013;72;8;TODO;Bei Prozess Dateien im DT5 Format ist die Bestellnummer komplett falsch.;72
+OMQ;email;DE;multimedia software developer;;578;;14.10.2013;72;8;TODO;Beim Import eines data-5-Prozesses (81seg EMV) von meiner Tiffey Blast 4250 Workstation werden zwar die Daten dargestellt (und berechnet), als Bestellnummer kommt jedoch nur ein (leeres) Feld.;72
+OMQ;email;DE;multimedia software developer;;579;;14.10.2013;72;8;TODO;Beim import meiner dt5-Salesdateien meiner Workstation, wird die Bestellnummer häufig falsch übertragen;72
+OMQ;email;DE;multimedia software developer;;580;;14.10.2013;72;8;TODO;"prozes von vorkstation sind fahlsch Plast 4250
+ungültige bestellnummer";72
+OMQ;email;DE;multimedia software developer;;581;;14.10.2013;116;3;TODO;Meine in Bearbeitung befindliche Artikelpreview lässt sich nicht mehr starten / bearbeiten.;116
+OMQ;email;DE;multimedia software developer;;582;;14.10.2013;80;10;TODO;"Fehlermeldung bei Installation (Programmpunkt: Interbase SPARQL Server):
+...bei
+Umwandlung ihres Produktdatenspeichers ist ein Problem aufgetreten..";80
+OMQ;email;DE;multimedia software developer;;583;;14.10.2013;80;10;TODO;"Da kam eine Fehlermeldung, dass bei der
+Installation vom Interbase SPARQL-Server ein Fehler aufgetreten wäre und der Datenspeicher nicht
+umgewandelt werden konnte.";80
+OMQ;email;DE;multimedia software developer;;584;;14.10.2013;80;10;TODO;"Fehlermeldung: ""Bei Umwandlung Ihres Produktdatenspeichers ist ein Problem aufgetreten. Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk.""";80
+OMQ;email;DE;multimedia software developer;;585;;14.10.2013;80;10;TODO;"Bei der Instalation kommt der Hinweis 
+bei der Umwandlung ihres Produktdatenspeichers ist ein Fehler auf getreten. Sie werden ihren
+Datenspeicher deswegen mit dieser Sofwahre nicht verwenden können .";80
+OMQ;email;DE;multimedia software developer;;586;;14.10.2013;80;10;TODO;"Erste Fehlermeldung ist, dass ich meine
+Datenspeicher nicht benutzen könne(bei der Umwandlung ihres Produktdatenspeichers ist ein
+Fehler aufgetreten...).";80
+OMQ;email;DE;multimedia software developer;;587;;14.10.2013;80;10;TODO; Jedesmal wenn ich das Programm neu aufspiele erscheint der Hinweis: Bei der Umwandlung Ihrer Produktdatei ist ein Problem aufgetreten. Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk;80
+OMQ;email;DE;multimedia software developer;;588;;14.10.2013;80;10;TODO;Bei neuen XLS-Umwandlungen meldete sich immer der SPARQL-Datenspeicher mit einer langen Fehlermeldung;80
+OMQ;email;DE;multimedia software developer;;589;;14.10.2013;80;10;TODO;"Dabei kam es zu folgender Fehlermeldung:
+
+Bei der Umwandlung Ihres Produktdatenspeichers ist ein Problem aufgetreten. Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk um Unterstützung zu bekommen.";80
+OMQ;email;DE;multimedia software developer;;590;;14.10.2013;80;10;TODO;Alle meine vesuche enden bei...bei Umwandlun des P.speicher,ist ein Problem...Software nicht nützen können...???;80
+OMQ;email;DE;multimedia software developer;;591;;14.10.2013;80;10;TODO;"bei der installation kam eine fehlermeldung ""bei der umwandlung ihres  
+produktdatenspeichers ist ein problem aufgetreten.sie werden ihren produktspeicher daher  
+mit diesem produkt nicht verwenden können.bitte wenden sie sich an den helpdesk  
+um unterstützung zu bekommen""";80
+OMQ;email;DE;multimedia software developer;;591;;14.10.2013;87;10;TODO;"bei start von dem prg. kommt die fehlermeldung ""fehler im warehouse datenspeicher  
+- Error code 03377405Uncompleted on Request :Query input WhInstance62
+failed! Cannot access DS-Directory!. LastError: 37 """;87
+OMQ;email;DE;multimedia software developer;;592;;14.10.2013;80;10;TODO;"Bei Installation der neu erworbenen Software ist folgendes Problem aufgetreten (Fehlermeldung): ""Bei der Umwandlung Ihres Produktdatenspeichers ist ein Problem aufgetreten. Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk um Unterstützung zu bekommen"".";80
+OMQ;email;DE;multimedia software developer;;593;;14.10.2013;80;10;TODO;"bei der Installation des Interbase SPARQL Server wird die Installation angehalten und es erscheint die Fehlermeldung:
+
+""Bei der Umwandlung des Produktdatenspeichers ist ein Problem aufgetreten. Sie werden den Datenspeicher bei dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk um Unterstützung zubekommen.""";80
+OMQ;email;DE;multimedia software developer;;594;;14.10.2013;80;10;TODO;"Bei der Installation bekomme ich folgende Fehlermeldung:
+Bei der Umwandlung Ihres Produktdatenspeichers ist ein Problem aufgetreten .......
+Bitte wenden Sie sich an den Helpdesk ....";80
+OMQ;email;DE;multimedia software developer;;595;;14.10.2013;80;10;TODO;Folgender Hinweis bei der Installation: Bei der Installation ihres Datenspeichers ist ein Problem vorgekommen. Sie werden diesen aus diesem Grund nicht verwenden können.;80
+OMQ;email;DE;multimedia software developer;;596;;14.10.2013;80;10;TODO;Nach der Installation der SPARQL Datenspeicher kommt beim Umwandeln des Speichers eine Fehlermeldung.;80
+OMQ;email;DE;multimedia software developer;;597;;14.10.2013;80;10;TODO;Bei der Installation kommt die Fehlermeldung Produktdatenspeicher kann nicht umgewandelt werden.;80
+OMQ;email;DE;multimedia software developer;;598;;14.10.2013;100;12;TODO;"Beim Start kommt immer wieder das Anmeldefenster der
+Registrierung mit meiner Serien Nr.";100
+OMQ;email;DE;multimedia software developer;;599;;14.10.2013;100;12;TODO;"jedes Mal, wenn ich Sales firstclass 20 neo starte, werde ich aufgefordert dieses Produkt zu
+registrieren.";100
+OMQ;email;DE;multimedia software developer;;600;;14.10.2013;100;12;TODO;mein SFC19 Ultimate PE behauptet dauernd, es wäre nicht registriert.;100
+OMQ;email;DE;multimedia software developer;;601;;14.10.2013;100;12;TODO;"Als erstes erscheint die Registrierungsabfrage. Sie wird mit bereits registriert
+angezeigt. wenn ich ""starten"" drücke bricht alles ab.";100
+OMQ;email;DE;multimedia software developer;;602;;14.10.2013;100;12;TODO;Leider musste ich feststellen das mein Konto anscheinend nicht eingerichtet wurde und ich habe mich deshalb selbst noch einmal auf ihrer Seite registriert. Als ich dann meinen SpecsManager 11 registrieren wollte, wurde dies geblockt mit der Meldung das dieses Produkt schon registriet sei und ich es nicht zweimal registrieren brauche.;100
+OMQ;email;DE;multimedia software developer;;602;;14.10.2013;57;11;TODO;Desweiteren habe ich noch ein Softwareproblem und zwar funktioniert die Sheetviewervorschau nicht.;57
+OMQ;email;DE;multimedia software developer;;603;;14.10.2013;100;12;TODO;" Wenn ich aber den Patch installieren möchte, kommt die Meldung: ""Sie müssen erst Specsmanager 9 installieren"".Ich habe aber das Programm installiert.";100
+OMQ;email;DE;multimedia software developer;;604;;14.10.2013;100;12;TODO;"Leider bekomme ich immer wieder beim Laden der Daten im XDAT Format eine Fehlermeldung ,,No Global memory in whalloclocalpnt for address 33"" wie mehrere andere auch http;//www.warehouse.info/de/no-global-memory.tipps.816314.html / http;//www.warehouse.info/de/produkt-organizer-13-firstclass-dateien-laden.tipps.740537.html.";100
+OMQ;email;DE;multimedia software developer;;605;;14.10.2013;100;12;TODO;bei jeder aktion, die ich im programm durchführen möchte werde ich gebeten mich zu registrieren;100
+OMQ;email;DE;multimedia software developer;;606;;14.10.2013;100;12;TODO;ich habe eine unvollständige Mailadresse angegeben.Wenn ich mich jetzt einlogge,erscheint der Hinweis ,daß die Seriennummer schon benutzt wird.;100
+OMQ;email;DE;multimedia software developer;;607;;14.10.2013;100;12;TODO;"Hinter beiden Angaben (SN und Mail) ist ein grüner Haken. Wenn man dann auf ""Starten"" geht, passiert nix, das Programm startet nicht.";100
+OMQ;email;DE;multimedia software developer;;608;;14.10.2013;100;12;TODO;Nun möchte ich es gerne registrieren geht aber nicht da es schon für eine andere E-Mail registriert ist.;100
+OMQ;email;DE;multimedia software developer;;609;;14.10.2013;100;12;TODO;"nach der eingabe der sernr sagt er mir ich soll es erst regestrieren 
+mache ich dann sagt er
+Die von Ihnen eingebene Seriennummer wurde bereits genutzt. Vermutlich haben Sie sich bereits registriert. Ein erneutes Registrieren ist nicht nötig.";100,104
+OMQ;email;DE;multimedia software developer;;610;;14.10.2013;100;12;TODO;Einerseits bekomme ich die Meldung ich möge mich registrieren, dann wieder ich sei bereits registriert.;100
+OMQ;email;DE;multimedia software developer;;611;;14.10.2013;100;12;TODO;"Wenn ich allerdings eine Aktualisierung des Prgramms über das Netz durchführen will, fragt das System mich nach der Registriernummer; ich kann daraus folgend das Programm nicht aktualisieren.";100
+OMQ;email;DE;multimedia software developer;;612;;14.10.2013;100;12;TODO;Bei der Registrierung erhalte ich die Meldung, meine Seriennummer werde bereits verwendet.;100,104
+OMQ;email;DE;multimedia software developer;;613;;14.10.2013;100;12;TODO;"zuerst zeigt es an: falsche Bestellnummer
+beim zweiten Mal  : falsche Seriennummer";100
+OMQ;email;DE;multimedia software developer;;614;;14.10.2013;100;12;TODO;"als ich mein online erworbenes Produkt registrieren wollte wurde mir dieser Hinweis angezeigt:
+""Die maximale Anzahl Freischaltungsvorgänge wurde überschritten.""";100
+OMQ;email;DE;multimedia software developer;;615;;14.10.2013;80;10;TODO;"Beim Versuch das Programm zu installieren erscheint folgende Meldung:
+ 
+Bei der Umwandlung ihres Produktdatenspeichers ist ein Problem aufgetreten. Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk um Hilfe.";80,87
+OMQ;email;DE;multimedia software developer;;616;;14.10.2013;80;10;TODO;"kommt immer der Hinweis: bei der umwandlung ihres
+produktdatenspeichers ist ein problem aufgetreten, die software kann nicht installiert werden und
+alles bisherige wird deinstalliert.";80
+OMQ;email;DE;multimedia software developer;;617;;14.10.2013;80;10;TODO;Fehlermeldung: Interbase SPARQL Server-Warehouse Edition Setup Bei der Umwandlung Ihres Produktdatenspeichers ist ein Problem aufgetreten. Sie werden Ihre Datenbank mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk;80
+OMQ;email;DE;multimedia software developer;;618;;14.10.2013;80;10;TODO;Nach der Installation kommt beim ersten Programmstart die folgende Fehlermeldung: Fehler im WAREHOUSE-Datenspeicher ! Es ist möglich, dass einige Funktionen nicht verfügbar sind.;80
+OMQ;email;DE;multimedia software developer;;619;;14.10.2013;87;10;TODO;"Ich verwende den Produktorganizer und Produkte im IT&OFFICEKatalog Version 11. 3 Jahre gab es keine Fehler, dann kam der Hinweis ""Fehler im Datenspeicher"" und nichts bewegt sich mehr.";87
+OMQ;email;DE;multimedia software developer;;620;;14.10.2013;87;10;TODO;Fehler im Warehouse Datenspeicher, alle angegebenen Optionen ausprobiert.;87
+OMQ;email;DE;multimedia software developer;;621;;14.10.2013;87;10;TODO;"Beim Start von XLS firstclass 20 kommt die Auskunft
+""Fehler in Warehouse Datenspeicher. Es ist möglich, dass manche Funktionen nicht verfügbar sind.";87
+OMQ;email;DE;multimedia software developer;;622;;14.10.2013;80;10;TODO;"bereits bei der Installation wurde darauf hingewiesen,
+daß Produktdaten nicht umgewandelt werden konnten und
+das Programm teilweise nicht funktionieren könnte.";80
+OMQ;email;DE;multimedia software developer;;622;;14.10.2013;87;10;TODO;"Am Programmstart bringt es dann aber 
+immer den Hinweis, daß der Produktdatenspeicher nicht
+ordnungsgemäß installiert wäre.";87
+OMQ;email;DE;multimedia software developer;;623;;14.10.2013;80;10;TODO;"Mit Beginn der Installation wurde folgender Hinweis angezeigt:
+Bei der Umwandlung Ihres Produktdatenspeichers ist ein Problem aufgetreten. Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können. Bitte wenden Sie sich an den Helpdesk um Unterstützung zu bekommen.";80
+OMQ;email;DE;multimedia software developer;;624;;14.10.2013;80;10;TODO;Nach der Installation der Software Prdukte im OFFICE Katalog WH Firstclass kam der Hinweis das derInterbase SPARQL Server nicht installiert werden kann die Umwandlung des Produktdatenspeichers nicht vollständig umgewandelt wurde, obnwohl ich mir den Interbase extra von Warehouse noch mals runtergeladen habe;80
+OMQ;email;DE;multimedia software developer;;625;;14.10.2013;80;10;TODO;Bei der Installierung der Komponente 4 kommt die Nachricht:Bei der Umwandlung ihres Produktspeichers ist ein Problem aufgetreten.Sie werden Ihren Datenspeicher deswegen mit dieser Software nicht verwenden können.;80
+OMQ;email;DE;multimedia software developer;;626;;14.10.2013;80;10;TODO;Vor der eigentlichen Installation erschien die Fehlermeldung, dass der Produktdatenspeicher ;80
+OMQ;email;DE;multimedia software developer;;627;;14.10.2013;80;10;TODO;Beim aufspielen von PRODUKTE IM OFFICE KATALOGWH bekomme ich folgende Fehlermeldung bei der Umwandlun Ihres Produktdatenspeichers ist ein Fehler augetreten;80
