@@ -110,6 +110,14 @@ corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, content_transformer(tolower))
 #remove stopwords
 corpus <- tm_map(corpus, removeWords, stopwords("german"))
+#remove Punctuation
+corpus <- tm_map(corpus, removePunctuation)
+#replace contraction
+corpus <- tm_map(corpus, replace_contraction)
+#replace abbreviation
+corpus <- tm_map(corpus, replace_abbreviation)
+#replace symbol
+#corpus <- tm_map(corpus, replace_symbol)
 #stemming
 tm_map(corpus, stemDocument)
 
@@ -117,7 +125,7 @@ corpusdataframe <- data.frame(text_new = sapply(corpus, as.character), stringsAs
 
 
 
-# inspect(corpus)
+#inspect(corpus)
 #print(textframe)
 
 ## corpusmatrix erst einmal weglassen, wird nicht benötigt für fastrtext
