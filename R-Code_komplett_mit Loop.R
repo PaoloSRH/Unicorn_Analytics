@@ -49,7 +49,7 @@ if (exists("csvimport")) {rm(csvimport)}
 if (exists("model")) {rm(model)}
 
 #rm(textframe3)
-
+##MongoDB
 ##### Option 1: MongoDB #####
 if (type == 1) {
 ### Connection to categories
