@@ -197,12 +197,12 @@ test_sentences_tmp <- lapply(splits, lowerFunction)
 #str(test_sentences)
 
 ### Combine data frames in list to one dataframe
-train_sentences <- bind_rows(train_sentences)
-test_sentences <- bind_rows(test_sentences)
+train_sentences <- bind_rows(train_sentences_tmp)
+test_sentences <- bind_rows(test_sentences_tmp)
 #str(train_set)
 #str(test_set)
-#View(train_set)
-#View(test_set)
+#View(train_sentences)
+#View(test_sentences)
 ### END OF training and test dataset generation ###
 
 # TODO: Has to be improved
