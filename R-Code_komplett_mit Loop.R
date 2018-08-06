@@ -248,6 +248,8 @@ test_labels_without_prefix <- test_sentences[,"class.text"]
 test_texts <- tolower(test_sentences[,"text"])
 test_to_write <- paste(test_labels, test_texts)
 
+###setting seed
+set.seed(42)
 
 ### Train model and save in tempfile, parameter can be adjusted
 execute(commands = c("supervised", "-input", train_tmp_file_txt, "-output", tmp_file_model, "-dim", j, "-lr", k, "-epoch", i, "-wordNgrams", l, "-verbose", m))
