@@ -1,6 +1,6 @@
 ##### Choose option (MongoDB or CSV import) #####
 # MongoDB (=1) or csv import (=2)
-type <- 1
+type <- 2
 
 ##### Set FastRText settings (Specifiy range for loop, results will be saved in variable 'results') #####
 epoche <- 128:128
@@ -99,7 +99,7 @@ colnames(textframe) <- c("id", "text")
 corpus <- VCorpus(VectorSource(textframe[,2]))
 
 #inspect(corpus)
-# whitespace entfernen
+# remove whitespace
 corpus <- tm_map(corpus, stripWhitespace)
 # convert to lowercases
 corpus <- tm_map(corpus, content_transformer(tolower))
@@ -217,6 +217,9 @@ test_sentences <- bind_rows(test_sentences_tmp)
 ### Create dataframe to save results of the models
 results <- setNames(data.frame(matrix(ncol = 8, nrow = 0)), c("id", "time", "dim","lr","ngram", "epoch","verbose", "result"))
 id <- 1
+
+###setting seed
+set.seed(42)
 
 ##### FASTRTEXT Loop, ranges can be specified at the beginning of script #####
 for (i in epoche){ 
