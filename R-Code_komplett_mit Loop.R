@@ -15,13 +15,19 @@ verbose <-22:22
 #install.packages("corpustools") 
 #install.packages("mongolite") 
 #install.packages("dplyr") 
-#install.packages("fastrtext") 
+#install.packages("fastrtext")
+#install.packages("quanteda") 
+#install.packages("caret") 
+#install.packages("e1071", dependencies=TRUE)
 
 library(mongolite)
 library(dplyr) 
 library(tm)
 library(corpustools)
 library(fastrtext)
+library(quanteda)
+library(caret)
+library(e1071)
 
 ##### Remove variables if they exist #####
 if (exists("conn")) {rm(conn)}
@@ -168,41 +174,65 @@ textframe2 <- textframe2[!grepl("97", textframe2$class.text),]
 }
 
 ### START OF training and test dataset generation ###
-textframe_ordered <- textframe2[order(textframe2$class.text, decreasing = FALSE), ]  
-textframe_ordered$class.text <- as.numeric(as.character(textframe_ordered$class.text))
-#str(textframe_ordered)
-#View(textframe_ordered)
-splits <- split(textframe_ordered, textframe_ordered$class.text)
-#View(splits)
+
+### 12.08 PR: Die Aufteilung so funktioniert nicht, weil er sonst Kategorien in den Trainingsdaten hat, 
+### die nicht in den Testdaten sind. 
+### Also neu, mit Aufteilung pro Kategorie
+
+### Aufteilung ALT:
+#textframe_ordered <- textframe2[order(textframe2$class.text, decreasing = FALSE), ]  
+#textframe_ordered$class.text <- as.numeric(as.character(textframe_ordered$class.text))
+##str(textframe_ordered)
+##View(textframe_ordered)
+#splits <- split(textframe_ordered, textframe_ordered$class.text)
+##View(splits)
 
 
 ### function to obtain first 70 percent of data (with round off)
-upperFunction <- function(textframes){
-  if(nrow(textframes)>0){
-    head(textframes, ceiling(nrow(textframes)*0.7))
-  }
-}
+#upperFunction <- function(textframes){
+#  if(nrow(textframes)>0){
+#    head(textframes, ceiling(nrow(textframes)*0.7))
+#  }
+#}
 
 ### function to obtain last 30 percent of data (with round off)
-lowerFunction <- function(textframes){
-  if(nrow(textframes)>0){
-    tail(textframes, floor(nrow(textframes)*0.3))
-  }
-}
+#lowerFunction <- function(textframes){
+#  if(nrow(textframes)>0){
+#    tail(textframes, floor(nrow(textframes)*0.3))
+#  }
+#}
 
 ### generating train and test dataset
-train_sentences_tmp <- lapply(splits, upperFunction)
-test_sentences_tmp <- lapply(splits, lowerFunction)
-#str(train_sentences)
-#str(test_sentences)
+#train_sentences_tmp <- lapply(splits, upperFunction)
+#test_sentences_tmp <- lapply(splits, lowerFunction)
+##str(train_sentences)
+##str(test_sentences)
 
 ### Combine data frames in list to one dataframe
-train_sentences <- bind_rows(train_sentences_tmp)
-test_sentences <- bind_rows(test_sentences_tmp)
-#str(train_set)
-#str(test_set)
-#View(train_sentences)
-#View(test_sentences)
+#train_sentences <- bind_rows(train_sentences_tmp)
+#test_sentences <- bind_rows(test_sentences_tmp)
+##str(train_set)
+##str(test_set)
+##View(train_sentences)
+##View(test_sentences)
+
+### Aufteilung NEU:
+help_df1 <- data.frame(class.text=character(),text=character(),stringsAsFactors=FALSE)
+help_df2 <- data.frame(class.text=character(),text=character(),stringsAsFactors=FALSE)
+
+
+for(i in 1:length(unique(textframe2[,1]))){
+  temp_head <- head(subset(textframe2, class.text == unique(textframe2[,1])[i]),.7*nrow(subset(textframe2, class.text == unique(textframe2[,1])[i])))
+  temp_tail <- tail(subset(textframe2, class.text == unique(textframe2[,1])[i]),.3*nrow(subset(textframe2, class.text == unique(textframe2[,1])[i])))
+  
+  help_df1 <- rbind(help_df1, temp_head)
+  help_df2 <- rbind(help_df2, temp_tail)
+  
+}
+
+train_sentences <- help_df1
+test_sentences <- help_df2
+
 ### END OF training and test dataset generation ###
 
 # TODO: Has to be improved
@@ -289,5 +319,38 @@ unlink(train_tmp_file_txt)
 unlink(tmp_file_model)
 gc()
 
-}}}}}
+        }}}}}
 ##### END OF: FASTRTEXT #####
+
+##### START OF: QUANTEDA (NAIVE BAYES CLASSIFIER) #####
+
+#Traindaten - in Corpus dann Labels dazu und DFM erstellen. 
+model2.train.corpus <- corpus(train_sentences$text) 
+docvars(model2.train.corpus) <- train_sentences$class.text
+model2.train.dfm <- dfm(model2.train.corpus, tolower = TRUE,stem=TRUE)
+
+#Das gleiche für Testdaten
+model2.test.corpus <- corpus(test_sentences$text) 
+docvars(model2.test.corpus) <- test_sentences$class.text
+model2.test.dfm <- dfm(model2.test.corpus, tolower = TRUE,stem=TRUE)
+
+#summary(model2.train.corpus, 5)
+# Model trainieren
+model2.nb <- textmodel_nb(model2.train.dfm, docvars(model2.train.dfm, "docvar1"))
+#summary(model2.nb)
+
+#Feature von Trainings- und Testdaten verwenden
+model2.test_dfm <- dfm_select(model2.test.dfm, model2.train.dfm)
+
+#Und jetzt prüfen wie gut das Model funktioniert
+model2.actual_class <- docvars(model2.test_dfm, "docvar1")
+model2.predicted_class <- predict(model2.nb, model2.test_dfm)
+model2.class_table <- table(model2.actual_class, model2.predicted_class)
+#model2.class_table
+
+
+confusionMatrix(model2.class_table, mode = "everything")
+
+##### END OF: QUANTEDA #####
+
+
