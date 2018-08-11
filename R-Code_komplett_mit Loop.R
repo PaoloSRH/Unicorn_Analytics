@@ -19,6 +19,7 @@ verbose <-22:22
 #install.packages("quanteda") 
 #install.packages("caret") 
 #install.packages("e1071", dependencies=TRUE)
+#install.packages("RTextTools")
 
 library(mongolite)
 library(dplyr) 
@@ -28,6 +29,7 @@ library(fastrtext)
 library(quanteda)
 library(caret)
 library(e1071)
+library(RTextTools)
 
 ##### Remove variables if they exist #####
 if (exists("conn")) {rm(conn)}
@@ -53,6 +55,19 @@ if (exists("temp_head")) {rm(temp_head)}
 if (exists("temp_tail")) {rm(temp_tail)}
 if (exists("csvimport")) {rm(csvimport)}
 if (exists("model")) {rm(model)}
+if (exists("model2.nb")) {rm(model2.nb)}
+if (exists("model2.test_dfm")) {rm(model2.test_dfm)}
+if (exists("model2.test.corpus")) {rm(model2.test.corpus)}
+if (exists("model2.test.dfm")) {rm(model2.test.dfm)}
+if (exists("model2.train.corpus")) {rm(model2.train.corpus)}
+if (exists("model2.train.dfm")) {rm(model2.train.dfm)}
+if (exists("model3.container")) {rm(model3.container)}
+if (exists("model3.dtMatrix")) {rm(model3.dtMatrix)}
+if (exists("model3.model")) {rm(model3.model)}
+if (exists("model3.predictionContainer")) {rm(model3.predictionContainer)}
+if (exists("model3.predMatrix")) {rm(model3.predMatrix)}
+if (exists("model3.results")) {rm(model3.results)}
+
 
 #rm(textframe3)
 ##MongoDB
@@ -322,7 +337,7 @@ gc()
         }}}}}
 ##### END OF: FASTRTEXT #####
 
-##### START OF: QUANTEDA (NAIVE BAYES CLASSIFIER) #####
+##### START OF MODEL 2: QUANTEDA (NAIVE BAYES CLASSIFIER) #####
 
 #Traindaten - in Corpus dann Labels dazu und DFM erstellen. 
 model2.train.corpus <- corpus(train_sentences$text) 
@@ -352,5 +367,37 @@ model2.class_table <- table(model2.actual_class, model2.predicted_class)
 confusionMatrix(model2.class_table, mode = "everything")
 
 ##### END OF: QUANTEDA #####
+
+
+##### START OF MODEL 3: SVM (Nicht gut aber mal schauen was man mit machen kann) #####
+
+# wir benötigen eine Matrix
+model3.dtMatrix <- create_matrix(train_sentences$text)
+
+# und einen Container
+model3.container <- create_container(model3.dtMatrix, train_sentences$class.text, trainSize=1:length(train_sentences$class.text), virgin=FALSE)
+
+# Dann trainieren wir das Modell
+model3.model <- train_model(model3.container, "SVM", kernel="linear", cost=1)
+
+# Testdaten vorbereiten
+model3.predictionData <-test_sentences$text
+
+# Prediction Matrix
+model3.predMatrix <- create_matrix(model3.predictionData, originalMatrix=model3.dtMatrix)
+
+# Prediction Container
+predSize = length(model3.predictionData);
+model3.predictionContainer <- create_container(model3.predMatrix, labels=rep(0,predSize), testSize=1:predSize, virgin=FALSE)
+
+# Ergebnisse
+model3.results <- classify_model(model3.predictionContainer, model3.model)
+
+# Und den Durchschnitt um das Modell zu bewerten
+mean(model3.results$SVM_PROB)
+
+# stimmt noch nicht ganz, testlabels zum vergleich heranziehen.
+
+##### END OF: SVM #####
 
 
