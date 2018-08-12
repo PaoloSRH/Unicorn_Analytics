@@ -258,11 +258,26 @@ model <- load_model(tmp_file_model)
 
 ### Apply model for test data set
 predictions <- predict(model, sentences = test_to_write)
+
+### Splitting predictions in predictions filtered (without bin = category "999") and predictions bin (category "999")
+prediction_splitter <- 0.2
+predictions_renamed <- lapply(predictions, function(prediction){
+    if(prediction<prediction_splitter){
+      c("999" = prediction[[1]][[1]])
+    }else{
+      prediction
+    }
+})
+
+predictions_bin <- predictions_renamed[predictions_renamed<prediction_splitter]
+predictions_filtered <- predictions_renamed[predictions_renamed>=prediction_splitter]
+
 ### Vorhergesagte Kategorie und Wahrscheinlichkeit ausgeben
 #print(head(predictions,100))
 #summary(unlist(predictions))
 ### Prozentualer Anteil, in dem das Model richtig lag
-result <- mean(names(unlist(predictions)) == test_labels_without_prefix)
+#result <- mean(names(unlist(predictions)) == test_labels_without_prefix)
+result <- mean(unlist(predictions_filtered))
 
 ### Because there is only one category by observation, hamming loss will be the same
 #get_hamming_loss(as.list(test_labels_without_prefix), predictions)
