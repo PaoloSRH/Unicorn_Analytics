@@ -385,8 +385,10 @@ confusionMatrix(model2.class_table, mode = "everything")
 
 
 ##### START OF MODEL 3: SVM (Nicht gut aber mal schauen was man mit machen kann) #####
-
+# vor dem ausfuehren
+# trace("create_matrix", edit=T) eingeben un in Zeile 42 Acronym in acronym ändern
 # wir benötigen eine Matrix
+
 model3.dtMatrix <- create_matrix(train_sentences$text)
 
 # und einen Container
