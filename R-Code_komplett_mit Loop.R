@@ -20,6 +20,9 @@ verbose <-22:22
 #install.packages("caret") 
 #install.packages("e1071", dependencies=TRUE)
 #install.packages("RTextTools")
+#install.packages("xgboost")
+#install.packages("scales")
+#install.packages("kernlab")
 
 library(mongolite)
 library(dplyr) 
@@ -417,4 +420,6 @@ mean(model3.results$SVM_PROB)
 
 ##### END OF: SVM #####
 
+##### START OF MODEL 4: xgBoost #####
+library(xgboost)
 
