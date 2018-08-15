@@ -1,12 +1,19 @@
 import json
 import lxml.etree
 from pymongo import MongoClient
+import os
+import pandas as pd
 
 mongoClient = MongoClient()
 db = mongoClient.mails 
 collection = db.interactions
 
-e = lxml.etree.parse('.\omq_public_email_data\omq_public_interactions.xml')
+df = pd.read_excel('CategoryMapping.xlsx')
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+xml_file = os.path.join(dir_path, 'omq_public_email_data', 'omq_public_interactions.xml')
+e = lxml.etree.parse(xml_file)
 
 for interaction in e.find('interactions').findall('interaction'):
     metadata = interaction.find('metadata')

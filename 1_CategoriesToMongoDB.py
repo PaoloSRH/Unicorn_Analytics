@@ -1,12 +1,16 @@
 import json
 import xml.etree.ElementTree
 from pymongo import MongoClient
+import os
 
 mongoClient = MongoClient()
 db = mongoClient.mails 
 collection = db.categories
 
-e = xml.etree.ElementTree.parse('.\omq_public_email_data\omq_public_categories.xml').getroot()
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+xml_file = os.path.join(dir_path, 'omq_public_email_data', 'omq_public_categories.xml')
+e = xml.etree.ElementTree.parse(xml_file).getroot()
 
 for categoryGroup in e.find('categories').findall('categoryGroup'):
     print('Processing categoryGroup '+categoryGroup.get('id')+'...')
@@ -14,6 +18,9 @@ for categoryGroup in e.find('categories').findall('categoryGroup'):
     
     for category in categoryGroup.findall('category'):
         #print(category.get('id'))
+
+        #group_id = df[df.category_id == category.get('id')].iloc[0,1]
+        #, "groupId":"'+group_id+'"
         
         textCount = category.get('textCount')
         if textCount is None:

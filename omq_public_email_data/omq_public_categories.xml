@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+<categories>
+	<categoryGroup id="1">
+	    <category id="70" textCount="2">
+Bei der EMVX Erstellung kommt die Meldung "Die Erstellung wurde aus Hardwaregründen abgebrochen".
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="2">
+	    <category id="71" textCount="19">
+Es stockt bei der Verarbeitung von hochsegmentierten Prozessdateien.
+	    </category>
+	    <category id="79" textCount="16">
+Cwvemx Dateien stocken in Sales firstclass 20
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="3">
+	    <category id="65" textCount="20">
+Bei der EM/EMVX Erstellung mit Windows 7, kann es teilweise nötig sein einen alternativen Treiber für Ethernetkarte im Gerätemanager zu installieren.
+	    </category>
+	    <category id="77" textCount="19">
+Treiber für den USB-Prozessverwalter konnten nicht einwandfrei installiert werden
+	    </category>
+	    <category id="85" textCount="18">
+EM Kartenleser kann über USB Anschluss nicht erkannt werden
+	    </category>
+	    <category id="116" textCount="21">
+Beim Öffnen des Programmes erscheint die Fehlermeldung" das smartcard device..."
+	    </category>
+	    <category id="121" textCount="9">
+Bei der Installation des Prozessverwalter Treibers, erscheitn die Fehlermeldung "1133: Unable to finish installation." 
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="4">
+	    <category id="66" textCount="20">
+Bei der Gewinnkalkulation erscheint nach Eingabe einer Zeitspanne folgende Meldung: "Fehler beim Parsen der XSL-Daten"
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="5">
+	    <category id="67" textCount="24">
+Das Brennen bricht ab mit der Meldung "Internes Problem".
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="6" >
+	    <category id="76" textCount="20">
+Fehlercode -9 beim Start des Programmes
+	    </category>
+	    <category id="73" textCount="11">
+Fehler 9000 bei der Programminstallation
+	    </category>
+	    <category id="110" textCount="17">
+Programm startet nicht. Beendet sich bei  Programmoberfläche wird eingerichtet.
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="7">
+	    <category id="78" textCount="18">
+Fehler beim Import von Workit-PRC-Dateien. Typ kann nicht geöffnet werden. 
+	    </category>
+	    <category id="33" textCount="17">
+Speicheranfrage ungültig beim Import von Daten bzw. Prozessen in WAREHOUSE Produkte im IT &amp; OFFICE Katalog und Salesfirstclass, Problem kann auch beim Verschlüsseln oder Bearbeiten auftreten.
+	    </category>    
+	    <category id="99" textCount="9">
+Codec zum Importieren dieser Datei konnte nicht gefunden werden.
+	    </category>
+	    <category id="32">
+Das Verschlüsseln bricht ab mit der Meldung "Verschlüsseln fehlgeschlagen".
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="8">
+	    <category id="72">
+Bestellnummernfehler bei der Berechnung DT5 Dateien von Tiffey Blast Workstation.
+	    </category>
+	    <category id="84">
+Der Import von Prozessdateien erfolgt ohne Bestellnummer.
+	    </category>
+	    <category id="82">
+Keine Bestellnummern bei der Kartenleserübertragung / keine Verbindung zur Hardware
+	    </category>    
+	    <category id="55">
+Daten und Bestellnummer einer DATA Datei sind nicht synchron.
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="9">
+	    <category id="74">
+Altes Programm soll unter Windows 7 installiert werden.
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="10">
+	    <category id="87">
+Fehler im Produktdatenspeicher
+	    </category>
+	    <category id="80">
+Bei der Installation eines unsere Programme erscheint die Fehlermeldung "Bei der Umwandlung ihres Produktdatenspeichers ist ein Fehler aufgetreten"
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="11">
+	    <category id="86">
+Die Schriften in der Exportieren-Oberfläche sind nicht lesbar oder haben eine andere Schriftart, welche nicht dem Originaldesign entspricht
+	    </category>
+	    <category id="57">
+Temporäre Darstellungsprobleme beim Specssheet Creator oder Online Sammlung
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="12">
+	    <category id="83">
+Der Produkt Manager 12 meldet, dass die Demophase abgelaufen ist bzw. nur noch wenige Tage läuft, obwohl das Programm unbegrenzt nutzbar sein soll.
+	    </category>
+	    <category id="100">
+Ständige Aufforderung zur Eingabe der Registrierungsdaten. 
+	    </category>    
+	    <category id="111">
+Problem bei der Installation oder Aktivierung (Probleme bei der Eingabe der Seriennummer) der Zusatzprogramme von XtraGood etc. 
+	    </category>
+	    <category id="104">
+Das Produkt ist nicht zu registrieren. Error Code -4
+	    </category>
+	    <category id="56">
+Fehlercode -27 erscheint beim Registrieren
+	    </category>    
+    </categoryGroup>
+
+	<categoryGroup id="13">
+	    <category id="92">
+Wenn die Funktion "DynamicListing" aktiviert wird im Specssheetcreator kommt die Meldung "Isotool reagiert nicht mehr"
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="14">
+	    <category id="31">
+DVD Player kann die erstellte DVD nicht abspielen.
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="15">
+	    <category id="101">
+"Interner Fehler" beim Export bzw. der Vorschau des Datenblatts.
+	    </category>
+	    <category id="97">
+PDF Export funktioniert nicht.
+	    </category>
+	    <category id="60">
+Bei der Seitenvorschau oder beim Exportieren des Datenblattes im Specsmanager erscheint die Fehlermeldung "nicht ausreichend Speicher".
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="16">
+	    <category id="106">
+Es wird kein Brenner gefunden.
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="17">
+	    <category id="112">
+Diverse Fehlermeldungen bei der Verwendung der Online Sammlung (sowohl bei Anmeldung, Upload von Medien etc.)
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="18">
+	    <category id="59">
+AutoSortSD Funktionen sind außerhalb des sichtbaren Bildschirmbereichs
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="19">
+	    <category id="125">
+Kunden möchten Warehouse Programme auf dem MAC installieren
+	    </category>
+    </categoryGroup>
+
+	<categoryGroup id="20">
+		<category id="63">
+Startzeiger zeigt immer von Anfang an
+		</category>
+    </categoryGroup>
+
+</categories>
+</dataset>
