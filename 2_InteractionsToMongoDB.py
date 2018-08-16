@@ -27,7 +27,8 @@ for interaction in e.find('interactions').findall('interaction'):
     #process categories
     categories = metadata.find('category').text.split(',');
     for category in categories:
-        json_str += '{"id":"'+category+'", "text":"'+interaction.find('text').xpath('./relevantText[re:test(@goldCategory, "(^|.*,)'+category+'(,.*|$)")]', namespaces={'re': 'http://exslt.org/regular-expressions'})[0].text.replace('\\', '\\\\').replace('\n', '\\n').replace('\r', '\\r').replace('"', '\\"')+'"}, '
+        group_id = str(df[df.category_id == int(category)].iloc[0,1])
+        json_str += '{"group_id":"'+group_id+'", "id":"'+category+'", "text":"'+interaction.find('text').xpath('./relevantText[re:test(@goldCategory, "(^|.*,)'+category+'(,.*|$)")]', namespaces={'re': 'http://exslt.org/regular-expressions'})[0].text.replace('\\', '\\\\').replace('\n', '\\n').replace('\r', '\\r').replace('"', '\\"')+'"}, '
     json_str = json_str[:-2]+'], '
     
     json_str += '"keyword":"'+metadata.find('keyword').text+'", '
