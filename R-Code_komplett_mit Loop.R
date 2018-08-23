@@ -1,6 +1,6 @@
 ##### Choose option (MongoDB or CSV import) #####
 # MongoDB (=1) or csv import (=2)
-type <- 2
+type <- 1
 
 ##### Set FastRText settings (Specifiy range for loop, results will be saved in variable 'results') #####
 epoche <- 128:128
@@ -71,9 +71,6 @@ if (exists("model3.predictionContainer")) {rm(model3.predictionContainer)}
 if (exists("model3.predMatrix")) {rm(model3.predMatrix)}
 if (exists("model3.results")) {rm(model3.results)}
 
-
-#rm(textframe3)
-##MongoDB
 ##### Option 1: MongoDB #####
 if (type == 1) {
 ### Connection to categories
@@ -89,10 +86,10 @@ getdata$count('{}')
 
 ### Clean texts and categories of MongoDB
 # Categories
-listid <- getdata$find(query = '{}', fields = '{"categories.id" : true, "_id": false}')
-listid <- data.frame(lapply(listid, function(x) {gsub("list\\(id = \"", "", x)}))
+listid <- getdata$find(query = '{}', fields = '{"categories.group_id" : true, "_id": false}')
+listid <- data.frame(lapply(listid, function(x) {gsub("list\\(group_id = \"", "", x)}))
 listid <- data.frame(lapply(listid, function(x) {gsub("\"\\)", "", x)}))
-listid <- data.frame(lapply(listid, function(x) {gsub("list\\(id = c\\(\"", "", x)}))
+listid <- data.frame(lapply(listid, function(x) {gsub("list\\(group_id = c\\(\"", "", x)}))
 listid <- data.frame(lapply(listid, function(x) {gsub("\"", "", x)}))
 listid <- data.frame(lapply(listid, function(x) {gsub("\\)", "", x)}))
 listid <- data.frame(lapply(listid, function(x) {gsub("\n", "", x)}))
@@ -108,7 +105,6 @@ listtext <- data.frame(lapply(listtext, function(x) {gsub("\\)", "", x)}))
 # Adapt and unite data frames
 textframe <- data.frame(listid, listtext)
 colnames(textframe) <- c("id", "text")
-
 }
 
 ##### Option 2: csv file #####
@@ -180,7 +176,10 @@ textframe2 <- textframe2[!grepl(",", textframe2$class.text),]
 ### If there are not enough mail texts per category, categories will be deleted
 # TODO: Should be automated
 #textframe3 <- aggregate(cbind(count = text) ~ class.text, data = textframe2, FUN = function(x){NROW(x)})
-# delete cats 59, 70, 72, 85, 86, 87, 92, 97
+# delete ids 59, 70, 72, 85, 86, 87, 92, 97 and group ids 1, 13 and 18
+textframe2 <- textframe2[!grepl("1", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("13", textframe2$class.text),]
+textframe2 <- textframe2[!grepl("18", textframe2$class.text),]
 textframe2 <- textframe2[!grepl("59", textframe2$class.text),]
 textframe2 <- textframe2[!grepl("70", textframe2$class.text),]
 textframe2 <- textframe2[!grepl("72", textframe2$class.text),]
@@ -266,7 +265,7 @@ test_sentences <- help_df2
 results <- setNames(data.frame(matrix(ncol = 8, nrow = 0)), c("id", "time", "dim","lr","ngram", "epoch","verbose", "result"))
 id <- 1
 
-###setting seed
+### Setting seed
 set.seed(42)
 
 ##### FASTRTEXT Loop, ranges can be specified at the beginning of script #####
