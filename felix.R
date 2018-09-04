@@ -21,6 +21,9 @@ library(RTextTools)
 library(stringr)
 library(tidyr)
 
+##### Remove variables if they exist #####
+rm(list=ls())
+
 ##### Option 1: MongoDB #####
 if (type == 1) {
   
@@ -29,39 +32,16 @@ if (type == 1) {
   getdata <- mongo("interactions", url = "mongodb://localhost:27017/mails")
   
   ### Clean texts and categories of MongoDB
-  # Categories
-  listid <- getdata$find(query = '{}', fields = '{"categories.group_id" : true, "_id": false}')
-  listid <- data.frame(lapply(listid, function(x) {gsub("list\\(group_id = \"", "", x)}))
-  listid <- data.frame(lapply(listid, function(x) {gsub("\"\\)", "", x)}))
-  listid <- data.frame(lapply(listid, function(x) {gsub("list\\(group_id = c\\(\"", "", x)}))
-  listid <- data.frame(lapply(listid, function(x) {gsub("\"", "", x)}))
-  listid <- data.frame(lapply(listid, function(x) {gsub("\\)", "", x)}))
-  listid <- data.frame(lapply(listid, function(x) {gsub("\n", "", x)}))
-  View(listid)
-  # Relevant text modules
-  #listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "_id": false}')
+
+  # Get data (id, text) from MongoDB
   listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "categories.group_id":true, "_id": false}')
   listtext <- separate(listtext, categories, c("id","text"), sep = ", text = ")
   listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(group_id = \"", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(group_id = c\\(\"", "", x)}))
-  listtext <- data.frame(lapply(listtext, function(x) {gsub("\"", "", x)}))
-  listtext <- data.frame(lapply(listtext, function(x) {gsub("\n", "", x)}))
-  View(listtext)
-  install.packages("openxlsx")
-  library(openxlsx)
-  
-  # for writing a data.frame or list of data.frames to an xlsx file
-  write.xlsx(listtext, 'listtext.xlsx')
-  write.xlsx(textframe, 'textframe.xlsx')
-  
-  listtext <- data.frame(lapply(listtext, function(x) {gsub("\"\\)", "", x)}))
-  listtext <- data.frame(lapply(listtext, function(x) {gsub("\n", "", x)}))
-  listtext <- data.frame(lapply(listtext, function(x) {gsub("\\)", "", x)}))
-  
-  
-  # Adapt and unite data frames
-  textframe <- data.frame(listid, listtext)
-  colnames(textframe) <- c("id", "text")
+
+#  letzten 2 Zeichen momentan ')"'. Sollten noch bereinigt werden.
+#  listtext$text = substr(listtext$text,1,nchar(listtext$text)-2)
+#  '\n' und '\' bereinigen?
 }
 
 ##### Option 2: csv file #####
@@ -70,7 +50,6 @@ if (type == 2) {
   textframe <- data.frame(csvimport[,10], csvimport[,12])
   colnames(textframe) <- c("id", "text")
 }
-
 
 ##### Load 2nd column in data frame and clean with tm #####
 corpus <- VCorpus(VectorSource(textframe[,2]))
@@ -377,5 +356,4 @@ mean(model3.results$SVM_PROB)
 ##### END OF: SVM #####
 
 ##### START OF MODEL 4: xgBoost #####
-library(xgboost)
-
+#library(xgboost)

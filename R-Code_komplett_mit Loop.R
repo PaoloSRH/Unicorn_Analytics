@@ -23,6 +23,7 @@ library(e1071)
 library(RTextTools)
 
 ##### Remove variables if they exist #####
+rm(list=ls())
 if (exists("conn")) {rm(conn)}
 if (exists("getdata")) {rm(getdata)}
 if (exists("listid")) {rm(listid)}
@@ -88,8 +89,7 @@ if (type == 1) {
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\"\\)", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\n", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\\)", "", x)}))
-  
-  
+
   # Adapt and unite data frames
   textframe <- data.frame(listid, listtext)
   colnames(textframe) <- c("id", "text")
