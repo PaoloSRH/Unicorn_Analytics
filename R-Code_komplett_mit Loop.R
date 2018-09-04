@@ -1,17 +1,7 @@
-##### Choose option (MongoDB or CSV import) #####
-# MongoDB (=1) or csv import (=2)
-type <- 1
-
-##### Set FastRText settings (Specifiy range for loop, results will be saved in variable 'results') #####
-epoche <- 128:128
-dime <- 27:27
-lr <- c(1)
-ngram <- 4:4
-verbose <-22:22
+##### Remove variables if they exist #####
+rm(list=ls())
 
 ##### Load packages #####
-
-
 library(mongolite)
 library(dplyr) 
 library(tm)
@@ -22,43 +12,16 @@ library(caret)
 library(e1071)
 library(RTextTools)
 
-##### Remove variables if they exist #####
-rm(list=ls())
-if (exists("conn")) {rm(conn)}
-if (exists("getdata")) {rm(getdata)}
-if (exists("listid")) {rm(listid)}
-if (exists("listtext")) {rm(listtext)}
-if (exists("textframe")) {rm(textframe)}
-if (exists("corpus")) {rm(corpus)}
-if (exists("corpusmatrix")) {rm(corpusmatrix)}
-if (exists("model")) {rm(model)}
-if (exists("predictions")) {rm(predictions)}
-if (exists("test_labels_without_prefix")) {rm(test_labels_without_prefix)}
-if (exists("test_sentences")) {rm(test_sentences)}
-if (exists("textframe2")) {rm(textframe2)}
-if (exists("train_sentences")) {rm(train_sentences)}
-if (exists("corpusdataframe")) {rm(corpusdataframe)}
-if (exists("id")) {rm(id)}
-if (exists("result")) {rm(result)}
-if (exists("results")) {rm(results)}
-if (exists("help_df1")) {rm(help_df1)}
-if (exists("help_df2")) {rm(help_df2)}
-if (exists("temp_head")) {rm(temp_head)}
-if (exists("temp_tail")) {rm(temp_tail)}
-if (exists("csvimport")) {rm(csvimport)}
-if (exists("model")) {rm(model)}
-if (exists("model2.nb")) {rm(model2.nb)}
-if (exists("model2.test_dfm")) {rm(model2.test_dfm)}
-if (exists("model2.test.corpus")) {rm(model2.test.corpus)}
-if (exists("model2.test.dfm")) {rm(model2.test.dfm)}
-if (exists("model2.train.corpus")) {rm(model2.train.corpus)}
-if (exists("model2.train.dfm")) {rm(model2.train.dfm)}
-if (exists("model3.container")) {rm(model3.container)}
-if (exists("model3.dtMatrix")) {rm(model3.dtMatrix)}
-if (exists("model3.model")) {rm(model3.model)}
-if (exists("model3.predictionContainer")) {rm(model3.predictionContainer)}
-if (exists("model3.predMatrix")) {rm(model3.predMatrix)}
-if (exists("model3.results")) {rm(model3.results)}
+##### Choose option (MongoDB or CSV import) #####
+# MongoDB (=1) or csv import (=2)
+type <- 1
+
+##### Set FastRText settings (Specifiy range for loop, results will be saved in variable 'results') #####
+epoche <- 128:128
+dime <- 27:27
+lr <- c(1)
+ngram <- 4:4
+verbose <-22:22
 
 ##### Option 1: MongoDB #####
 if (type == 1) {
