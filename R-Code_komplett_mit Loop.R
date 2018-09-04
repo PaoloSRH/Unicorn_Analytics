@@ -144,47 +144,6 @@ if (type == 1) { #MongoDB
 
 ### START OF training and test dataset generation ###
 
-### 12.08 PR: Die Aufteilung so funktioniert nicht, weil er sonst Kategorien in den Trainingsdaten hat, 
-### die nicht in den Testdaten sind. 
-### Also neu, mit Aufteilung pro Kategorie
-
-### Aufteilung ALT:
-#textframe_ordered <- textframe2[order(textframe2$class.text, decreasing = FALSE), ]  
-#textframe_ordered$class.text <- as.numeric(as.character(textframe_ordered$class.text))
-##str(textframe_ordered)
-##View(textframe_ordered)
-#splits <- split(textframe_ordered, textframe_ordered$class.text)
-##View(splits)
-
-
-### function to obtain first 70 percent of data (with round off)
-#upperFunction <- function(textframes){
-#  if(nrow(textframes)>0){
-#    head(textframes, ceiling(nrow(textframes)*0.7))
-#  }
-#}
-
-### function to obtain last 30 percent of data (with round off)
-#lowerFunction <- function(textframes){
-#  if(nrow(textframes)>0){
-#    tail(textframes, floor(nrow(textframes)*0.3))
-#  }
-#}
-
-### generating train and test dataset
-#train_sentences_tmp <- lapply(splits, upperFunction)
-#test_sentences_tmp <- lapply(splits, lowerFunction)
-##str(train_sentences)
-##str(test_sentences)
-
-### Combine data frames in list to one dataframe
-#train_sentences <- bind_rows(train_sentences_tmp)
-#test_sentences <- bind_rows(test_sentences_tmp)
-##str(train_set)
-##str(test_set)
-##View(train_sentences)
-##View(test_sentences)
-
 ### Aufteilung NEU:
 help_df1 <- data.frame(class.text=character(),text=character(),stringsAsFactors=FALSE)
 help_df2 <- data.frame(class.text=character(),text=character(),stringsAsFactors=FALSE)
@@ -297,7 +256,7 @@ for (i in epoche){
           show(result)
           
           ### Free memory and delete files in temp folder
-          # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im nÃƒÂ¤chsten Schritt immer lÃƒÂ¶schen
+          # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im nächsten Schritt immer löschen
           do.call(file.remove, list(list.files(tempdir(), full.names = TRUE)))
           unlink(train_tmp_file_txt)
           unlink(tmp_file_model)
@@ -313,7 +272,7 @@ model2.train.corpus <- corpus(train_sentences$text)
 docvars(model2.train.corpus) <- train_sentences$class.text
 model2.train.dfm <- dfm(model2.train.corpus, tolower = TRUE,stem=TRUE)
 
-#Das gleiche fÃ¼r Testdaten
+#Das gleiche für Testdaten
 model2.test.corpus <- corpus(test_sentences$text) 
 docvars(model2.test.corpus) <- test_sentences$class.text
 model2.test.dfm <- dfm(model2.test.corpus, tolower = TRUE,stem=TRUE)
@@ -326,10 +285,15 @@ model2.nb <- textmodel_nb(model2.train.dfm, docvars(model2.train.dfm, "docvar1")
 #Feature von Trainings- und Testdaten verwenden
 model2.test_dfm <- dfm_select(model2.test.dfm, model2.train.dfm)
 
-#Und jetzt prÃ¼fen wie gut das Model funktioniert
+#Und jetzt prüfen wie gut das Model funktioniert
 model2.actual_class <- docvars(model2.test_dfm, "docvar1")
 model2.predicted_class <- predict(model2.nb, model2.test_dfm)
-model2.class_table <- table(model2.actual_class, model2.predicted_class)
+#Mit union
+u <- union(model2.actual_class, model2.predicted_class)
+model2.class_table <- table(factor(model2.actual_class, u), factor(model2.predicted_class, u))
+#Ohne Union
+#model2.class_table <- table(model2.actual_class, model2.predicted_class)
+
 #model2.class_table
 
 
