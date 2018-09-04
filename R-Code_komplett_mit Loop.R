@@ -132,9 +132,9 @@ corpus <- tm_map(corpus, removeWords, stopwords("german"))
 # remove Punctuation
 corpus <- tm_map(corpus, removePunctuation)
 # replace contraction
-corpus <- tm_map(corpus, replace_contraction)
+#corpus <- tm_map(corpus, replace_contraction)
 # replace abbreviation
-corpus <- tm_map(corpus, replace_abbreviation)
+#corpus <- tm_map(corpus, replace_abbreviation)
 # replace symbol
 #corpus <- tm_map(corpus, replace_symbol)
 # stemming
