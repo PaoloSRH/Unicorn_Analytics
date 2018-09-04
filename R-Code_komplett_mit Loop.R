@@ -35,6 +35,7 @@ library(e1071)
 library(RTextTools)
 
 ##### Remove variables if they exist #####
+rm(list=ls())
 if (exists("conn")) {rm(conn)}
 if (exists("getdata")) {rm(getdata)}
 if (exists("listid")) {rm(listid)}
@@ -100,8 +101,7 @@ if (type == 1) {
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\"\\)", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\n", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\\)", "", x)}))
-  
-  
+
   # Adapt and unite data frames
   textframe <- data.frame(listid, listtext)
   colnames(textframe) <- c("id", "text")
@@ -388,7 +388,7 @@ confusionMatrix(model2.class_table, mode = "everything")
 
 ##### START OF MODEL 3: SVM (Nicht gut aber mal schauen was man mit machen kann) #####
 # vor dem ausfuehren
-# trace("create_matrix", edit=T) eingeben un in Zeile 42 Acronym in acronym ändern
+trace("create_matrix", edit=T) #eingeben un in Zeile 42 Acronym in acronym ändern
 # wir benötigen eine Matrix
 
 model3.dtMatrix <- create_matrix(train_sentences$text)
