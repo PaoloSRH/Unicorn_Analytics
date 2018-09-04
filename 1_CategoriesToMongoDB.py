@@ -18,9 +18,6 @@ for categoryGroup in e.find('categories').findall('categoryGroup'):
     
     for category in categoryGroup.findall('category'):
         #print(category.get('id'))
-
-        #group_id = df[df.category_id == category.get('id')].iloc[0,1]
-        #, "groupId":"'+group_id+'"
         
         textCount = category.get('textCount')
         if textCount is None:
