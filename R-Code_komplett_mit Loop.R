@@ -10,19 +10,7 @@ ngram <- 4:4
 verbose <-22:22
 
 ##### Load packages #####
-#install.packages("tm") 
-#install.packages("libxml2") 
-#install.packages("corpustools") 
-#install.packages("mongolite") 
-#install.packages("dplyr") 
-#install.packages("fastrtext")
-#install.packages("quanteda") 
-#install.packages("caret") 
-#install.packages("e1071", dependencies=TRUE)
-#install.packages("RTextTools")
-#install.packages("xgboost")
-#install.packages("scales")
-#install.packages("kernlab")
+
 
 library(mongolite)
 library(dplyr) 
@@ -117,6 +105,7 @@ if (type == 2) {
 
 ##### Load 2nd column in data frame and clean with tm #####
 corpus <- VCorpus(VectorSource(textframe[,2]))
+
 
 #inspect(corpus)
 # remove whitespace
@@ -388,7 +377,7 @@ confusionMatrix(model2.class_table, mode = "everything")
 
 ##### START OF MODEL 3: SVM (Nicht gut aber mal schauen was man mit machen kann) #####
 # vor dem ausfuehren
-# trace("create_matrix", edit=T) eingeben un in Zeile 42 Acronym in acronym ändern
+trace("create_matrix", edit=T) #eingeben un in Zeile 42 Acronym in acronym ändern
 # wir benötigen eine Matrix
 
 model3.dtMatrix <- create_matrix(train_sentences$text)
@@ -421,4 +410,21 @@ mean(model3.results$SVM_PROB)
 
 ##### START OF MODEL 4: xgBoost #####
 library(xgboost)
+
+
+
+
+##### Start of Ensembling #####
+
+
+#Predicting the probabilities
+test_sentences$pred_fastrtext<-predict(object = model,test_sentences$class.text,type='prob')
+test_sentences$pred_quanteda<-predict(object = model2,test_sentences$class.text,type='prob')
+test_sentences$pred_mod3<-predict(object = model3,test_sentences$class.text,type='prob')
+
+#Taking average of predictionsa
+test_sentences$pred_avg<-(test_sentences$pred_fastrtext$Y+test_sentences$pred_quanteda$Y+test_sentences$pred_mod3$Y)/3
+
+#Splitting into binary classes at 0.5
+test_sentences$pred_avg<-as.factor(ifelse(test_sentences$pred_avg>0.5,'Y','N'))
 
