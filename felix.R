@@ -9,21 +9,6 @@ lr <- c(1)
 ngram <- 4:4
 verbose <-22:22
 
-##### Load packages #####
-#install.packages("tm") 
-#install.packages("libxml2") 
-#install.packages("corpustools") 
-#install.packages("mongolite") 
-#install.packages("dplyr") 
-#install.packages("fastrtext")
-#install.packages("quanteda") 
-#install.packages("caret") 
-#install.packages("e1071", dependencies=TRUE)
-#install.packages("RTextTools")
-#install.packages("xgboost")
-#install.packages("scales")
-#install.packages("kernlab")
-
 library(mongolite)
 library(dplyr) 
 library(tm)
@@ -33,56 +18,15 @@ library(quanteda)
 library(caret)
 library(e1071)
 library(RTextTools)
-
-##### Remove variables if they exist #####
-if (exists("conn")) {rm(conn)}
-if (exists("getdata")) {rm(getdata)}
-if (exists("listid")) {rm(listid)}
-if (exists("listtext")) {rm(listtext)}
-if (exists("textframe")) {rm(textframe)}
-if (exists("corpus")) {rm(corpus)}
-if (exists("corpusmatrix")) {rm(corpusmatrix)}
-if (exists("model")) {rm(model)}
-if (exists("predictions")) {rm(predictions)}
-if (exists("test_labels_without_prefix")) {rm(test_labels_without_prefix)}
-if (exists("test_sentences")) {rm(test_sentences)}
-if (exists("textframe2")) {rm(textframe2)}
-if (exists("train_sentences")) {rm(train_sentences)}
-if (exists("corpusdataframe")) {rm(corpusdataframe)}
-if (exists("id")) {rm(id)}
-if (exists("result")) {rm(result)}
-if (exists("results")) {rm(results)}
-if (exists("help_df1")) {rm(help_df1)}
-if (exists("help_df2")) {rm(help_df2)}
-if (exists("temp_head")) {rm(temp_head)}
-if (exists("temp_tail")) {rm(temp_tail)}
-if (exists("csvimport")) {rm(csvimport)}
-if (exists("model")) {rm(model)}
-if (exists("model2.nb")) {rm(model2.nb)}
-if (exists("model2.test_dfm")) {rm(model2.test_dfm)}
-if (exists("model2.test.corpus")) {rm(model2.test.corpus)}
-if (exists("model2.test.dfm")) {rm(model2.test.dfm)}
-if (exists("model2.train.corpus")) {rm(model2.train.corpus)}
-if (exists("model2.train.dfm")) {rm(model2.train.dfm)}
-if (exists("model3.container")) {rm(model3.container)}
-if (exists("model3.dtMatrix")) {rm(model3.dtMatrix)}
-if (exists("model3.model")) {rm(model3.model)}
-if (exists("model3.predictionContainer")) {rm(model3.predictionContainer)}
-if (exists("model3.predMatrix")) {rm(model3.predMatrix)}
-if (exists("model3.results")) {rm(model3.results)}
+library(stringr)
+library(tidyr)
 
 ##### Option 1: MongoDB #####
 if (type == 1) {
-  ### Connection to categories
-  #conn <- mongo("categories", url = "mongodb://192.168.2.135:27017/mails")  
   
   ### Connection to mails
-  #conn <- mongo("interactions", url = "mongodb://192.168.2.135:27017/mails")
-  conn <- mongo("interactions", url = "mongodb://localhost:27017/mails")
-  getdata <- conn
-  
-  ### Count how many records are available
-  getdata$count('{}')
+  #getdata <- mongo("interactions", url = "mongodb://192.168.2.135:27017/mails")
+  getdata <- mongo("interactions", url = "mongodb://localhost:27017/mails")
   
   ### Clean texts and categories of MongoDB
   # Categories
@@ -93,10 +37,23 @@ if (type == 1) {
   listid <- data.frame(lapply(listid, function(x) {gsub("\"", "", x)}))
   listid <- data.frame(lapply(listid, function(x) {gsub("\\)", "", x)}))
   listid <- data.frame(lapply(listid, function(x) {gsub("\n", "", x)}))
-  
+  View(listid)
   # Relevant text modules
-  listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "_id": false}')
-  listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(text = \"", "", x)}))
+  #listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "_id": false}')
+  listtext <- getdata$find(query = '{}',fields = '{"categories.text" : true, "categories.group_id":true, "_id": false}')
+  listtext <- separate(listtext, categories, c("id","text"), sep = ", text = ")
+  listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(group_id = \"", "", x)}))
+  listtext <- data.frame(lapply(listtext, function(x) {gsub("list\\(group_id = c\\(\"", "", x)}))
+  listtext <- data.frame(lapply(listtext, function(x) {gsub("\"", "", x)}))
+  listtext <- data.frame(lapply(listtext, function(x) {gsub("\n", "", x)}))
+  View(listtext)
+  install.packages("openxlsx")
+  library(openxlsx)
+  
+  # for writing a data.frame or list of data.frames to an xlsx file
+  write.xlsx(listtext, 'listtext.xlsx')
+  write.xlsx(textframe, 'textframe.xlsx')
+  
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\"\\)", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\n", "", x)}))
   listtext <- data.frame(lapply(listtext, function(x) {gsub("\\)", "", x)}))
@@ -128,11 +85,11 @@ corpus <- tm_map(corpus, removeWords, stopwords("german"))
 # remove Punctuation
 corpus <- tm_map(corpus, removePunctuation)
 # replace contraction
-#corpus <- tm_map(corpus, replace_contraction)
+# corpus <- tm_map(corpus, replace_contraction)
 # replace abbreviation
-#corpus <- tm_map(corpus, replace_abbreviation)
+# corpus <- tm_map(corpus, replace_abbreviation)
 # replace symbol
-#corpus <- tm_map(corpus, replace_symbol)
+# corpus <- tm_map(corpus, replace_symbol)
 # stemming
 tm_map(corpus, stemDocument)
 
@@ -345,7 +302,7 @@ for (i in epoche){
           show(result)
           
           ### Free memory and delete files in temp folder
-          # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im nÃ¤chsten Schritt immer lÃ¶schen
+          # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im nächsten Schritt immer löschen
           do.call(file.remove, list(list.files(tempdir(), full.names = TRUE)))
           unlink(train_tmp_file_txt)
           unlink(tmp_file_model)
@@ -361,7 +318,7 @@ model2.train.corpus <- corpus(train_sentences$text)
 docvars(model2.train.corpus) <- train_sentences$class.text
 model2.train.dfm <- dfm(model2.train.corpus, tolower = TRUE,stem=TRUE)
 
-#Das gleiche für Testdaten
+#Das gleiche f?r Testdaten
 model2.test.corpus <- corpus(test_sentences$text) 
 docvars(model2.test.corpus) <- test_sentences$class.text
 model2.test.dfm <- dfm(model2.test.corpus, tolower = TRUE,stem=TRUE)
@@ -374,13 +331,13 @@ model2.nb <- textmodel_nb(model2.train.dfm, docvars(model2.train.dfm, "docvar1")
 #Feature von Trainings- und Testdaten verwenden
 model2.test_dfm <- dfm_select(model2.test.dfm, model2.train.dfm)
 
-#Und jetzt prüfen wie gut das Model funktioniert
+#Und jetzt pr?fen wie gut das Model funktioniert
 model2.actual_class <- docvars(model2.test_dfm, "docvar1")
 model2.predicted_class <- predict(model2.nb, model2.test_dfm)
-model2.class_table <- table(model2.actual_class, model2.predicted_class)
+
+model2.class_table <- table(model2.actual_class, as.numeric(model2.predicted_class$nb.predicted))
+#model2.class_table <- table(model2.actual_class, model2.predicted_class$nb.predicted)
 #model2.class_table
-
-
 confusionMatrix(model2.class_table, mode = "everything")
 
 ##### END OF: QUANTEDA #####
@@ -388,8 +345,8 @@ confusionMatrix(model2.class_table, mode = "everything")
 
 ##### START OF MODEL 3: SVM (Nicht gut aber mal schauen was man mit machen kann) #####
 # vor dem ausfuehren
-# trace("create_matrix", edit=T) eingeben un in Zeile 42 Acronym in acronym ändern
-# wir benötigen eine Matrix
+trace("create_matrix", edit=T) #eingeben un in Zeile 42 Acronym in acronym ?ndern
+# wir ben?tigen eine Matrix
 
 model3.dtMatrix <- create_matrix(train_sentences$text)
 
