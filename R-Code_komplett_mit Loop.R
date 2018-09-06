@@ -26,12 +26,11 @@ verbose <-22:22
 ##### Option 1: MongoDB #####
 if (type == 1) {
   ### Connection to categories
-  #conn <- mongo("categories", url = "mongodb://192.168.2.135:27017/mails")  
+  #getdata <- mongo("categories", url = "mongodb://192.168.2.135:27017/mails")  
   
   ### Connection to mails
-  #conn <- mongo("interactions", url = "mongodb://192.168.2.135:27017/mails")
-  conn <- mongo("interactions", url = "mongodb://localhost:27017/mails")
-  getdata <- conn
+  #getdata <- mongo("interactions", url = "mongodb://192.168.2.135:27017/mails")
+  getdata <- mongo("interactions", url = "mongodb://localhost:27017/mails")
   
   ### Count how many records are available
   getdata$count('{}')
@@ -256,7 +255,7 @@ for (i in epoche){
           show(result)
           
           ### Free memory and delete files in temp folder
-          # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im nächsten Schritt immer löschen
+          # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im n?chsten Schritt immer l?schen
           do.call(file.remove, list(list.files(tempdir(), full.names = TRUE)))
           unlink(train_tmp_file_txt)
           unlink(tmp_file_model)
@@ -272,7 +271,7 @@ model2.train.corpus <- corpus(train_sentences$text)
 docvars(model2.train.corpus) <- train_sentences$class.text
 model2.train.dfm <- dfm(model2.train.corpus, tolower = TRUE,stem=TRUE)
 
-#Das gleiche für Testdaten
+#Das gleiche f?r Testdaten
 model2.test.corpus <- corpus(test_sentences$text) 
 docvars(model2.test.corpus) <- test_sentences$class.text
 model2.test.dfm <- dfm(model2.test.corpus, tolower = TRUE,stem=TRUE)
@@ -285,7 +284,7 @@ model2.nb <- textmodel_nb(model2.train.dfm, docvars(model2.train.dfm, "docvar1")
 #Feature von Trainings- und Testdaten verwenden
 model2.test_dfm <- dfm_select(model2.test.dfm, model2.train.dfm)
 
-#Und jetzt prüfen wie gut das Model funktioniert
+#Und jetzt pr?fen wie gut das Model funktioniert
 model2.actual_class <- docvars(model2.test_dfm, "docvar1")
 model2.predicted_class <- predict(model2.nb, model2.test_dfm)
 #Mit union
