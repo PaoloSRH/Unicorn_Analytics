@@ -28,7 +28,7 @@ for interaction in e.find('interactions').findall('interaction'):
     categories = metadata.find('category').text.split(',');
     for category in categories:
         group_id = str(df[df.category_id == int(category)].iloc[0,1])
-        json_str += '{"group_id":"'+group_id+'", "id":"'+category+'", "text":"'+interaction.find('text').xpath('./relevantText[re:test(@goldCategory, "(^|.*,)'+category+'(,.*|$)")]', namespaces={'re': 'http://exslt.org/regular-expressions'})[0].text.replace('\\', '\\\\').replace('\n', '\\n').replace('\r', '\\r').replace('"', '\\"')+'"}, '
+        json_str += '{"group_id":"'+group_id+'", "id":"'+category+'", "text":"'+interaction.find('text').xpath('./relevantText[re:test(@goldCategory, "(^|.*,)'+category+'(,.*|$)")]', namespaces={'re': 'http://exslt.org/regular-expressions'})[0].text.replace('\\', ' ').replace('\n', ' ').replace('\r', ' ').replace('"', ' ')+'"}, '
     json_str = json_str[:-2]+'], '
     
     json_str += '"keyword":"'+metadata.find('keyword').text+'", '
@@ -39,7 +39,7 @@ for interaction in e.find('interactions').findall('interaction'):
         completeMessage += relevantText.text+relevantText.tail
     completeMessage = completeMessage.replace('\\', '\\\\').replace('\n', '\\n').replace('\r', '\\r').replace('"', '\\"');
     json_str += '"text":"'+completeMessage+'"}'
-    
+
     #print(json_str)
     collection.insert_one(json.loads(json_str))
     print('Done!')
