@@ -68,7 +68,6 @@ if (type == 2) {
 ##### Load 2nd column in data frame and clean with tm #####
 corpus <- VCorpus(VectorSource(textframe[,2]))
 
-
 #inspect(corpus)
 # remove whitespace
 corpus <- tm_map(corpus, stripWhitespace)
@@ -78,34 +77,10 @@ corpus <- tm_map(corpus, content_transformer(tolower))
 corpus <- tm_map(corpus, removeWords, stopwords("german"))
 # remove Punctuation
 corpus <- tm_map(corpus, removePunctuation)
-# replace contraction
-#corpus <- tm_map(corpus, replace_contraction)
-# replace abbreviation
-#corpus <- tm_map(corpus, replace_abbreviation)
-# replace symbol
-#corpus <- tm_map(corpus, replace_symbol)
 # stemming
 tm_map(corpus, stemDocument)
 
 corpusdataframe <- data.frame(text_new = sapply(corpus, as.character), stringsAsFactors = FALSE)
-
-#inspect(corpus)
-#print(textframe)
-
-### corpusmatrix is not needed for FastRText
-# Term document matrices
-#corpusmatrix <- DocumentTermMatrix(corpus)
-#inspect(corpusmatrix)
-
-# Frequency matrix
-#findFreqTerms(corpusmatrix, 10)
-
-# Correlation between single words
-#findAssocs(corpusmatrix, "fehler", 0.5)
-
-# Remove rare words
-#removeSparseTerms(corpusmatrix, 0.4)
-#inspect(corpusmatrix)
 
 # Add new column with edited mail texts
 textframe[,3] <- corpusdataframe
@@ -166,7 +141,6 @@ test_sentences <- help_df2
 #textframe2 %>% 
 #add_count(class.text)
 
-
 #for (year in c(2010,2011,2012,2013,2014,2015)){
 #  print(paste("The year is", year))
 #}
@@ -174,9 +148,6 @@ test_sentences <- help_df2
 ### Create dataframe to save results of the models
 results <- setNames(data.frame(matrix(ncol = 8, nrow = 0)), c("id", "time", "dim","lr","ngram", "epoch","verbose", "result"))
 id <- 1
-
-### Setting seed
-set.seed(42)
 
 ##### FASTRTEXT Loop, ranges can be specified at the beginning of script #####
 for (i in epoche){ 
@@ -205,11 +176,8 @@ for (i in epoche){
           ### Apply same procedure for test data set
           test_labels <- paste0("__label__", test_sentences[,"class.text"])
           test_labels_without_prefix <- test_sentences[,"class.text"]
-          test_texts <- tolower(test_sentences[,"text"])
+          test_texts <- test_sentences[,"text"]
           test_to_write <- paste(test_labels, test_texts)
-          
-          ###setting seed
-          set.seed(42)
           
           ### Train model and save in tempfile, parameter can be adjusted
           execute(commands = c("supervised", "-input", train_tmp_file_txt, "-output", tmp_file_model, "-dim", j, "-lr", k, "-epoch", i, "-wordNgrams", l, "-verbose", m))
@@ -222,7 +190,7 @@ for (i in epoche){
           predictions <- predict(model, sentences = test_to_write)
           
           ### Splitting predictions in predictions filtered (without bin = category "999") and predictions bin (category "999")
-          prediction_splitter <- 0.2
+          prediction_splitter <- 0.1
           predictions_renamed <- lapply(predictions, function(prediction){
             if(prediction<prediction_splitter){
               c("999" = prediction[[1]][[1]])
@@ -239,13 +207,7 @@ for (i in epoche){
           #summary(unlist(predictions))
           ### Prozentualer Anteil, in dem das Model richtig lag
           #result <- mean(names(unlist(predictions)) == test_labels_without_prefix)
-          result <- mean(unlist(predictions_filtered))
-          
-          ### Because there is only one category by observation, hamming loss will be the same
-          #get_hamming_loss(as.list(test_labels_without_prefix), predictions)
-          
-          # You can get flat list of results when you are retrieving only one label per observation
-          #print(head(predict(model, sentences = test_to_write, simplify = TRUE)))
+          result <- mean(names(unlist(predictions_filtered)) == test_labels_without_prefix)
           
           ### Save results
           results[nrow(results) + 1,] = list(id,format(Sys.time(), format="%d.%m.%Y - %H:%M:%S"),j,k,l,i,m,result)
@@ -256,10 +218,10 @@ for (i in epoche){
           
           ### Free memory and delete files in temp folder
           # mit tempdir() auslesen welcher der Temp-Ordner ist, dann den Inhalt im n?chsten Schritt immer l?schen
-          do.call(file.remove, list(list.files(tempdir(), full.names = TRUE)))
-          unlink(train_tmp_file_txt)
-          unlink(tmp_file_model)
-          gc()
+          #do.call(file.remove, list(list.files(tempdir(), full.names = TRUE)))
+          #unlink(train_tmp_file_txt)
+          #unlink(tmp_file_model)
+          #gc()
           
         }}}}}
 ##### END OF: FASTRTEXT #####
@@ -341,16 +303,4 @@ library(xgboost)
 
 
 ##### Start of Ensembling #####
-
-
-#Predicting the probabilities
-test_sentences$pred_fastrtext<-predict(object = model,test_sentences$class.text,type='prob')
-test_sentences$pred_quanteda<-predict(object = model2,test_sentences$class.text,type='prob')
-test_sentences$pred_mod3<-predict(object = model3,test_sentences$class.text,type='prob')
-
-#Taking average of predictionsa
-test_sentences$pred_avg<-(test_sentences$pred_fastrtext$Y+test_sentences$pred_quanteda$Y+test_sentences$pred_mod3$Y)/3
-
-#Splitting into binary classes at 0.5
-test_sentences$pred_avg<-as.factor(ifelse(test_sentences$pred_avg>0.5,'Y','N'))
 
