@@ -257,6 +257,7 @@ model2.class_table <- table(factor(model2.actual_class, u), factor(model2.predic
 
 #model2.class_table
 
+model2.predMatrix <- predict(model2.nb, model2.test_dfm, type = "probability")
 
 confusionMatrix(model2.class_table, mode = "everything")
 
