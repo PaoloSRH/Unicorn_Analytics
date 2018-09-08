@@ -275,7 +275,7 @@ model3.dtMatrix <- create_matrix(train_sentences$text)
 model3.container <- create_container(model3.dtMatrix, train_sentences$class.text, trainSize=1:length(train_sentences$class.text), virgin=FALSE)
 
 # Dann trainieren wir das Modell
-model3.model <- train_model(model3.container, "SVM", kernel="linear", cost=1)
+model3.model <- train_model(model3.container, "SVM", kernel="linear", degree = 5,  cost=5)
 
 # Testdaten vorbereiten
 model3.predictionData <-test_sentences$text
@@ -297,17 +297,39 @@ mean(model3.results$SVM_PROB)
 
 ##### END OF: SVM #####
 
-##### START OF MODEL 4: xgBoost #####
-library(xgboost)
-
-
-
-
 ##### Start of Ensembling #####
 
 ensembling.cat <- ''
 rm(ensembling.result)
 ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category","model2.prob","model3.category", "model3.prob","actual.category"))
+
+## Function for a majority Vote which takes the category with the highest probability if there is no majority
+maj_vote <- function(x) {
+  # Need to switch categories from char to numeric
+  
+  classes <- rep(0, 20)
+  
+  for (i in c(1, 3, 5)) {
+    
+    classes[x[i]] <- classes[x[i]] + 1
+    
+  }
+  
+  if (max(classes) == 1) {
+    
+    result <- x[which.max(c(x[2], 0, x[4], 0, x[6]))]
+    
+    
+  } else {
+    
+    result <- which.max(classes)
+    
+  }
+  
+  return(result)
+  
+}
+## Filling Ensembling dataframe
 for (row in 1:nrow(model2.predMatrix)) {
   ensembling.cat <- ''
   ensembling.prob <- ''
@@ -327,3 +349,13 @@ for (row in 1:nrow(model2.predMatrix)) {
   }
   ensembling.result[row,] = list(names(predictions[[row]]),round(unname(predictions[[row]])*100,2),ensembling.cat,round(ensembling.prob*100, 2),as.character(model3.results[row,1]),round(as.numeric(model3.results[row,2])*100,2),as.character(test_sentences[row,1]))
 }
+## Changing char to numeric
+ensembling.result$model1.category <- as.numeric(ensembling.result$model1.category)
+ensembling.result$model2.category <- as.numeric(ensembling.result$model2.category)
+ensembling.result$model3.category <- as.numeric(ensembling.result$model3.category)
+ensembling.result$actual.category <- as.numeric(ensembling.result$actual.category)
+## Voting for Majority
+ensembling.result$maj_vote <- apply(ensembling.result, 1, maj_vote)
+
+ensembling_result <- mean(ensembling.result$maj_vote == ensembling.result$actual.category)
+show(ensembling_result)
