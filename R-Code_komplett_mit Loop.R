@@ -304,3 +304,25 @@ library(xgboost)
 
 ##### Start of Ensembling #####
 
+ensembling.cat <- ''
+rm(ensembling.result)
+ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category","model2.prob","model3.category", "model3.prob","actual.category"))
+for (row in 1:nrow(model2.predMatrix)) {
+  ensembling.cat <- ''
+  ensembling.prob <- ''
+  for(i in 1:ncol(model2.predMatrix)){
+    
+    if (ensembling.cat == '') {
+      ensembling.cat <- colnames(model2.predMatrix)[1]
+      ensembling.prob <- model2.predMatrix[row, 1] 
+    } 
+    if (i > 1){
+      if (model2.predMatrix[row, i] > ensembling.prob){
+        ensembling.cat <- colnames(model2.predMatrix)[i]
+        ensembling.prob <- model2.predMatrix[row, i]
+      }
+    }
+    
+  }
+  ensembling.result[row,] = list(names(predictions[[row]]),round(unname(predictions[[row]])*100,2),ensembling.cat,round(ensembling.prob*100, 2),as.character(model3.results[row,1]),round(as.numeric(model3.results[row,2])*100,2),as.character(test_sentences[row,1]))
+}
