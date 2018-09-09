@@ -299,16 +299,13 @@ mean(model3.results$SVM_PROB)
 
 ##### Start of Ensembling #####
 
-ensembling.cat <- ''
-rm(ensembling.result)
-ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category","model2.prob","model3.category", "model3.prob","actual.category"))
+ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), +
+                                 c("model1.category", "model1.prob", "model2.category", +
+                                     "model2.prob","model3.category", "model3.prob","actual.category"))
 
 ## Function for a majority Vote which takes the category with the highest probability if there is no majority
 maj_vote <- function(x) {
-  # Need to switch categories from char to numeric
-  
   classes <- rep(0, 20)
-  
   for (i in c(1, 3, 5)) {
     
     classes[x[i]] <- classes[x[i]] + 1
@@ -316,12 +313,12 @@ maj_vote <- function(x) {
   }
   
   if (max(classes) == 1) {
-    
+    # If all 3 models have a different predicted category, take the category with the highes probability
     result <- x[which.max(c(x[2], 0, x[4], 0, x[6]))]
     
     
   } else {
-    
+
     result <- which.max(classes)
     
   }
@@ -354,6 +351,21 @@ ensembling.result$model1.category <- as.numeric(ensembling.result$model1.categor
 ensembling.result$model2.category <- as.numeric(ensembling.result$model2.category)
 ensembling.result$model3.category <- as.numeric(ensembling.result$model3.category)
 ensembling.result$actual.category <- as.numeric(ensembling.result$actual.category)
+
+## Bin for under split_value %
+split_value <- 0.2
+bin <- function(x) {
+  for (i in c(2, 4, 6)) {
+    if(which.max(c(x[2], 0, x[4], 0, x[6])) <= split_value){
+      ##Row entfernen
+      
+    }
+    
+  }
+
+}
+
+apply(ensembling.result, 1, bin)
 ## Voting for Majority
 ensembling.result$maj_vote <- apply(ensembling.result, 1, maj_vote)
 
