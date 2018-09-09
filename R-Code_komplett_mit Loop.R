@@ -275,7 +275,7 @@ model3.dtMatrix <- create_matrix(train_sentences$text)
 model3.container <- create_container(model3.dtMatrix, train_sentences$class.text, trainSize=1:length(train_sentences$class.text), virgin=FALSE)
 
 # Dann trainieren wir das Modell
-model3.model <- train_model(model3.container, "SVM", kernel="linear", degree = 5,  cost=5)
+model3.model <- train_model(model3.container, "SVM", kernel="linear", degree = 5, gamma = 8, cost=8, coef0 = 2)
 
 # Testdaten vorbereiten
 model3.predictionData <-test_sentences$text
