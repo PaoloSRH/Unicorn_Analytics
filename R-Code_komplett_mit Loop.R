@@ -299,11 +299,10 @@ mean(model3.results$SVM_PROB)
 
 ##### Start of Ensembling #####
 
-ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), +
-                                 c("model1.category", "model1.prob", "model2.category", +
-                                     "model2.prob","model3.category", "model3.prob","actual.category"))
+ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category", "model2.prob","model3.category", "model3.prob","actual.category"))
 
 ## Function for a majority Vote which takes the category with the highest probability if there is no majority
+split_value <- 30
 maj_vote <- function(x) {
   classes <- rep(0, 20)
   for (i in c(1, 3, 5)) {
@@ -311,17 +310,23 @@ maj_vote <- function(x) {
     classes[x[i]] <- classes[x[i]] + 1
     
   }
-  
-  if (max(classes) == 1) {
-    # If all 3 models have a different predicted category, take the category with the highes probability
-    result <- x[which.max(c(x[2], 0, x[4], 0, x[6]))]
-    
-    
-  } else {
-
-    result <- which.max(classes)
-    
+  # If the probability is under split_value, the result is set to -1 so it can be filtered out later
+  if(max(c(x[2], 0, x[4], 0, x[6])) <= split_value){
+    result <- -1
   }
+  else
+  {
+    if (max(classes) == 1) {
+      # If all models have a different prediction, take the prediction with the highes probability
+      result <- x[which.max(c(x[2], 0, x[4], 0, x[6]))]
+      
+    } else {
+      
+      result <- which.max(classes)
+      
+    }
+  }
+  
   
   return(result)
   
@@ -346,28 +351,19 @@ for (row in 1:nrow(model2.predMatrix)) {
   }
   ensembling.result[row,] = list(names(predictions[[row]]),round(unname(predictions[[row]])*100,2),ensembling.cat,round(ensembling.prob*100, 2),as.character(model3.results[row,1]),round(as.numeric(model3.results[row,2])*100,2),as.character(test_sentences[row,1]))
 }
+
 ## Changing char to numeric
 ensembling.result$model1.category <- as.numeric(ensembling.result$model1.category)
 ensembling.result$model2.category <- as.numeric(ensembling.result$model2.category)
 ensembling.result$model3.category <- as.numeric(ensembling.result$model3.category)
 ensembling.result$actual.category <- as.numeric(ensembling.result$actual.category)
 
-## Bin for under split_value %
-split_value <- 0.2
-bin <- function(x) {
-  for (i in c(2, 4, 6)) {
-    if(which.max(c(x[2], 0, x[4], 0, x[6])) <= split_value){
-      ##Row entfernen
-      
-    }
-    
-  }
-
-}
-
-apply(ensembling.result, 1, bin)
 ## Voting for Majority
 ensembling.result$maj_vote <- apply(ensembling.result, 1, maj_vote)
 
+## Bin for under split_value %
+#Reihe rausschieben
+
+## Check Result from Majority Vote with real category
 ensembling_result <- mean(ensembling.result$maj_vote == ensembling.result$actual.category)
 show(ensembling_result)
