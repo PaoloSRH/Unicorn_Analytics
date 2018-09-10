@@ -189,25 +189,12 @@ for (i in epoche){
           ### Apply model for test data set
           predictions <- predict(model, sentences = test_to_write)
           
-          ### Splitting predictions in predictions filtered (without bin = category "999") and predictions bin (category "999")
-          prediction_splitter <- 0.1
-          predictions_renamed <- lapply(predictions, function(prediction){
-            if(prediction<prediction_splitter){
-              c("999" = prediction[[1]][[1]])
-            }else{
-              prediction
-            }
-          })
-          
-          predictions_bin <- predictions_renamed[predictions_renamed<prediction_splitter]
-          predictions_filtered <- predictions_renamed[predictions_renamed>=prediction_splitter]
-          
           ### Vorhergesagte Kategorie und Wahrscheinlichkeit ausgeben
           #print(head(predictions,100))
           #summary(unlist(predictions))
           ### Prozentualer Anteil, in dem das Model richtig lag
           #result <- mean(names(unlist(predictions)) == test_labels_without_prefix)
-          result <- mean(names(unlist(predictions_filtered)) == test_labels_without_prefix)
+          result <- mean(names(unlist(predictions)) == test_labels_without_prefix)
           
           ### Save results
           results[nrow(results) + 1,] = list(id,format(Sys.time(), format="%d.%m.%Y - %H:%M:%S"),j,k,l,i,m,result)
@@ -302,7 +289,7 @@ mean(model3.results$SVM_PROB)
 ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category", "model2.prob","model3.category", "model3.prob","actual.category"))
 
 ## Function for a majority Vote which takes the category with the highest probability if there is no majority
-split_value <- 30
+split_value <- 50
 maj_vote <- function(x) {
   classes <- rep(0, 20)
   for (i in c(1, 3, 5)) {
@@ -362,7 +349,8 @@ ensembling.result$actual.category <- as.numeric(ensembling.result$actual.categor
 ensembling.result$maj_vote <- apply(ensembling.result, 1, maj_vote)
 
 ## Bin for under split_value %
-#Reihe rausschieben
+bin <- ensembling.result[ensembling.result$maj_vote == -1,]
+ensembling.result <- ensembling.result[!ensembling.result$maj_vote == -1,]
 
 ## Check Result from Majority Vote with real category
 ensembling_result <- mean(ensembling.result$maj_vote == ensembling.result$actual.category)
