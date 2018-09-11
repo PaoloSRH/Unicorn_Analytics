@@ -78,7 +78,7 @@ corpus <- tm_map(corpus, removeWords, stopwords("german"))
 # remove Punctuation
 corpus <- tm_map(corpus, removePunctuation)
 # stemming
-tm_map(corpus, stemDocument)
+corpus <- tm_map(corpus, stemDocument)
 
 corpusdataframe <- data.frame(text_new = sapply(corpus, as.character), stringsAsFactors = FALSE)
 
