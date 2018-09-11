@@ -289,7 +289,7 @@ mean(model3.results$SVM_PROB)
 ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category", "model2.prob","model3.category", "model3.prob","actual.category"))
 
 ## Function for a majority Vote which takes the category with the highest probability if there is no majority
-split_value <- 50
+split_value <- 30
 maj_vote <- function(x) {
   classes <- rep(0, 20)
   for (i in c(1, 3, 5)) {
