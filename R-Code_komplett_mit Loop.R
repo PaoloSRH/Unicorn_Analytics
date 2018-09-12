@@ -14,6 +14,7 @@ library(RTextTools)
 
 ##### Choose option (MongoDB or CSV import) #####
 # MongoDB (=1) or csv import (=2)
+set.seed(42)
 type <- 1
 
 ##### Set FastRText settings (Specifiy range for loop, results will be saved in variable 'results') #####
@@ -218,17 +219,22 @@ for (i in epoche){
 #Traindaten - in Corpus dann Labels dazu und DFM erstellen. 
 model2.train.corpus <- corpus(train_sentences$text) 
 docvars(model2.train.corpus) <- train_sentences$class.text
-model2.train.dfm <- dfm(model2.train.corpus, tolower = TRUE,stem=TRUE)
+model2.train.dfm <- dfm(model2.train.corpus,ngrams = 1,stem=TRUE)
+#doc_freq <- docfreq(model2.train.dfm)
+#model2.train.dfm <- model2.train.dfm[, doc_freq >= 2]
+model2.train.dfm <- dfm_tfidf(model2.train.dfm)
 
 #Das gleiche f?r Testdaten
 model2.test.corpus <- corpus(test_sentences$text) 
 docvars(model2.test.corpus) <- test_sentences$class.text
-model2.test.dfm <- dfm(model2.test.corpus, tolower = TRUE,stem=TRUE)
+model2.test.dfm <- dfm(model2.test.corpus,ngrams = 1,stem=TRUE)
+#doc_freq_test <- docfreq(model2.test.dfm)
+#model2.test.dfm <- model2.test.dfm[, doc_freq_test >= 2]
+model2.test.dfm <- dfm_tfidf(model2.test.dfm)
 
 #summary(model2.train.corpus, 5)
 # Model trainieren
 model2.nb <- textmodel_nb(model2.train.dfm, docvars(model2.train.dfm, "docvar1"))
-#summary(model2.nb)
 
 #Feature von Trainings- und Testdaten verwenden
 model2.test_dfm <- dfm_select(model2.test.dfm, model2.train.dfm)
