@@ -21,7 +21,7 @@ type <- 1
 epoche <- 128:128
 dime <- 27:27
 lr <- c(1)
-ngram <- 4:4
+ngram <- 3:3
 verbose <-22:22
 
 ##### Option 1: MongoDB #####
@@ -102,19 +102,11 @@ if (type == 1) { #MongoDB
   
   ### If there are not enough mail texts per category, categories will be deleted
   # TODO: Should be automated
-  #textframe3 <- aggregate(cbind(count = text) ~ class.text, data = textframe2, FUN = function(x){NROW(x)})
-  # delete ids 59, 70, 72, 85, 86, 87, 92, 97 and group ids 1, 13 and 18
-  textframe2 <- textframe2[!grepl("1", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("13", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("18", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("59", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("70", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("72", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("85", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("86", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("87", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("92", textframe2$class.text),]
-  textframe2 <- textframe2[!grepl("97", textframe2$class.text),]
+  # textframe3 <- aggregate(cbind(count = text) ~ class.text, data = textframe2, FUN = function(x){NROW(x)})
+  # delete group ids 1, 13 and 18 because there are maximum 10 entries in those categories
+  textframe2 <- textframe2[!grepl("^1$", textframe2$class.text),]
+  textframe2 <- textframe2[!grepl("^13$", textframe2$class.text),]
+  textframe2 <- textframe2[!grepl("^18$", textframe2$class.text),]
 }
 
 ### START OF training and test dataset generation ###
@@ -287,6 +279,8 @@ model3.results <- classify_model(model3.predictionContainer, model3.model)
 mean(model3.results$SVM_PROB)
 
 # stimmt noch nicht ganz, testlabels zum vergleich heranziehen.
+u <- union(model3.results$SVM_LABEL, test_sentences$class.text)
+mean(factor(model3.results$SVM_LABEL, u) == factor(test_sentences$class.text, u))
 
 ##### END OF: SVM #####
 
