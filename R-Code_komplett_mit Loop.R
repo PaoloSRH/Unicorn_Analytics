@@ -211,7 +211,7 @@ for (i in epoche){
 #Traindaten - in Corpus dann Labels dazu und DFM erstellen. 
 model2.train.corpus <- corpus(train_sentences$text) 
 docvars(model2.train.corpus) <- train_sentences$class.text
-model2.train.dfm <- dfm(model2.train.corpus,ngrams = 1,stem=TRUE)
+model2.train.dfm <- dfm(model2.train.corpus,ngrams = 1)
 #doc_freq <- docfreq(model2.train.dfm)
 #model2.train.dfm <- model2.train.dfm[, doc_freq >= 2]
 model2.train.dfm <- dfm_tfidf(model2.train.dfm)
@@ -219,7 +219,7 @@ model2.train.dfm <- dfm_tfidf(model2.train.dfm)
 #Das gleiche f?r Testdaten
 model2.test.corpus <- corpus(test_sentences$text) 
 docvars(model2.test.corpus) <- test_sentences$class.text
-model2.test.dfm <- dfm(model2.test.corpus,ngrams = 1,stem=TRUE)
+model2.test.dfm <- dfm(model2.test.corpus,ngrams = 1)
 #doc_freq_test <- docfreq(model2.test.dfm)
 #model2.test.dfm <- model2.test.dfm[, doc_freq_test >= 2]
 model2.test.dfm <- dfm_tfidf(model2.test.dfm)
