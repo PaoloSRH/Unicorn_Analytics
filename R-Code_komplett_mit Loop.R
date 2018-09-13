@@ -18,11 +18,11 @@ set.seed(42)
 type <- 1
 
 ##### Set FastRText settings (Specifiy range for loop, results will be saved in variable 'results') #####
-epoche <- 128:128
-dime <- 27:27
-lr <- c(1)
-ngram <- 3:3
-verbose <-22:22
+epoche <- 99:99
+dime <- 19:19
+lr <- c(0.5)
+ngram <- 2:2
+verbose <-10:10
 
 ##### Option 1: MongoDB #####
 if (type == 1) {
@@ -251,16 +251,15 @@ confusionMatrix(model2.class_table, mode = "everything")
 
 ##### START OF MODEL 3: SVM (Nicht gut aber mal schauen was man mit machen kann) #####
 # vor dem ausfuehren
-trace("create_matrix", edit=T) #eingeben un in Zeile 42 Acronym in acronym ändern
+# trace("create_matrix", edit=T) #eingeben un in Zeile 42 Acronym in acronym ändern
 # wir benötigen eine Matrix
-
 model3.dtMatrix <- create_matrix(train_sentences$text)
 
 # und einen Container
 model3.container <- create_container(model3.dtMatrix, train_sentences$class.text, trainSize=1:length(train_sentences$class.text), virgin=FALSE)
 
 # Dann trainieren wir das Modell
-model3.model <- train_model(model3.container, "SVM", kernel="linear", degree = 5, gamma = 8, cost=8, coef0 = 2)
+model3.model <- train_model(model3.container, "SVM", kernel="linear", gamma = 0.125, cost = 0.5, coef0 = 5)
 
 # Testdaten vorbereiten
 model3.predictionData <-test_sentences$text
@@ -272,13 +271,25 @@ model3.predMatrix <- create_matrix(model3.predictionData, originalMatrix=model3.
 predSize = length(model3.predictionData);
 model3.predictionContainer <- create_container(model3.predMatrix, labels=rep(0,predSize), testSize=1:predSize, virgin=FALSE)
 
+# Automatic Tuning for SVM
+# model.tuned <- tune.svm(x = model3.container@training_matrix,
+#                         y = model3.container@training_codes,
+#                         cost = 2^(-5:5),
+#                         gamma = 2^(-5:5),
+#                         kernel="polynomial"
+# )
+# model.tuned$best.parameters$cost
+# model.tuned$best.parameters$gamma
+# model.tuned$best.performance
+
+
 # Ergebnisse
 model3.results <- classify_model(model3.predictionContainer, model3.model)
 
-# Und den Durchschnitt um das Modell zu bewerten
-mean(model3.results$SVM_PROB)
+# Durchschnitt der Probabilities
+# mean(model3.results$SVM_PROB)
 
-# stimmt noch nicht ganz, testlabels zum vergleich heranziehen.
+# Berechnung der Accuracy
 u <- union(model3.results$SVM_LABEL, test_sentences$class.text)
 mean(factor(model3.results$SVM_LABEL, u) == factor(test_sentences$class.text, u))
 
@@ -288,7 +299,8 @@ mean(factor(model3.results$SVM_LABEL, u) == factor(test_sentences$class.text, u)
 
 ensembling.result  <- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("model1.category", "model1.prob", "model2.category", "model2.prob","model3.category", "model3.prob","actual.category"))
 
-## Function for a majority Vote which takes the category with the highest probability if there is no majority
+## Function for a majority Vote which takes the category with the highest probability
+## if there is no majority
 split_value <- 30
 maj_vote <- function(x) {
   classes <- rep(0, 20)
@@ -297,14 +309,16 @@ maj_vote <- function(x) {
     classes[x[i]] <- classes[x[i]] + 1
     
   }
-  # If the probability is under split_value, the result is set to -1 so it can be filtered out later
+  # If the probability is under split_value, the result is set to -1 
+  # so it can be filtered out later
   if(max(c(x[2], 0, x[4], 0, x[6])) <= split_value){
     result <- -1
   }
   else
   {
     if (max(classes) == 1) {
-      # If all models have a different prediction, take the prediction with the highes probability
+      # If all models have a different prediction, 
+      # take the prediction with the highest probability
       result <- x[which.max(c(x[2], 0, x[4], 0, x[6]))]
       
     } else {
